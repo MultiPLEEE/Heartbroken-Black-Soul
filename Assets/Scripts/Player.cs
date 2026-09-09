@@ -4,99 +4,118 @@ using UnityEngine.Tilemaps;
 
 public class Player : MonoBehaviour
 {   
-    public event EventHandler<OnMoveChangedEventArgs> OnPlayerMove;
-
-    public class OnMoveChangedEventArgs : EventArgs
-    {
-        public Vector2 moveVector;
-        public bool canMove;
-    }
+    // public event EventHandler<OnPlayerMoveEventArgs> OnPlayerMove;
+    //
+    // public class OnPlayerMoveEventArgs : EventArgs
+    // {
+    //     public Vector2 currentMoveVector;
+    //     public bool isMoving;
+    // }
     
     [SerializeField] private float moveSpeed = 3f;
     [SerializeField] private PlayerInput playerInput;
-    [SerializeField] private Grid grid;
-    [SerializeField] private Tilemap obstaclesTilemap;
+    [SerializeField] private Transform visualTransform;
+    [SerializeField] private LayerMask blockingLayer;
+
+    [SerializeField] private Inventory inventory;
+    public Inventory GetPlayerInventory() => inventory;
     
     private bool isMoving = false;
-    private Vector3 targetPosition;
-    private Vector2 currentMoveVector;
+    private Vector2 currentPlayerDirectionVector = new Vector2(0, 1);
     
-    void Update()
+    void Start()
     {
-        HandleMovement();
+        playerInput.OnPlayerInteract += PlayerInput_OnPlayerInteract;
     }
     
-    private void HandleMovement()
+    private void PlayerInput_OnPlayerInteract(object sender, EventArgs e)
     {
         if (!isMoving)
         {
-            currentMoveVector = playerInput.GetMoveDirections();
-    
-            bool isArrowPressed = currentMoveVector != Vector2.zero;
-    
-            if (isArrowPressed)
+            Collider2D hitCollider = Physics2D.OverlapCircle(
+                transform.position + new Vector3(currentPlayerDirectionVector.x, currentPlayerDirectionVector.y, 0),
+                0.4f, blockingLayer.value);
+
+            if (hitCollider != null)
             {
-                Vector3Int targetCell = grid.WorldToCell(transform.position + new Vector3(currentMoveVector.x, currentMoveVector.y, 0));
-                Vector3Int targetCellX = grid.WorldToCell(transform.position + new Vector3(currentMoveVector.x, 0, 0));
-                Vector3Int targetCellY = grid.WorldToCell(transform.position + new Vector3(0, currentMoveVector.y, 0));
-                
-                bool isWallInTarget = obstaclesTilemap.HasTile(targetCell);
-                bool isWallInTargetX = obstaclesTilemap.HasTile(targetCellX);
-                bool isWallInTargetY = obstaclesTilemap.HasTile(targetCellY);
-    
-                if (!isWallInTargetX && !isWallInTargetY && !isWallInTarget)
-                {
-                    OnPlayerMove?.Invoke(this, new OnMoveChangedEventArgs { moveVector = currentMoveVector, canMove = true });
-                    targetPosition = grid.GetCellCenterWorld(targetCell);
-                    isMoving = true;
-                }
-                else if (!isWallInTargetX)
-                {
-                    targetPosition = grid.GetCellCenterWorld(targetCellX);
-                    OnPlayerMove?.Invoke(this, new OnMoveChangedEventArgs { moveVector = currentMoveVector, canMove = true });
-                    isMoving = true;
-                }
-                else if (!isWallInTargetY)
-                {
-                    targetPosition = grid.GetCellCenterWorld(targetCellY);
-                    OnPlayerMove?.Invoke(this, new OnMoveChangedEventArgs { moveVector = currentMoveVector, canMove = true });
-                    isMoving = true;
-                }
-                else
-                {
-                    OnPlayerMove?.Invoke(this, new OnMoveChangedEventArgs { moveVector = currentMoveVector, canMove = false });
-                }
-            }
-    
-            // if (isArrowPressed)
-            // {
-            //     Vector3Int targetCell = grid.WorldToCell(transform.position + new Vector3(currentMoveVector.x, currentMoveVector.y, 0));
-            //     
-            //     bool isWallInTarget = obstaclesTilemap.HasTile(targetCell);
-            //     
-            //     targetPosition = grid.GetCellCenterWorld(targetCell);
-            //
-            //     if (!isWallInTarget)
-            //     {
-            //         OnPlayerMove?.Invoke(this, new OnMoveChangedEventArgs { moveVector = currentMoveVector, canMove = true });
-            //         isMoving = true;
-            //     }
-            //     else
-            //     {
-            //         OnPlayerMove?.Invoke(this, new OnMoveChangedEventArgs { moveVector = currentMoveVector, canMove = false });
-            //     }
-            // }
-        }
-        else
-        {
-            transform.position = Vector3.MoveTowards(transform.position, targetPosition,  moveSpeed * Time.deltaTime);
-            
-            if (transform.position == targetPosition)
-            {
-                OnPlayerMove?.Invoke(this, new OnMoveChangedEventArgs { moveVector = Vector2.zero, canMove = false });
-                transform.position = targetPosition;
-                isMoving = false;
+                Debug.Log(hitCollider);
             }
         }
     }
+    
+    void Update()
+    {
+        PlayerMovement();
+    }
+    
+     private void PlayerMovement()
+     {
+         Vector2 currentMoveVector = playerInput.GetPlayerMoveVector();
+         
+         if (!isMoving)
+         {
+             bool isArrowPressed = currentMoveVector != Vector2.zero;
+             
+             if (isArrowPressed)
+             {
+                 if (!(currentMoveVector.x != 0 && currentMoveVector.y != 0 || currentMoveVector.x == 0 && currentMoveVector.y == 0))
+                 {
+                     currentPlayerDirectionVector = currentMoveVector;
+                 }
+                 
+                 // visualTransform.localPosition = -currentMoveVector;
+                 // transform.position = transform.position + new Vector3(currentMoveVector.x, currentMoveVector.y, 0);
+                 // isMoving = true;
+                 
+                 bool isWallInTarget = Physics2D.OverlapCircle(transform.position + new Vector3(currentMoveVector.x, currentMoveVector.y, 0), 0.4f, blockingLayer.value) != null;
+                 bool isWallInTargetX = Physics2D.OverlapCircle(transform.position + new Vector3(currentMoveVector.x, 0, 0), 0.4f, blockingLayer.value) != null;
+                 bool isWallInTargetY = Physics2D.OverlapCircle(transform.position + new Vector3(0, currentMoveVector.y, 0), 0.4f, blockingLayer.value) != null;
+                 
+                 if (!isWallInTargetX && !isWallInTargetY && !isWallInTarget)
+                 {
+                     transform.position = transform.position + new Vector3(currentMoveVector.x, currentMoveVector.y, 0);
+                     visualTransform.localPosition = -currentMoveVector;
+                     isMoving = true;
+                 }
+                 else if (!isWallInTargetX)
+                 {
+                     transform.position = transform.position + new Vector3(currentMoveVector.x, 0, 0);
+                     visualTransform.localPosition = new Vector3(-currentMoveVector.x, 0, 0);
+                     isMoving = true;
+                 }
+                 else if (!isWallInTargetY)
+                 {
+                     transform.position = transform.position + new Vector3(0, currentMoveVector.y, 0);
+                     visualTransform.localPosition = new Vector3(0, -currentMoveVector.y, 0);
+                     isMoving = true;
+                 }
+                 else
+                 {
+                 
+                 }
+             }
+         }
+         else
+         {
+             visualTransform.localPosition = Vector3.MoveTowards(visualTransform.localPosition, Vector3.zero,  moveSpeed * Time.deltaTime);
+             
+             if (visualTransform.localPosition == Vector3.zero)
+             {
+                 visualTransform.localPosition = Vector3.zero;
+                 isMoving = false;
+             }
+         }
+     }
+     
+     // private void OnDrawGizmos()
+     // {
+     //     // Устанавливаем цвет круга (например, зеленый)
+     //     Gizmos.color = Color.green;
+     //
+     //     // Считаем позицию целевой клетки
+     //     Vector3 targetCheckPos = transform.position + new Vector3(currentPlayerDirectionVector.x, currentPlayerDirectionVector.y, 0);
+     //
+     //     // Рисуем проволочную сферу радиусом 0.2f (укажи тот же радиус, что и в OverlapCircle)
+     //     Gizmos.DrawWireSphere(targetCheckPos, 0.4f);
+     // }
 }
