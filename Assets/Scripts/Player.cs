@@ -12,6 +12,8 @@ public class Player : MonoBehaviour
     //     public bool isMoving;
     // }
     
+    // Konnichiwa :) Bug was added in the previous commit, but i notice it only after commit, so i create new commit to mention it)
+    
     [SerializeField] private float walkSpeed = 4f;
     [SerializeField] private float sprintSpeed = 6f;
     [SerializeField] private PlayerInput playerInput;
