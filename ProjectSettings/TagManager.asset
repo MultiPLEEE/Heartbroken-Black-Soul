@@ -41,6 +41,24 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Parallax
+    uniqueID: 1251753299
+    locked: 0
+  - name: GroundTilemap
+    uniqueID: 1894074807
+    locked: 0
+  - name: Object
+    uniqueID: 1999212799
+    locked: 0
+  - name: ForegroundTilemap
+    uniqueID: 905181517
+    locked: 0
+  - name: Interactable
+    uniqueID: 2323948779
+    locked: 0
+  - name: Debug
+    uniqueID: 1061536809
+    locked: 0
   m_RenderingLayers:
   - Default
   m_MigratedRenderPipelines: []

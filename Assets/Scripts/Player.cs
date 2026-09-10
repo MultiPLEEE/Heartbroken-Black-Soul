@@ -12,7 +12,8 @@ public class Player : MonoBehaviour
     //     public bool isMoving;
     // }
     
-    [SerializeField] private float moveSpeed = 3f;
+    [SerializeField] private float walkSpeed = 4f;
+    [SerializeField] private float sprintSpeed = 6f;
     [SerializeField] private PlayerInput playerInput;
     [SerializeField] private Transform visualTransform;
     [SerializeField] private LayerMask blockingLayer;
@@ -22,6 +23,12 @@ public class Player : MonoBehaviour
     
     private bool isMoving = false;
     private Vector2 currentPlayerDirectionVector = new Vector2(0, 1);
+    private float currentMoveSpeed;
+
+    void Awake()
+    {
+        currentMoveSpeed = walkSpeed;
+    }
     
     void Start()
     {
@@ -38,13 +45,21 @@ public class Player : MonoBehaviour
 
             if (hitCollider != null)
             {
-                Debug.Log(hitCollider);
+                if (hitCollider.TryGetComponent<InteractableObject>(out InteractableObject interactable))
+                {
+                    interactable.Interact(this);
+                }
+                else
+                {
+                    Debug.Log("Объект на пути не интерактивен");
+                }
             }
         }
     }
     
     void Update()
     {
+        currentMoveSpeed = playerInput.IsSprintPressed()? sprintSpeed : walkSpeed;
         PlayerMovement();
     }
     
@@ -71,7 +86,9 @@ public class Player : MonoBehaviour
                  bool isWallInTargetX = Physics2D.OverlapCircle(transform.position + new Vector3(currentMoveVector.x, 0, 0), 0.4f, blockingLayer.value) != null;
                  bool isWallInTargetY = Physics2D.OverlapCircle(transform.position + new Vector3(0, currentMoveVector.y, 0), 0.4f, blockingLayer.value) != null;
                  
-                 if (!isWallInTargetX && !isWallInTargetY && !isWallInTarget)
+                 if ((currentMoveVector.y != 0 && currentMoveVector.x == 0 && isWallInTargetY) || (currentMoveVector.x != 0 && currentMoveVector.y == 0 && isWallInTargetX)) return;
+                 
+                 if (!isWallInTargetX && !isWallInTargetY)
                  {
                      transform.position = transform.position + new Vector3(currentMoveVector.x, currentMoveVector.y, 0);
                      visualTransform.localPosition = -currentMoveVector;
@@ -97,7 +114,7 @@ public class Player : MonoBehaviour
          }
          else
          {
-             visualTransform.localPosition = Vector3.MoveTowards(visualTransform.localPosition, Vector3.zero,  moveSpeed * Time.deltaTime);
+             visualTransform.localPosition = Vector3.MoveTowards(visualTransform.localPosition, Vector3.zero,  currentMoveSpeed * Time.deltaTime);
              
              if (visualTransform.localPosition == Vector3.zero)
              {

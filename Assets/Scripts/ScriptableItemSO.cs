@@ -1,7 +1,7 @@
 using UnityEngine;
 
 [CreateAssetMenu()]
-public class ScriptableСonsumableSO : ScriptableObject
+public class ScriptableItemSO : ScriptableObject
 {
     public Sprite sprite;
     public string objectName;

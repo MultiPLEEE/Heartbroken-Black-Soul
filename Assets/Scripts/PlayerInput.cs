@@ -4,6 +4,7 @@ using UnityEngine.InputSystem;
 
 public class PlayerInput : MonoBehaviour
 {
+    public event EventHandler OnPlayerSprint;
     public event EventHandler OnPlayerInteract;
     
     private PlayerMapInput playerMapInput;
@@ -15,7 +16,7 @@ public class PlayerInput : MonoBehaviour
         
         playerMapInput.Player.Interact.performed += Interact_performed;
     }
-
+    
     private void Interact_performed(InputAction.CallbackContext obj)
     {
         OnPlayerInteract?.Invoke(this, EventArgs.Empty);
@@ -27,4 +28,10 @@ public class PlayerInput : MonoBehaviour
     
         return inputDirections;
     }
+    
+    public bool IsSprintPressed()
+    {
+        return playerMapInput.Player.Sprint.IsPressed();
+    }
+
 }

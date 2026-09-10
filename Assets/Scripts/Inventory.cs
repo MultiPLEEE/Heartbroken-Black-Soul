@@ -7,7 +7,7 @@ public class Inventory : MonoBehaviour
     [SerializeField] private int maxAmount = 99;
     [SerializeField] private List<InventorySlot> slots = new List<InventorySlot>();
 
-    public bool AddItem(ScriptableСonsumableSO item, int amount = 1)
+    public bool AddItem(ScriptableItemSO item, int amount = 1)
     {
         InventorySlot existingSlot = slots.Find(slot => slot.item == item);
         
@@ -24,7 +24,7 @@ public class Inventory : MonoBehaviour
         }
     }
 
-    public void RemoveItem(ScriptableСonsumableSO item, int amount = 1)
+    public void RemoveItem(ScriptableItemSO item, int amount = 1)
     {
         InventorySlot existingSlot = slots.Find(slot => slot.item == item);
 
