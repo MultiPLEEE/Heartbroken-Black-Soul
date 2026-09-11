@@ -1,8 +1,8 @@
 using UnityEngine;
 
-public class ItemPickup : InteractableObject
+public class ItemPickup : MonoBehaviour, IInteractable
 {
-    [SerializeField] private ScriptableItemSO itemToGive;
+    [SerializeField] private ConsumableItemSO itemToGive;
     [SerializeField] private int amount = 1;
     [SerializeField] bool isDestroys;
     // [SerializeField] private SpriteRenderer spriteRenderer;
@@ -10,7 +10,7 @@ public class ItemPickup : InteractableObject
     //
     // private float fadeDuration = 0.4f;
     
-    public override void Interact(Player player)
+    public void Interact(Player player)
     {
         if (itemToGive == null)
         {

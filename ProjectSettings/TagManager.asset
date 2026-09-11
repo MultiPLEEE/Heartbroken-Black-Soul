@@ -59,6 +59,24 @@ TagManager:
   - name: Debug
     uniqueID: 1061536809
     locked: 0
+  - name: LowerUIBackground
+    uniqueID: 2956282061
+    locked: 0
+  - name: LowerUIBackgroundTint
+    uniqueID: 3751541015
+    locked: 0
+  - name: LowerUI
+    uniqueID: 94709653
+    locked: 0
+  - name: UpperUIBackground
+    uniqueID: 2149791131
+    locked: 0
+  - name: UpperUIBackgroundTint
+    uniqueID: 3067691577
+    locked: 0
+  - name: UpperUI
+    uniqueID: 3499741469
+    locked: 0
   m_RenderingLayers:
   - Default
   m_MigratedRenderPipelines: []

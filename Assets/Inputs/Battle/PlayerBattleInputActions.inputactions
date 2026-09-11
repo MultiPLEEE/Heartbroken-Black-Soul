@@ -1,0 +1,36 @@
+{
+    "version": 1,
+    "name": "PlayerBattleInputActions",
+    "maps": [
+        {
+            "name": "Player",
+            "id": "0410fd75-1bfc-492a-9e8b-b60d3639906e",
+            "actions": [
+                {
+                    "name": "Proceed",
+                    "type": "Button",
+                    "id": "a2a16fae-1288-41ab-a406-e73b4ed130f1",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false,
+                    "priority": 0
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "38dd683e-126b-4046-92b0-ac68471ddc23",
+                    "path": "<Keyboard>/enter",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Proceed",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

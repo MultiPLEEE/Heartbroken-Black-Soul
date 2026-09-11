@@ -4,28 +4,22 @@ using UnityEngine.Tilemaps;
 
 public class Player : MonoBehaviour
 {   
-    // public event EventHandler<OnPlayerMoveEventArgs> OnPlayerMove;
-    //
-    // public class OnPlayerMoveEventArgs : EventArgs
-    // {
-    //     public Vector2 currentMoveVector;
-    //     public bool isMoving;
-    // }
-    
-    // Konnichiwa :) Bug was added in the previous commit, but i notice it only after commit, so i create new commit to mention it)
-    
     [SerializeField] private float walkSpeed = 4f;
-    [SerializeField] private float sprintSpeed = 6f;
-    [SerializeField] private PlayerInput playerInput;
+    [SerializeField] private float sprintSpeedMultiplier = 2f;
+    [SerializeField] private PlayerMapInput playerMapInput;
     [SerializeField] private Transform visualTransform;
     [SerializeField] private LayerMask blockingLayer;
-
     [SerializeField] private Inventory inventory;
-    public Inventory GetPlayerInventory() => inventory;
     
-    private bool isMoving = false;
-    private Vector2 currentPlayerDirectionVector = new Vector2(0, 1);
+    private bool isMoving = false, isSprinting = false;
     private float currentMoveSpeed;
+    private Vector2 currentPlayerDirectionVector = new Vector2(0, 1);
+    
+    public Inventory GetPlayerInventory() => inventory;
+    public bool GetIsMoving() => isMoving;
+    public bool GetIsSprinting() => isSprinting;
+    public Vector2 GetCurrentPlayerDirectionVector() => currentPlayerDirectionVector;
+
 
     void Awake()
     {
@@ -34,10 +28,10 @@ public class Player : MonoBehaviour
     
     void Start()
     {
-        playerInput.OnPlayerInteract += PlayerInput_OnPlayerInteract;
+        playerMapInput.OnPlayerInteract += PlayerMapInput_OnPlayerMapInteract;
     }
     
-    private void PlayerInput_OnPlayerInteract(object sender, EventArgs e)
+    private void PlayerMapInput_OnPlayerMapInteract(object sender, EventArgs e)
     {
         if (!isMoving)
         {
@@ -47,7 +41,7 @@ public class Player : MonoBehaviour
 
             if (hitCollider != null)
             {
-                if (hitCollider.TryGetComponent<InteractableObject>(out InteractableObject interactable))
+                if (hitCollider.TryGetComponent<IInteractable>(out IInteractable interactable))
                 {
                     interactable.Interact(this);
                 }
@@ -61,13 +55,14 @@ public class Player : MonoBehaviour
     
     void Update()
     {
-        currentMoveSpeed = playerInput.IsSprintPressed()? sprintSpeed : walkSpeed;
+        isSprinting = playerMapInput.IsSprintPressed()? true : false;
+        currentMoveSpeed = isSprinting? walkSpeed * sprintSpeedMultiplier : walkSpeed;
         PlayerMovement();
     }
     
      private void PlayerMovement()
      {
-         Vector2 currentMoveVector = playerInput.GetPlayerMoveVector();
+         Vector2 currentMoveVector = playerMapInput.GetPlayerMoveVector();
          
          if (!isMoving)
          {
@@ -75,10 +70,9 @@ public class Player : MonoBehaviour
              
              if (isArrowPressed)
              {
-                 if (!(currentMoveVector.x != 0 && currentMoveVector.y != 0 || currentMoveVector.x == 0 && currentMoveVector.y == 0))
-                 {
-                     currentPlayerDirectionVector = currentMoveVector;
-                 }
+                 if (!(currentMoveVector.x != 0 && currentMoveVector.y != 0 || currentMoveVector.x == 0 && currentMoveVector.y == 0)) currentPlayerDirectionVector = currentMoveVector;
+                 if (currentMoveVector.x == -currentPlayerDirectionVector.x) currentPlayerDirectionVector = new Vector2(currentMoveVector.x, currentPlayerDirectionVector.y);
+                 if (currentMoveVector.y == -currentPlayerDirectionVector.y) currentPlayerDirectionVector = new Vector2(currentPlayerDirectionVector.x, currentMoveVector.y);
                  
                  // visualTransform.localPosition = -currentMoveVector;
                  // transform.position = transform.position + new Vector3(currentMoveVector.x, currentMoveVector.y, 0);
@@ -90,7 +84,7 @@ public class Player : MonoBehaviour
                  
                  if ((currentMoveVector.y != 0 && currentMoveVector.x == 0 && isWallInTargetY) || (currentMoveVector.x != 0 && currentMoveVector.y == 0 && isWallInTargetX)) return;
                  
-                 if (!isWallInTargetX && !isWallInTargetY)
+                 if (!isWallInTargetX && !isWallInTargetY && !isWallInTarget)
                  {
                      transform.position = transform.position + new Vector3(currentMoveVector.x, currentMoveVector.y, 0);
                      visualTransform.localPosition = -currentMoveVector;

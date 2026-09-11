@@ -4,10 +4,10 @@ using UnityEngine;
 [Serializable]
 public class InventorySlot
 {
-    public ScriptableItemSO item;
+    public ConsumableItemSO item;
     public int amount;
     
-    public InventorySlot(ScriptableItemSO item, int amount = 1)
+    public InventorySlot(ConsumableItemSO item, int amount = 1)
     {
         this.item = item;
         this.amount = amount;
