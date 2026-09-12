@@ -5,7 +5,7 @@ public class PlayerInputManager : MonoBehaviour
     public static PlayerInputManager Instance { get; private set; }
     
     [SerializeField] private PlayerMapInput playerMapInput;
-    [SerializeField] private PlayerCutsceneInput playerCutsceneInput;
+    [SerializeField] private PlayerEventInput playerEventInput;
     
     public enum InputMode
     {
@@ -29,12 +29,12 @@ public class PlayerInputManager : MonoBehaviour
         {
             case InputMode.Map:
                 playerMapInput.enabled = true;
-                playerCutsceneInput.enabled = false;
+                playerEventInput.enabled = false;
                 break;
 
             case InputMode.Cutscene:
                 playerMapInput.enabled = false;
-                playerCutsceneInput.enabled = true;
+                playerEventInput.enabled = true;
                 break;
         }
     }

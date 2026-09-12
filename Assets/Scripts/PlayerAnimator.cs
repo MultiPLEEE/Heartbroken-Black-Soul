@@ -11,35 +11,35 @@ public class PlayerAnimator : MonoBehaviour
     [SerializeField] private Player player;
     [SerializeField] private float animationSpeedMultiplier = 1.5f;
     
-    private Animator animator;
-    private bool isContinueMoving = false;
+    private Animator _animator;
+    private bool _isContinueMoving = false;
     
     private void Awake()
     {
-        animator = GetComponent<Animator>();
+        _animator = GetComponent<Animator>();
     }
     
     private void Update()
     {
         Vector2 currentPlayerDirectionVector = player.GetCurrentPlayerDirectionVector();
         
-        animator.SetFloat(CURRENT_DIRECTION_X, currentPlayerDirectionVector.x);
-        animator.SetFloat(CURRENT_DIRECTION_Y, currentPlayerDirectionVector.y);
+        _animator.SetFloat(CURRENT_DIRECTION_X, currentPlayerDirectionVector.x);
+        _animator.SetFloat(CURRENT_DIRECTION_Y, currentPlayerDirectionVector.y);
         if (player.GetIsMoving())
         {
-            if (player.GetIsSprinting()) animator.SetFloat(ANIMATION_SPEED_MULTIPLIER, animationSpeedMultiplier); else animator.SetFloat(ANIMATION_SPEED_MULTIPLIER, 1);
-            animator.SetBool(IS_WALKING, true);
-            isContinueMoving = true;
+            if (player.GetIsSprinting()) _animator.SetFloat(ANIMATION_SPEED_MULTIPLIER, animationSpeedMultiplier); else _animator.SetFloat(ANIMATION_SPEED_MULTIPLIER, 1);
+            _animator.SetBool(IS_WALKING, true);
+            _isContinueMoving = true;
         }
         else
         {
-            if (isContinueMoving)
+            if (_isContinueMoving)
             {
-                isContinueMoving = false;
+                _isContinueMoving = false;
             }
             else
             {
-                animator.SetBool(IS_WALKING, false);
+                _animator.SetBool(IS_WALKING, false);
             }
         }
     }

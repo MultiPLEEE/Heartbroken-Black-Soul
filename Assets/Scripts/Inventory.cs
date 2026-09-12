@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -15,13 +14,13 @@ public class Inventory : MonoBehaviour
         {
             if (existingSlot.amount + amount > maxAmount) return false;
             existingSlot.amount += amount;
-            return true;
         }
         else
         {
             slots.Add(new InventorySlot(item, amount));
-            return true;
         }
+        
+        return true;
     }
 
     public void RemoveItem(ConsumableItemSO item, int amount = 1)

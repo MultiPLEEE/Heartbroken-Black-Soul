@@ -6,23 +6,23 @@ public class PlayerMapInput : MonoBehaviour
 {
     public event EventHandler OnPlayerInteract;
     
-    private PlayerMapInputActions playerMapInput;
+    private PlayerMapInputActions _playerMapInput;
 
     private void Awake()
     {
-        playerMapInput = new PlayerMapInputActions();
+        _playerMapInput = new PlayerMapInputActions();
     }
     
     private void OnEnable()
     {
-        playerMapInput.Player.Enable();
-        playerMapInput.Player.Interact.performed += Interact_performed;
+        _playerMapInput.Player.Enable();
+        _playerMapInput.Player.Interact.performed += Interact_performed;
     }
     
     private void OnDisable()
     {
-        playerMapInput.Player.Interact.performed -= Interact_performed;
-        playerMapInput.Player.Disable();
+        _playerMapInput.Player.Interact.performed -= Interact_performed;
+        _playerMapInput.Player.Disable();
     }
     
     private void Interact_performed(InputAction.CallbackContext obj)
@@ -32,14 +32,13 @@ public class PlayerMapInput : MonoBehaviour
     
     public Vector2 GetPlayerMoveVector()
     {
-        Vector2 inputDirections = playerMapInput.Player.Move.ReadValue<Vector2>();
-    
+        Vector2 inputDirections = _playerMapInput.Player.Move.ReadValue<Vector2>();
         return inputDirections;
     }
     
     public bool IsSprintPressed()
     {
-        return playerMapInput.Player.Sprint.IsPressed();
+        return _playerMapInput.Player.Sprint.IsPressed();
     }
 
 }

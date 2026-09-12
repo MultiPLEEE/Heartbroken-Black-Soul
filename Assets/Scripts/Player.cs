@@ -1,29 +1,29 @@
 using System;
 using UnityEngine;
-using UnityEngine.Tilemaps;
 
 public class Player : MonoBehaviour
 {   
-    [SerializeField] private float walkSpeed = 4f;
-    [SerializeField] private float sprintSpeedMultiplier = 2f;
+    [SerializeField] private float walkSpeed;
+    [SerializeField] private float sprintSpeedMultiplier;
     [SerializeField] private PlayerMapInput playerMapInput;
     [SerializeField] private Transform visualTransform;
     [SerializeField] private LayerMask blockingLayer;
+    [SerializeField] private LayerMask eventLayer;
     [SerializeField] private Inventory inventory;
     
-    private bool isMoving = false, isSprinting = false;
-    private float currentMoveSpeed;
-    private Vector2 currentPlayerDirectionVector = new Vector2(0, 1);
+    private bool _isMoving = false, _isSprinting = false;
+    private float _currentMoveSpeed;
+    private Vector2 _currentPlayerDirectionVector = new Vector2(0, 1);
     
     public Inventory GetPlayerInventory() => inventory;
-    public bool GetIsMoving() => isMoving;
-    public bool GetIsSprinting() => isSprinting;
-    public Vector2 GetCurrentPlayerDirectionVector() => currentPlayerDirectionVector;
+    public bool GetIsMoving() => _isMoving;
+    public bool GetIsSprinting() => _isSprinting;
+    public Vector2 GetCurrentPlayerDirectionVector() => _currentPlayerDirectionVector;
 
 
     void Awake()
     {
-        currentMoveSpeed = walkSpeed;
+        _currentMoveSpeed = walkSpeed;
     }
     
     void Start()
@@ -33,30 +33,14 @@ public class Player : MonoBehaviour
     
     private void PlayerMapInput_OnPlayerMapInteract(object sender, EventArgs e)
     {
-        if (!isMoving)
-        {
-            Collider2D hitCollider = Physics2D.OverlapCircle(
-                transform.position + new Vector3(currentPlayerDirectionVector.x, currentPlayerDirectionVector.y, 0),
-                0.4f, blockingLayer.value);
-
-            if (hitCollider != null)
-            {
-                if (hitCollider.TryGetComponent<IInteractable>(out IInteractable interactable))
-                {
-                    interactable.Interact(this);
-                }
-                else
-                {
-                    Debug.Log("Объект на пути не интерактивен");
-                }
-            }
-        }
+        ExecuteEvent(transform.position + new Vector3(_currentPlayerDirectionVector.x, _currentPlayerDirectionVector.y, 0));
     }
     
     void Update()
     {
-        isSprinting = playerMapInput.IsSprintPressed()? true : false;
-        currentMoveSpeed = isSprinting? walkSpeed * sprintSpeedMultiplier : walkSpeed;
+        ExecuteEvent(transform.position);
+        _isSprinting = playerMapInput.IsSprintPressed()? true : false;
+        _currentMoveSpeed = _isSprinting? walkSpeed * sprintSpeedMultiplier : walkSpeed;
         PlayerMovement();
     }
     
@@ -64,15 +48,15 @@ public class Player : MonoBehaviour
      {
          Vector2 currentMoveVector = playerMapInput.GetPlayerMoveVector();
          
-         if (!isMoving)
+         if (!_isMoving)
          {
              bool isArrowPressed = currentMoveVector != Vector2.zero;
              
              if (isArrowPressed)
              {
-                 if (!(currentMoveVector.x != 0 && currentMoveVector.y != 0 || currentMoveVector.x == 0 && currentMoveVector.y == 0)) currentPlayerDirectionVector = currentMoveVector;
-                 if (currentMoveVector.x == -currentPlayerDirectionVector.x) currentPlayerDirectionVector = new Vector2(currentMoveVector.x, currentPlayerDirectionVector.y);
-                 if (currentMoveVector.y == -currentPlayerDirectionVector.y) currentPlayerDirectionVector = new Vector2(currentPlayerDirectionVector.x, currentMoveVector.y);
+                 if (!(currentMoveVector.x != 0 && currentMoveVector.y != 0 || currentMoveVector.x == 0 && currentMoveVector.y == 0)) _currentPlayerDirectionVector = currentMoveVector;
+                 if (currentMoveVector.x == -_currentPlayerDirectionVector.x) _currentPlayerDirectionVector = new Vector2(currentMoveVector.x, _currentPlayerDirectionVector.y);
+                 if (currentMoveVector.y == -_currentPlayerDirectionVector.y) _currentPlayerDirectionVector = new Vector2(_currentPlayerDirectionVector.x, currentMoveVector.y);
                  
                  // visualTransform.localPosition = -currentMoveVector;
                  // transform.position = transform.position + new Vector3(currentMoveVector.x, currentMoveVector.y, 0);
@@ -88,19 +72,19 @@ public class Player : MonoBehaviour
                  {
                      transform.position = transform.position + new Vector3(currentMoveVector.x, currentMoveVector.y, 0);
                      visualTransform.localPosition = -currentMoveVector;
-                     isMoving = true;
+                     _isMoving = true;
                  }
                  else if (!isWallInTargetX)
                  {
                      transform.position = transform.position + new Vector3(currentMoveVector.x, 0, 0);
                      visualTransform.localPosition = new Vector3(-currentMoveVector.x, 0, 0);
-                     isMoving = true;
+                     _isMoving = true;
                  }
                  else if (!isWallInTargetY)
                  {
                      transform.position = transform.position + new Vector3(0, currentMoveVector.y, 0);
                      visualTransform.localPosition = new Vector3(0, -currentMoveVector.y, 0);
-                     isMoving = true;
+                     _isMoving = true;
                  }
                  else
                  {
@@ -110,12 +94,12 @@ public class Player : MonoBehaviour
          }
          else
          {
-             visualTransform.localPosition = Vector3.MoveTowards(visualTransform.localPosition, Vector3.zero,  currentMoveSpeed * Time.deltaTime);
+             visualTransform.localPosition = Vector3.MoveTowards(visualTransform.localPosition, Vector3.zero,  _currentMoveSpeed * Time.deltaTime);
              
              if (visualTransform.localPosition == Vector3.zero)
              {
                  visualTransform.localPosition = Vector3.zero;
-                 isMoving = false;
+                 _isMoving = false;
              }
          }
      }
@@ -131,4 +115,17 @@ public class Player : MonoBehaviour
      //     // Рисуем проволочную сферу радиусом 0.2f (укажи тот же радиус, что и в OverlapCircle)
      //     Gizmos.DrawWireSphere(targetCheckPos, 0.4f);
      // }
+     
+     private void ExecuteEvent(Vector2 targetTransform)
+     {
+         if (!_isMoving)
+         {
+             Collider2D executor = Physics2D.OverlapCircle(targetTransform, 0.4f);
+
+             if (executor != null)
+             {
+                 if (executor.TryGetComponent<IEvent>(out IEvent executableEvent)) executableEvent.Execute(this);
+             }
+         }
+     }
 }

@@ -1,6 +1,6 @@
 {
     "version": 1,
-    "name": "PlayerCutsceneInputActions",
+    "name": "PlayerEventInputActions",
     "maps": [
         {
             "name": "Player",
