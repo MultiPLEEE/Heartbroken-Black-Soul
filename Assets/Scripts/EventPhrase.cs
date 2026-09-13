@@ -82,6 +82,11 @@ public class EventPhrase : IEventStep
 
         IsRunning = false;
     }
+
+    public void Update(Step step, EventContext eventContext, Action onComplete)
+    {
+        
+    }
     
     public void Skip(Step step, EventContext eventContext, Action onComplete)
     {

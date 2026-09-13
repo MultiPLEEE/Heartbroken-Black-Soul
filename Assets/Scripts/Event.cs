@@ -7,7 +7,7 @@ public enum StepType
 {
     Phrase,
     GiveItem,
-    SpawnEnemy
+    Battle
 }
 
 [Serializable]
@@ -17,6 +17,7 @@ public class Step
     
     [ShowIf("stepType", StepType.Phrase)] [AllowNesting] public PhraseInfo phrase;
     [ShowIf("stepType", StepType.GiveItem)] [AllowNesting] public GiveItemInfo giveItem;
+    [ShowIf("stepType", StepType.Battle)] [AllowNesting] public BattleInfo battle;
 }
 
 [Serializable]
@@ -34,7 +35,6 @@ public class Sequences
 
 public class Event : MonoBehaviour, IEvent
 {
-    [SerializeField] private PlayerInputManager playerInputManager;
     [SerializeField] private PlayerEventInput playerEventInput;
     [SerializeField] private bool isOneTimeEvent;
     [SerializeField] private EventContext eventContext;
@@ -44,7 +44,7 @@ public class Event : MonoBehaviour, IEvent
     private IEventStep _activeEventStep;
     private bool _isActivated = false;
 
-    private void PlayerCutsceneInput_OnPlayerConfirm(object sender, EventArgs e)
+    private void PlayerEventInput_OnPlayerConfirm(object sender, EventArgs e)
     {
         switch (eventData.sequences[_sequenceIndex].sequence[_stepIndex].stepType)
         {
@@ -61,9 +61,15 @@ public class Event : MonoBehaviour, IEvent
                 break;
             case StepType.GiveItem:
                 break;
-            case StepType.SpawnEnemy:
+            case StepType.Battle:
                 break;
         }
+    }
+
+    private void Update()
+    {
+        if (_activeEventStep != null) _activeEventStep.Update(eventData.sequences[_sequenceIndex].sequence[_stepIndex], eventContext, OnStepFinished);
+
     }
     
     public void Execute(Player player)
@@ -77,7 +83,7 @@ public class Event : MonoBehaviour, IEvent
         _isActivated = true;
         _stepIndex = 0;
         PlayerInputManager.Instance.SetInputMode(PlayerInputManager.InputMode.Cutscene);
-        playerEventInput.OnPlayerConfirm += PlayerCutsceneInput_OnPlayerConfirm;
+        playerEventInput.OnPlayerConfirm += PlayerEventInput_OnPlayerConfirm;
         eventContext.CoroutineRunner = this;
         NextStep();
     }
@@ -102,7 +108,9 @@ public class Event : MonoBehaviour, IEvent
                 _activeEventStep.End(eventData.sequences[_sequenceIndex].sequence[_stepIndex], eventContext, OnStepFinished);
                 NextStep();
                 break;
-            case StepType.SpawnEnemy:
+            case StepType.Battle:
+                _activeEventStep = new EventBattle();
+                _activeEventStep.Execute(eventData.sequences[_sequenceIndex].sequence[_stepIndex], eventContext, OnStepFinished);
                 break;
         }
     }
@@ -123,7 +131,7 @@ public class Event : MonoBehaviour, IEvent
         {
             Destroy(gameObject);
         }
-        playerEventInput.OnPlayerConfirm -= PlayerCutsceneInput_OnPlayerConfirm;
+        playerEventInput.OnPlayerConfirm -= PlayerEventInput_OnPlayerConfirm;
         PlayerInputManager.Instance.SetInputMode(PlayerInputManager.InputMode.Map);
     }
 }

@@ -102,7 +102,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PrinceOfHell_0
+      name: PrinceOfGrief_0
       rect:
         serializedVersion: 2
         x: 0
@@ -117,14 +117,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 021e6d5f9ab9a4af6918308da80e97c6
-      internalID: 902855693
+      spriteID: 956f95b58ba9345eb912826df647c005
+      internalID: -946738187
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfHell_1
+      name: PrinceOfGrief_1
       rect:
         serializedVersion: 2
         x: 96
@@ -139,14 +139,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8712f9bb144ad4fdba80e2dd51abf42e
-      internalID: -955381565
+      spriteID: 7f49b729e76f3436285be518c5ac2573
+      internalID: 517416331
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfHell_2
+      name: PrinceOfGrief_2
       rect:
         serializedVersion: 2
         x: 192
@@ -161,8 +161,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d50ed24c0e66b4fbf95afb9ed1f7cc14
-      internalID: -1077475249
+      spriteID: 1e0a927bf84c4441f867e51390d23d4e
+      internalID: -1431709832
       vertices: []
       indices: 
       edges: []
@@ -183,9 +183,9 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":96.0,"y":96.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      PrinceOfHell_0: 902855693
-      PrinceOfHell_1: -955381565
-      PrinceOfHell_2: -1077475249
+      PrinceOfGrief_0: -946738187
+      PrinceOfGrief_1: 517416331
+      PrinceOfGrief_2: -1431709832
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

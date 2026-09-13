@@ -27,6 +27,11 @@ public class EventGiveItem : IEventStep
         playerInventory.AddItem(info.itemToGive, info.amount);
     }
     
+    public void Update(Step step, EventContext eventContext, Action onComplete)
+    {
+        
+    }
+    
     public void Skip(Step step, EventContext context, Action onComplete)
     {
         

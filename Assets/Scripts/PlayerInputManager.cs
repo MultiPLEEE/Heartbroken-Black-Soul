@@ -6,11 +6,13 @@ public class PlayerInputManager : MonoBehaviour
     
     [SerializeField] private PlayerMapInput playerMapInput;
     [SerializeField] private PlayerEventInput playerEventInput;
+    [SerializeField] private PlayerBattleInput playerBattleInput;
     
     public enum InputMode
     {
         Map,
         Cutscene,
+        Battle,
     }
 
     private void Awake()
@@ -30,11 +32,18 @@ public class PlayerInputManager : MonoBehaviour
             case InputMode.Map:
                 playerMapInput.enabled = true;
                 playerEventInput.enabled = false;
+                playerBattleInput.enabled = false;
                 break;
 
             case InputMode.Cutscene:
                 playerMapInput.enabled = false;
                 playerEventInput.enabled = true;
+                playerBattleInput.enabled = false;
+                break;
+            case InputMode.Battle:
+                playerMapInput.enabled = false;
+                playerEventInput.enabled = false;
+                playerBattleInput.enabled = true;
                 break;
         }
     }

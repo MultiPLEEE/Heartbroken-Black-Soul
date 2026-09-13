@@ -16,12 +16,15 @@ public class EventContext
     public TMP_Text secondaryTextPanel;
     public GameObject thirdPanelParent;
     public TMP_Text thirdTextPanel;
+    
+    public GameObject battleUIParent;
 }
 
 public interface IEventStep
 {
     bool IsRunning { get; }
     void Execute(Step step, EventContext context, Action onComplete);
+    void Update(Step step, EventContext context, Action onComplete);
     void Skip(Step step, EventContext context, Action onComplete);
     void End(Step step, EventContext context, Action onComplete);
 }

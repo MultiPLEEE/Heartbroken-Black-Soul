@@ -288,7 +288,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PrinceOfHell_0
+      name: PrinceOfGrief_0
       rect:
         serializedVersion: 2
         x: 0
@@ -303,14 +303,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 98499575d3bdc4ede878a4401627d9b6
-      internalID: -55843441
+      spriteID: 0ff8ef7b783c24169a7984d829d3022e
+      internalID: -682728856
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfHell_1
+      name: PrinceOfGrief_1
       rect:
         serializedVersion: 2
         x: 32
@@ -325,14 +325,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a950a093a2a9640d686552436d21f8b5
-      internalID: 1894218576
+      spriteID: 197a08d1d096a4e7a928cea4fa92b49e
+      internalID: 694594605
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfHell_2
+      name: PrinceOfGrief_2
       rect:
         serializedVersion: 2
         x: 64
@@ -347,14 +347,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 66cd06f10bf09431c895a98fe19c3438
-      internalID: -1281462244
+      spriteID: 563b73473aa194a7783f55de0df637d9
+      internalID: -1897689687
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfHell_3
+      name: PrinceOfGrief_3
       rect:
         serializedVersion: 2
         x: 96
@@ -369,14 +369,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0dd608712631c426d8eab1fe771f5ea9
-      internalID: -2100825876
+      spriteID: 7cb6338f41b3f4dce8140b5b1ef4af05
+      internalID: 1808004232
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfHell_4
+      name: PrinceOfGrief_4
       rect:
         serializedVersion: 2
         x: 128
@@ -391,14 +391,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f5ec62e7ac8134802b2a44c3cef57bfc
-      internalID: -285337369
+      spriteID: b16c3825631464a949cca64e033c3374
+      internalID: 288594301
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfHell_5
+      name: PrinceOfGrief_5
       rect:
         serializedVersion: 2
         x: 160
@@ -413,14 +413,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 241a992d1291a4f8e86896f86f4e962e
-      internalID: -376259317
+      spriteID: 0a7dab24bad89493e8c24a1effe0e4f0
+      internalID: -758431630
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfHell_6
+      name: PrinceOfGrief_6
       rect:
         serializedVersion: 2
         x: 192
@@ -435,14 +435,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cd27d046327124c419500db341db1050
-      internalID: -1077228866
+      spriteID: 44194f50fa05b4620af37cd07d261829
+      internalID: 41825636
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfHell_7
+      name: PrinceOfGrief_7
       rect:
         serializedVersion: 2
         x: 224
@@ -457,14 +457,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aa9e335a9dac4428785dce5049e1eb8d
-      internalID: -199436980
+      spriteID: ecba76c342bdf4446b4bf1027f650013
+      internalID: 184677147
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfHell_8
+      name: PrinceOfGrief_8
       rect:
         serializedVersion: 2
         x: 256
@@ -479,14 +479,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 74a215f1a5ad440388c56afcaee13531
-      internalID: 865567723
+      spriteID: caefead780c2b48c9970218e68915a63
+      internalID: -156204897
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfHell_9
+      name: PrinceOfGrief_9
       rect:
         serializedVersion: 2
         x: 288
@@ -501,14 +501,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: afcd0258ab5b04e558f8a2308cb0b83f
-      internalID: 615155521
+      spriteID: 230a4df8d83cd499694acc2a116ad1a7
+      internalID: 279596408
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfHell_10
+      name: PrinceOfGrief_10
       rect:
         serializedVersion: 2
         x: 320
@@ -523,14 +523,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7ea685675cce2408ba7ca31b15126c04
-      internalID: -1360304072
+      spriteID: e2324ea5e0297402db5328a88fc3e0bf
+      internalID: 511984249
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfHell_11
+      name: PrinceOfGrief_11
       rect:
         serializedVersion: 2
         x: 352
@@ -545,14 +545,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2865904a355cc4c53ac46e00494d8391
-      internalID: -631459958
+      spriteID: 7f6d81ca6604d4091b2c4fbf4ba9fbee
+      internalID: -671258644
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfHell_12
+      name: PrinceOfGrief_12
       rect:
         serializedVersion: 2
         x: 0
@@ -567,14 +567,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1c421508acfcc4c36bebad53c192251b
-      internalID: 102550421
+      spriteID: 71a9b6ff675424c0cac85b3524117216
+      internalID: -668044333
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfHell_13
+      name: PrinceOfGrief_13
       rect:
         serializedVersion: 2
         x: 32
@@ -589,14 +589,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0ced748e2e216401ca1f6a9d013831d6
-      internalID: 1367043342
+      spriteID: 066f3540e2d9649659f2bcc7ccab724b
+      internalID: -1903717429
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfHell_14
+      name: PrinceOfGrief_14
       rect:
         serializedVersion: 2
         x: 64
@@ -611,14 +611,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9da406de035c3428f902a0839b425b4a
-      internalID: 627124975
+      spriteID: d66a21619c85a4400b7b170ac098bbc2
+      internalID: 1784219068
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfHell_15
+      name: PrinceOfGrief_15
       rect:
         serializedVersion: 2
         x: 96
@@ -633,14 +633,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 62628caab216948ab82c6a8579c7cd58
-      internalID: -430694635
+      spriteID: 147e7846b672044e2b08480f324e40b1
+      internalID: -1666171377
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfHell_16
+      name: PrinceOfGrief_16
       rect:
         serializedVersion: 2
         x: 128
@@ -655,14 +655,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5f3467062dc72467c9e386846a4323c2
-      internalID: -784869063
+      spriteID: d873b7404365e486291fdf47ebce51f4
+      internalID: 1293125585
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfHell_17
+      name: PrinceOfGrief_17
       rect:
         serializedVersion: 2
         x: 160
@@ -677,14 +677,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c4f97f42762784b12bb7e2f4c04436f9
-      internalID: 1819753317
+      spriteID: fe649e9a8d71646d1865ae32355e9bf0
+      internalID: 1084028533
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfHell_18
+      name: PrinceOfGrief_18
       rect:
         serializedVersion: 2
         x: 192
@@ -699,14 +699,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 87a6f6ad9a4fc4bc8b92e308ff1f230d
-      internalID: -1190725250
+      spriteID: 1b63d7a0b41634380b06fa4f848ecadf
+      internalID: -398397954
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfHell_19
+      name: PrinceOfGrief_19
       rect:
         serializedVersion: 2
         x: 224
@@ -721,14 +721,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 61442b6ac2cc6452fa62c3e0e43362f5
-      internalID: -266048209
+      spriteID: a696ddc3ab7114b22af3e7d6350570df
+      internalID: 1449228993
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfHell_20
+      name: PrinceOfGrief_20
       rect:
         serializedVersion: 2
         x: 256
@@ -743,14 +743,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: da4dddf4a41c24874bbefbdb11eb255c
-      internalID: 1269145958
+      spriteID: 7813c44ae9c864b82b6a1b15aa8fc8a4
+      internalID: 783212733
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfHell_21
+      name: PrinceOfGrief_21
       rect:
         serializedVersion: 2
         x: 288
@@ -765,14 +765,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bb1c42d40151a41019957bd7fd962940
-      internalID: 1765866581
+      spriteID: 04b6ebcababe54735a29026044d1672a
+      internalID: 102153478
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfHell_22
+      name: PrinceOfGrief_22
       rect:
         serializedVersion: 2
         x: 320
@@ -787,14 +787,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d157249a9cc8541eaa082cfbb559a605
-      internalID: 581523529
+      spriteID: 5d6b9e3a288dd43b6be6241482dc1ea1
+      internalID: -1065557979
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfHell_23
+      name: PrinceOfGrief_23
       rect:
         serializedVersion: 2
         x: 352
@@ -809,14 +809,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b25845f1c80b040128da10e486ecf7ca
-      internalID: -838115351
+      spriteID: b471302a19bba4098b493bffc658d069
+      internalID: -1635326838
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfHell_24
+      name: PrinceOfGrief_24
       rect:
         serializedVersion: 2
         x: 0
@@ -831,14 +831,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 342d331f2cb32423db9b97e2b860fce2
-      internalID: 518506919
+      spriteID: dfc34185978764ef5901b493dbf27e8f
+      internalID: -1581988724
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfHell_25
+      name: PrinceOfGrief_25
       rect:
         serializedVersion: 2
         x: 32
@@ -853,14 +853,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 45a7cd1554ab64ee99c4c49b8cfc0938
-      internalID: -1346793012
+      spriteID: 0346cc191773246b189ffdb6ae5cf6ab
+      internalID: 1040920694
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfHell_26
+      name: PrinceOfGrief_26
       rect:
         serializedVersion: 2
         x: 64
@@ -875,14 +875,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 62d4b55a1c963421f956d5c27525cae2
-      internalID: 1668428059
+      spriteID: 90cb075c64a61480592e4d3911e8460d
+      internalID: -301713653
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfHell_27
+      name: PrinceOfGrief_27
       rect:
         serializedVersion: 2
         x: 96
@@ -897,14 +897,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2938fc7379a16403597a929ed50d442b
-      internalID: 666854401
+      spriteID: 5350638e6d2f7403ca0f5f125930b115
+      internalID: -1441221954
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfHell_28
+      name: PrinceOfGrief_28
       rect:
         serializedVersion: 2
         x: 128
@@ -919,14 +919,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b8edd453a76e342b2b7e54b577293a3d
-      internalID: -254987632
+      spriteID: ce3f063bee690487ca0d4aa3faf8f2f5
+      internalID: 1343779361
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfHell_29
+      name: PrinceOfGrief_29
       rect:
         serializedVersion: 2
         x: 160
@@ -941,14 +941,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e96fc79efc19c41ebacd6db570660899
-      internalID: 2036879745
+      spriteID: 6afdf301b341c4534a5d329534e49c98
+      internalID: -1570497230
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfHell_30
+      name: PrinceOfGrief_30
       rect:
         serializedVersion: 2
         x: 192
@@ -963,14 +963,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fa00c46faa88c42028a36b6867b2792f
-      internalID: -1386285507
+      spriteID: 4b9d06a370a214a4a835eaa733229e0e
+      internalID: 95984346
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfHell_31
+      name: PrinceOfGrief_31
       rect:
         serializedVersion: 2
         x: 224
@@ -985,14 +985,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c444f79960ac84358a69b0df47f67447
-      internalID: -1144058874
+      spriteID: fa14ebcc06abe485eade3a8bdff1f6a4
+      internalID: 571145992
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfHell_32
+      name: PrinceOfGrief_32
       rect:
         serializedVersion: 2
         x: 256
@@ -1007,14 +1007,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1b52eb9d02c954eb98e2b3cd2f7e9a16
-      internalID: -1007096318
+      spriteID: 0d55761b694ee43d6a28215ffbecbb47
+      internalID: 568249207
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfHell_33
+      name: PrinceOfGrief_33
       rect:
         serializedVersion: 2
         x: 288
@@ -1029,14 +1029,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 628269e95060e41e687e2909718497e4
-      internalID: 1407388738
+      spriteID: 0de7a8d07121d43d1b02acd7265b0d7f
+      internalID: 1696351360
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfHell_34
+      name: PrinceOfGrief_34
       rect:
         serializedVersion: 2
         x: 320
@@ -1051,14 +1051,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4d306b9b09bc2402c89500116dbc6e7f
-      internalID: 1165996798
+      spriteID: 99a07540ca0d24f43a53b4a0b1082d2f
+      internalID: -1176890779
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfHell_35
+      name: PrinceOfGrief_35
       rect:
         serializedVersion: 2
         x: 352
@@ -1073,14 +1073,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b4f2b4f063bbc4d219a9e121bff56093
-      internalID: -1014741409
+      spriteID: 4c220e3046b854335a3c855f2a72b119
+      internalID: -809309613
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfHell_36
+      name: PrinceOfGrief_36
       rect:
         serializedVersion: 2
         x: 0
@@ -1095,14 +1095,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d3471f677ab9b4e18bb47f361d74098a
-      internalID: -147878697
+      spriteID: e1c93186ff6e24c4c920a1e9ef23c8ae
+      internalID: 931572635
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfHell_37
+      name: PrinceOfGrief_37
       rect:
         serializedVersion: 2
         x: 32
@@ -1117,14 +1117,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5e5a8577d504b4121b4afc498d5ab76f
-      internalID: -2085929599
+      spriteID: aa142a93b17e44f719dfd66da559b8e5
+      internalID: -463778114
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfHell_38
+      name: PrinceOfGrief_38
       rect:
         serializedVersion: 2
         x: 64
@@ -1139,14 +1139,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1183286aa49f64658a063f3690b5f69f
-      internalID: 1097102766
+      spriteID: f1f7a36a7b2ea4e2e9032eec9e1321b6
+      internalID: -1368864341
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfHell_39
+      name: PrinceOfGrief_39
       rect:
         serializedVersion: 2
         x: 96
@@ -1161,14 +1161,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5bedbd3f122dd4ec2aa6068dbd2bc6ca
-      internalID: 1235805841
+      spriteID: 0100aa8adb00c4402903fb49afffc00f
+      internalID: -1577717083
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfHell_40
+      name: PrinceOfGrief_40
       rect:
         serializedVersion: 2
         x: 128
@@ -1183,14 +1183,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8af2639d9512f43a888ae0e8ec8df52a
-      internalID: 561070559
+      spriteID: 92d02e9db315a4a519d9f9e6cec8264e
+      internalID: -494952969
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfHell_41
+      name: PrinceOfGrief_41
       rect:
         serializedVersion: 2
         x: 160
@@ -1205,14 +1205,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6166c819cdf4c4f23a56d23aef7bbc94
-      internalID: 2129525339
+      spriteID: f25bae5eefd514977aaad6626b536eb4
+      internalID: 1534559856
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfHell_42
+      name: PrinceOfGrief_42
       rect:
         serializedVersion: 2
         x: 192
@@ -1227,14 +1227,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6629d5bd7238e484ebeafd1bbbdc238c
-      internalID: 631321588
+      spriteID: e7bff7745ace647a5bc4b776a0154a04
+      internalID: 1870134432
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfHell_43
+      name: PrinceOfGrief_43
       rect:
         serializedVersion: 2
         x: 224
@@ -1249,14 +1249,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0d18d0db4cf9841a7be3ad8d77bac1fc
-      internalID: 41164704
+      spriteID: bcccc7bde24b1432c979f84774739580
+      internalID: 297569146
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfHell_44
+      name: PrinceOfGrief_44
       rect:
         serializedVersion: 2
         x: 256
@@ -1271,14 +1271,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e195bb04e89fa4f63b9da49745070e76
-      internalID: -13824309
+      spriteID: 570dd3d910a39485296fd8994aa2d8d0
+      internalID: 2116663326
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfHell_45
+      name: PrinceOfGrief_45
       rect:
         serializedVersion: 2
         x: 288
@@ -1293,14 +1293,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 52e5fd816abd34bf9ab9ef8d864731f6
-      internalID: 1203056866
+      spriteID: f45caea12d90b40209335ad3459b4915
+      internalID: 799588733
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfHell_46
+      name: PrinceOfGrief_46
       rect:
         serializedVersion: 2
         x: 320
@@ -1315,14 +1315,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 17a88d723c69b4fdbb7361c77acaf2c9
-      internalID: 1980435358
+      spriteID: 4ece67f71f82441719c153df5f526639
+      internalID: -1243184507
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfHell_47
+      name: PrinceOfGrief_47
       rect:
         serializedVersion: 2
         x: 352
@@ -1337,14 +1337,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 18371efd2327542e1bdecbd4cb0c9a45
-      internalID: -1553555802
+      spriteID: 092582c87873d459e8f53f2615038b9e
+      internalID: -1860522128
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfHell_48
+      name: PrinceOfGrief_48
       rect:
         serializedVersion: 2
         x: 0
@@ -1359,14 +1359,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5fc15968562be4d2ca8b702db7d62558
-      internalID: 672373107
+      spriteID: af42974efc8704e26821ff0390f2c377
+      internalID: 1261895258
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfHell_49
+      name: PrinceOfGrief_49
       rect:
         serializedVersion: 2
         x: 32
@@ -1381,14 +1381,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4c5648cba09784b5bb0c29f22a59763f
-      internalID: -616578149
+      spriteID: 0b9cc4bf641c74c9caa87c96f6b5d4bc
+      internalID: 1083739397
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfHell_50
+      name: PrinceOfGrief_50
       rect:
         serializedVersion: 2
         x: 64
@@ -1403,14 +1403,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ef99b03526d754166977e32c7eedc300
-      internalID: 957605469
+      spriteID: a48440efa7f4a42e88777bd8f5a23784
+      internalID: -1597723185
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfHell_51
+      name: PrinceOfGrief_51
       rect:
         serializedVersion: 2
         x: 96
@@ -1425,14 +1425,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 706d75723eba34ea2a41d0216f34ea43
-      internalID: 1906971076
+      spriteID: 5fee65a702bdd457d9e678daa58e5c4d
+      internalID: 918677210
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfHell_52
+      name: PrinceOfGrief_52
       rect:
         serializedVersion: 2
         x: 128
@@ -1447,14 +1447,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 84e90a141a9604027b8f792e59e52048
-      internalID: 1505045967
+      spriteID: d1cfd9f9fa20947ef9222ce5429e0e7d
+      internalID: 918639977
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfHell_53
+      name: PrinceOfGrief_53
       rect:
         serializedVersion: 2
         x: 160
@@ -1469,14 +1469,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bc25ab4d7f60b40eab7fc016adc96ad9
-      internalID: -1478095328
+      spriteID: 48cd09b03bbb14a46be9eeb3451e4e14
+      internalID: -2015810211
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfHell_54
+      name: PrinceOfGrief_54
       rect:
         serializedVersion: 2
         x: 192
@@ -1491,14 +1491,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b3cdce88771524e6490ff609bcee6c0a
-      internalID: 599012871
+      spriteID: a04ebb218a30a417bb6c7748d0b02bd5
+      internalID: 1908335432
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfHell_55
+      name: PrinceOfGrief_55
       rect:
         serializedVersion: 2
         x: 224
@@ -1513,14 +1513,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: afbfaa6b515f84aabb70697c3361585d
-      internalID: -1474940045
+      spriteID: ac644ab4f7f3649b6ae54d023c4640d0
+      internalID: 994282864
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfHell_56
+      name: PrinceOfGrief_56
       rect:
         serializedVersion: 2
         x: 256
@@ -1535,14 +1535,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f65456fd183424bf19bf631e2482371d
-      internalID: -1975336083
+      spriteID: 9ff362a264ff943e3b3c04c8dcbfbac3
+      internalID: -1333169303
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfHell_57
+      name: PrinceOfGrief_57
       rect:
         serializedVersion: 2
         x: 288
@@ -1557,14 +1557,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 571f44eeb592b4d7ab54cbc58fa825c3
-      internalID: 794478144
+      spriteID: dac5fba778c60440e820fcb8fdf6a81a
+      internalID: -2143788473
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfHell_58
+      name: PrinceOfGrief_58
       rect:
         serializedVersion: 2
         x: 320
@@ -1579,14 +1579,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 39e8625d6a059459baf4d4ff8df32ae3
-      internalID: 548705126
+      spriteID: d19c3419b62324391aa5cb8c93de2e0e
+      internalID: -1728852746
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfHell_59
+      name: PrinceOfGrief_59
       rect:
         serializedVersion: 2
         x: 352
@@ -1601,14 +1601,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7fe6a5ddd1978487cb3bf31d4d45a200
-      internalID: -63794962
+      spriteID: 922b7311943fe4e2e94c9875902ec04d
+      internalID: 840718595
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfHell_60
+      name: PrinceOfGrief_60
       rect:
         serializedVersion: 2
         x: 0
@@ -1623,14 +1623,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4befeb8a3f540441c904bdb8a4e8c593
-      internalID: -1347867071
+      spriteID: b9c7d8a7cc6234378b7af77f82f88a3f
+      internalID: -1517851733
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfHell_61
+      name: PrinceOfGrief_61
       rect:
         serializedVersion: 2
         x: 32
@@ -1645,14 +1645,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a373bbf5df6134ef2b76f0150de6d283
-      internalID: -1284280979
+      spriteID: 6f5fcf70387ff4dcbba3976a5950b293
+      internalID: -1012241169
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfHell_62
+      name: PrinceOfGrief_62
       rect:
         serializedVersion: 2
         x: 64
@@ -1667,14 +1667,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 959e033f4e42f47ae8f26f2244ea1b54
-      internalID: 2121274307
+      spriteID: b1066329c97224be2a95288a67d7cc82
+      internalID: 193167991
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfHell_63
+      name: PrinceOfGrief_63
       rect:
         serializedVersion: 2
         x: 96
@@ -1689,14 +1689,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 93de816bd5726469db5ff0c6e22f2ce8
-      internalID: -1291416689
+      spriteID: ad0dffb3a085f496fbc9d6ea8ef00a31
+      internalID: 1723461555
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfHell_64
+      name: PrinceOfGrief_64
       rect:
         serializedVersion: 2
         x: 128
@@ -1711,14 +1711,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ec379562f0206411aacfa53365e24a36
-      internalID: 107499541
+      spriteID: 794c1f65e98bd427999fc77b0c740c6f
+      internalID: -1169213752
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfHell_65
+      name: PrinceOfGrief_65
       rect:
         serializedVersion: 2
         x: 160
@@ -1733,14 +1733,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5477e7d657db5477cb99b3bb5e70fcfa
-      internalID: 731701405
+      spriteID: 6afcad4cb34204353a116b508adbc7ab
+      internalID: 246581090
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfHell_66
+      name: PrinceOfGrief_66
       rect:
         serializedVersion: 2
         x: 192
@@ -1755,14 +1755,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7b435a8208fe24d528c2758cb27e0415
-      internalID: -612097342
+      spriteID: f117be477526a48d7a0a4be4cd18d2ed
+      internalID: -1986305301
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfHell_67
+      name: PrinceOfGrief_67
       rect:
         serializedVersion: 2
         x: 224
@@ -1777,14 +1777,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a8028257798d1417bb4ed29b420ed9d3
-      internalID: -629740410
+      spriteID: 69c939d80ec1c4895a6bd56a45fcf250
+      internalID: 310159411
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfHell_68
+      name: PrinceOfGrief_68
       rect:
         serializedVersion: 2
         x: 256
@@ -1799,14 +1799,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f96cf19113aab4e90bee18d3f0e5f15b
-      internalID: -1005660403
+      spriteID: 76d467e4e3b47473ab9225a3b31761c4
+      internalID: 1713897476
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfHell_69
+      name: PrinceOfGrief_69
       rect:
         serializedVersion: 2
         x: 288
@@ -1821,14 +1821,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b35ad5aa4333d4228b7a6b81f61488bd
-      internalID: 67833444
+      spriteID: 709b59933fab0484893bae08a3b2c02f
+      internalID: -209633174
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfHell_70
+      name: PrinceOfGrief_70
       rect:
         serializedVersion: 2
         x: 320
@@ -1843,14 +1843,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fd3bfb160d94a4b39931820f30c169d6
-      internalID: 2056982053
+      spriteID: 92cef2c5d17ae4a958d6860a53d108b2
+      internalID: -120521412
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfHell_71
+      name: PrinceOfGrief_71
       rect:
         serializedVersion: 2
         x: 352
@@ -1865,14 +1865,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 08b1e61c861804f5ebda70ebe6f5cab2
-      internalID: 2082671504
+      spriteID: 05453ff094db84f59b0ec52fff3b11c5
+      internalID: -1532823181
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfHell_72
+      name: PrinceOfGrief_72
       rect:
         serializedVersion: 2
         x: 0
@@ -1887,14 +1887,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e907fa663825045caad3ff9384b5d35e
-      internalID: 1498897191
+      spriteID: 8d5c6f12ab80640719277ac9e76e6987
+      internalID: 1411479473
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfHell_73
+      name: PrinceOfGrief_73
       rect:
         serializedVersion: 2
         x: 32
@@ -1909,14 +1909,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 02f0208d7114e456ba49309c421372c0
-      internalID: -1971864124
+      spriteID: 9516e308886604ab0b34318c06f54c58
+      internalID: -1058744923
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfHell_74
+      name: PrinceOfGrief_74
       rect:
         serializedVersion: 2
         x: 64
@@ -1931,14 +1931,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0e61328a480884907ae19b499690077d
-      internalID: 164630142
+      spriteID: 22cd0146c548943c2ba7e2afa538485e
+      internalID: -1501739466
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfHell_75
+      name: PrinceOfGrief_75
       rect:
         serializedVersion: 2
         x: 96
@@ -1953,14 +1953,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 702c98f7c34dd4ce5b2b6976b2f97aad
-      internalID: 2132766493
+      spriteID: 4fe79273b0e334be3aa597e851748604
+      internalID: -481031787
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfHell_76
+      name: PrinceOfGrief_76
       rect:
         serializedVersion: 2
         x: 128
@@ -1975,14 +1975,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a6ebd45a079614e6da53c9f95f39d2ee
-      internalID: -5780754
+      spriteID: e146a759edc2e4dce887312548bece92
+      internalID: -503299846
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfHell_77
+      name: PrinceOfGrief_77
       rect:
         serializedVersion: 2
         x: 160
@@ -1997,14 +1997,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8081f4a2ffd8646d9a4f3938ada0a1fc
-      internalID: -314199488
+      spriteID: 4b784ca9bf69845b3900ff4c09774eba
+      internalID: -1227973680
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfHell_78
+      name: PrinceOfGrief_78
       rect:
         serializedVersion: 2
         x: 192
@@ -2019,14 +2019,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2990d943270a0462b9a36510035bcbd8
-      internalID: 304827383
+      spriteID: cf9f7c596c5a04e39889f069997db600
+      internalID: 1765776790
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfHell_79
+      name: PrinceOfGrief_79
       rect:
         serializedVersion: 2
         x: 224
@@ -2041,14 +2041,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c566971abd1df4926b6f2a8463c17d6d
-      internalID: -1824016977
+      spriteID: cebff85bfdd3e430abc55e1f16749cf8
+      internalID: -297251784
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfHell_80
+      name: PrinceOfGrief_80
       rect:
         serializedVersion: 2
         x: 256
@@ -2063,14 +2063,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 559e0d1b7195a4cf59664067f17267ae
-      internalID: 892991808
+      spriteID: d96db536eee8f409495dd6c6f2959aa8
+      internalID: 276867356
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfHell_81
+      name: PrinceOfGrief_81
       rect:
         serializedVersion: 2
         x: 288
@@ -2085,14 +2085,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f2a66bfd35c1f4c4f9edcd0ba4b0bc38
-      internalID: 603780969
+      spriteID: 0be48a2b09b134eb5839113552b07ce4
+      internalID: 945367428
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfHell_82
+      name: PrinceOfGrief_82
       rect:
         serializedVersion: 2
         x: 320
@@ -2107,14 +2107,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c264b186443224064b843e861deab9f9
-      internalID: 802231149
+      spriteID: 107ef1f9782e540a7864b3110a702742
+      internalID: 1040349537
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfHell_83
+      name: PrinceOfGrief_83
       rect:
         serializedVersion: 2
         x: 352
@@ -2129,14 +2129,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fe804323246f8494482bc49a54fa4fa0
-      internalID: -1042584688
+      spriteID: 38b7b10c3b6bd46949167344d02af9e3
+      internalID: 1446628061
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfHell_84
+      name: PrinceOfGrief_84
       rect:
         serializedVersion: 2
         x: 0
@@ -2151,14 +2151,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 740000dfa933545f9a435ea75c47e473
-      internalID: -963617903
+      spriteID: c8d320a09a0f8473290a166930faee76
+      internalID: -1503359164
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfHell_85
+      name: PrinceOfGrief_85
       rect:
         serializedVersion: 2
         x: 32
@@ -2173,14 +2173,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a32fa41cb8d3d499c90a0f8a6f329d46
-      internalID: -1863129453
+      spriteID: 54f1d68d8c0d544e3a61663d7c777521
+      internalID: -1449888039
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfHell_86
+      name: PrinceOfGrief_86
       rect:
         serializedVersion: 2
         x: 64
@@ -2195,14 +2195,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 51a99532c7cc047c89de2430aa298899
-      internalID: 145006839
+      spriteID: 5f919fd8c830d4436bc8ee4f25c0eabb
+      internalID: -1331131279
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfHell_87
+      name: PrinceOfGrief_87
       rect:
         serializedVersion: 2
         x: 96
@@ -2217,14 +2217,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b572f067318b64c3b9b983b34a8ddf3a
-      internalID: 613783423
+      spriteID: 2cf17d3e8572645f5b28ba28ca248ba8
+      internalID: 930753871
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfHell_88
+      name: PrinceOfGrief_88
       rect:
         serializedVersion: 2
         x: 128
@@ -2239,14 +2239,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b7afac53d1e064b17ac700400286d45a
-      internalID: 1709999193
+      spriteID: 19ccfce6104f44d2eb122f1b4f14cbd2
+      internalID: 258527134
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfHell_89
+      name: PrinceOfGrief_89
       rect:
         serializedVersion: 2
         x: 160
@@ -2261,14 +2261,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ff6ed9f162fe74036b9875d232790983
-      internalID: 730853528
+      spriteID: 7d1f0dc155a204a07a1d6c18a588abce
+      internalID: -1452708521
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfHell_90
+      name: PrinceOfGrief_90
       rect:
         serializedVersion: 2
         x: 192
@@ -2283,14 +2283,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fc830706cc4f2467ea3c09b3e5349c8d
-      internalID: -1635761641
+      spriteID: 07a33619a563d41afa1eabb0c09bc1b1
+      internalID: -1903770523
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfHell_91
+      name: PrinceOfGrief_91
       rect:
         serializedVersion: 2
         x: 224
@@ -2305,14 +2305,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 50fe5bf6c70294bce9943e11ab9dea86
-      internalID: -1273774367
+      spriteID: 4968eaa82e93147ce8c8bf424fa32911
+      internalID: -122351916
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfHell_92
+      name: PrinceOfGrief_92
       rect:
         serializedVersion: 2
         x: 256
@@ -2327,14 +2327,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 22fc30aa3de784dfe923961309ce84ca
-      internalID: 749959647
+      spriteID: aebfcfbc84e7f438c9d86bcc84b79554
+      internalID: -669931410
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfHell_93
+      name: PrinceOfGrief_93
       rect:
         serializedVersion: 2
         x: 288
@@ -2349,14 +2349,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: febfc1775ce014353836dd39bc2e6c4e
-      internalID: 449442946
+      spriteID: 8ebdd49b1985b41e6a2b0c874de46a5c
+      internalID: -589285357
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfHell_94
+      name: PrinceOfGrief_94
       rect:
         serializedVersion: 2
         x: 320
@@ -2371,14 +2371,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d2ff276d2cf974638ba4f9d8907b072f
-      internalID: 157916866
+      spriteID: efb44e385355240d3bf3e535628e6cb8
+      internalID: -1042077806
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfHell_95
+      name: PrinceOfGrief_95
       rect:
         serializedVersion: 2
         x: 352
@@ -2393,8 +2393,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8ff55abe061ae4440ba81cdff76c8963
-      internalID: -977192841
+      spriteID: 8b60d3a095ac4486c99ec10482b94acb
+      internalID: 1037217397
       vertices: []
       indices: 
       edges: []
@@ -2415,102 +2415,102 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      PrinceOfHell_0: -55843441
-      PrinceOfHell_1: 1894218576
-      PrinceOfHell_10: -1360304072
-      PrinceOfHell_11: -631459958
-      PrinceOfHell_12: 102550421
-      PrinceOfHell_13: 1367043342
-      PrinceOfHell_14: 627124975
-      PrinceOfHell_15: -430694635
-      PrinceOfHell_16: -784869063
-      PrinceOfHell_17: 1819753317
-      PrinceOfHell_18: -1190725250
-      PrinceOfHell_19: -266048209
-      PrinceOfHell_2: -1281462244
-      PrinceOfHell_20: 1269145958
-      PrinceOfHell_21: 1765866581
-      PrinceOfHell_22: 581523529
-      PrinceOfHell_23: -838115351
-      PrinceOfHell_24: 518506919
-      PrinceOfHell_25: -1346793012
-      PrinceOfHell_26: 1668428059
-      PrinceOfHell_27: 666854401
-      PrinceOfHell_28: -254987632
-      PrinceOfHell_29: 2036879745
-      PrinceOfHell_3: -2100825876
-      PrinceOfHell_30: -1386285507
-      PrinceOfHell_31: -1144058874
-      PrinceOfHell_32: -1007096318
-      PrinceOfHell_33: 1407388738
-      PrinceOfHell_34: 1165996798
-      PrinceOfHell_35: -1014741409
-      PrinceOfHell_36: -147878697
-      PrinceOfHell_37: -2085929599
-      PrinceOfHell_38: 1097102766
-      PrinceOfHell_39: 1235805841
-      PrinceOfHell_4: -285337369
-      PrinceOfHell_40: 561070559
-      PrinceOfHell_41: 2129525339
-      PrinceOfHell_42: 631321588
-      PrinceOfHell_43: 41164704
-      PrinceOfHell_44: -13824309
-      PrinceOfHell_45: 1203056866
-      PrinceOfHell_46: 1980435358
-      PrinceOfHell_47: -1553555802
-      PrinceOfHell_48: 672373107
-      PrinceOfHell_49: -616578149
-      PrinceOfHell_5: -376259317
-      PrinceOfHell_50: 957605469
-      PrinceOfHell_51: 1906971076
-      PrinceOfHell_52: 1505045967
-      PrinceOfHell_53: -1478095328
-      PrinceOfHell_54: 599012871
-      PrinceOfHell_55: -1474940045
-      PrinceOfHell_56: -1975336083
-      PrinceOfHell_57: 794478144
-      PrinceOfHell_58: 548705126
-      PrinceOfHell_59: -63794962
-      PrinceOfHell_6: -1077228866
-      PrinceOfHell_60: -1347867071
-      PrinceOfHell_61: -1284280979
-      PrinceOfHell_62: 2121274307
-      PrinceOfHell_63: -1291416689
-      PrinceOfHell_64: 107499541
-      PrinceOfHell_65: 731701405
-      PrinceOfHell_66: -612097342
-      PrinceOfHell_67: -629740410
-      PrinceOfHell_68: -1005660403
-      PrinceOfHell_69: 67833444
-      PrinceOfHell_7: -199436980
-      PrinceOfHell_70: 2056982053
-      PrinceOfHell_71: 2082671504
-      PrinceOfHell_72: 1498897191
-      PrinceOfHell_73: -1971864124
-      PrinceOfHell_74: 164630142
-      PrinceOfHell_75: 2132766493
-      PrinceOfHell_76: -5780754
-      PrinceOfHell_77: -314199488
-      PrinceOfHell_78: 304827383
-      PrinceOfHell_79: -1824016977
-      PrinceOfHell_8: 865567723
-      PrinceOfHell_80: 892991808
-      PrinceOfHell_81: 603780969
-      PrinceOfHell_82: 802231149
-      PrinceOfHell_83: -1042584688
-      PrinceOfHell_84: -963617903
-      PrinceOfHell_85: -1863129453
-      PrinceOfHell_86: 145006839
-      PrinceOfHell_87: 613783423
-      PrinceOfHell_88: 1709999193
-      PrinceOfHell_89: 730853528
-      PrinceOfHell_9: 615155521
-      PrinceOfHell_90: -1635761641
-      PrinceOfHell_91: -1273774367
-      PrinceOfHell_92: 749959647
-      PrinceOfHell_93: 449442946
-      PrinceOfHell_94: 157916866
-      PrinceOfHell_95: -977192841
+      PrinceOfGrief_0: -682728856
+      PrinceOfGrief_1: 694594605
+      PrinceOfGrief_10: 511984249
+      PrinceOfGrief_11: -671258644
+      PrinceOfGrief_12: -668044333
+      PrinceOfGrief_13: -1903717429
+      PrinceOfGrief_14: 1784219068
+      PrinceOfGrief_15: -1666171377
+      PrinceOfGrief_16: 1293125585
+      PrinceOfGrief_17: 1084028533
+      PrinceOfGrief_18: -398397954
+      PrinceOfGrief_19: 1449228993
+      PrinceOfGrief_2: -1897689687
+      PrinceOfGrief_20: 783212733
+      PrinceOfGrief_21: 102153478
+      PrinceOfGrief_22: -1065557979
+      PrinceOfGrief_23: -1635326838
+      PrinceOfGrief_24: -1581988724
+      PrinceOfGrief_25: 1040920694
+      PrinceOfGrief_26: -301713653
+      PrinceOfGrief_27: -1441221954
+      PrinceOfGrief_28: 1343779361
+      PrinceOfGrief_29: -1570497230
+      PrinceOfGrief_3: 1808004232
+      PrinceOfGrief_30: 95984346
+      PrinceOfGrief_31: 571145992
+      PrinceOfGrief_32: 568249207
+      PrinceOfGrief_33: 1696351360
+      PrinceOfGrief_34: -1176890779
+      PrinceOfGrief_35: -809309613
+      PrinceOfGrief_36: 931572635
+      PrinceOfGrief_37: -463778114
+      PrinceOfGrief_38: -1368864341
+      PrinceOfGrief_39: -1577717083
+      PrinceOfGrief_4: 288594301
+      PrinceOfGrief_40: -494952969
+      PrinceOfGrief_41: 1534559856
+      PrinceOfGrief_42: 1870134432
+      PrinceOfGrief_43: 297569146
+      PrinceOfGrief_44: 2116663326
+      PrinceOfGrief_45: 799588733
+      PrinceOfGrief_46: -1243184507
+      PrinceOfGrief_47: -1860522128
+      PrinceOfGrief_48: 1261895258
+      PrinceOfGrief_49: 1083739397
+      PrinceOfGrief_5: -758431630
+      PrinceOfGrief_50: -1597723185
+      PrinceOfGrief_51: 918677210
+      PrinceOfGrief_52: 918639977
+      PrinceOfGrief_53: -2015810211
+      PrinceOfGrief_54: 1908335432
+      PrinceOfGrief_55: 994282864
+      PrinceOfGrief_56: -1333169303
+      PrinceOfGrief_57: -2143788473
+      PrinceOfGrief_58: -1728852746
+      PrinceOfGrief_59: 840718595
+      PrinceOfGrief_6: 41825636
+      PrinceOfGrief_60: -1517851733
+      PrinceOfGrief_61: -1012241169
+      PrinceOfGrief_62: 193167991
+      PrinceOfGrief_63: 1723461555
+      PrinceOfGrief_64: -1169213752
+      PrinceOfGrief_65: 246581090
+      PrinceOfGrief_66: -1986305301
+      PrinceOfGrief_67: 310159411
+      PrinceOfGrief_68: 1713897476
+      PrinceOfGrief_69: -209633174
+      PrinceOfGrief_7: 184677147
+      PrinceOfGrief_70: -120521412
+      PrinceOfGrief_71: -1532823181
+      PrinceOfGrief_72: 1411479473
+      PrinceOfGrief_73: -1058744923
+      PrinceOfGrief_74: -1501739466
+      PrinceOfGrief_75: -481031787
+      PrinceOfGrief_76: -503299846
+      PrinceOfGrief_77: -1227973680
+      PrinceOfGrief_78: 1765776790
+      PrinceOfGrief_79: -297251784
+      PrinceOfGrief_8: -156204897
+      PrinceOfGrief_80: 276867356
+      PrinceOfGrief_81: 945367428
+      PrinceOfGrief_82: 1040349537
+      PrinceOfGrief_83: 1446628061
+      PrinceOfGrief_84: -1503359164
+      PrinceOfGrief_85: -1449888039
+      PrinceOfGrief_86: -1331131279
+      PrinceOfGrief_87: 930753871
+      PrinceOfGrief_88: 258527134
+      PrinceOfGrief_89: -1452708521
+      PrinceOfGrief_9: 279596408
+      PrinceOfGrief_90: -1903770523
+      PrinceOfGrief_91: -122351916
+      PrinceOfGrief_92: -669931410
+      PrinceOfGrief_93: -589285357
+      PrinceOfGrief_94: -1042077806
+      PrinceOfGrief_95: 1037217397
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
