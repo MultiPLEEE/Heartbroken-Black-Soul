@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3942765546b294e0d8e31c8a6a5193b1, type: 3}
+  m_Name: GirlsScent
+  m_EditorClassIdentifier: "Assembly-CSharp::Scriptable\u0421onsumableSO"
+  sprite: {fileID: -237017833660977155, guid: edfcb64958fc54e569477935be993e82, type: 3}
+  objectName: Girl's Scent
+  objectDescription: This scent fills you with a bittersweet sense of nostalgia.
+  objectEffectDescription: 'Perform attack by pain from your broken heart. '
+  isTakesTurn: 1

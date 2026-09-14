@@ -1,0 +1,36 @@
+{
+    "version": 1,
+    "name": "PlayerEventInputActions1",
+    "maps": [
+        {
+            "name": "Player",
+            "id": "21b7c237-141d-4c6f-aea1-33273786a93f",
+            "actions": [
+                {
+                    "name": "Confirmation",
+                    "type": "Button",
+                    "id": "7a703893-0f14-4dc3-9525-8ae5eb974736",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false,
+                    "priority": 0
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "a8f353db-df81-41ec-b458-8850f94f9c65",
+                    "path": "<Keyboard>/enter",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Confirmation",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

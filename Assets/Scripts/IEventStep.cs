@@ -7,6 +7,8 @@ using UnityEngine.UI;
 public class EventContext
 {
     [field: NonSerialized] public MonoBehaviour CoroutineRunner;
+    public PlayerEventInput playerEventInput;
+    public SoundManager soundManager;
     public Player player;
     public GameObject primaryPanelParent;
     public TMP_Text primaryNamePanel;
@@ -23,8 +25,8 @@ public class EventContext
 public interface IEventStep
 {
     bool IsRunning { get; }
-    void Execute(Step step, EventContext context, Action onComplete);
-    void Update(Step step, EventContext context, Action onComplete);
-    void Skip(Step step, EventContext context, Action onComplete);
-    void End(Step step, EventContext context, Action onComplete);
+    void Execute(Step step, EventContext eventContext, Action onComplete);
+    void Update();
+    void Skip();
+    void End();
 }

@@ -35,7 +35,7 @@ public class Sequences
 
 public class Event : MonoBehaviour, IEvent
 {
-    [SerializeField] private PlayerEventInput playerEventInput;
+    [SerializeField] private AudioClip aaa;
     [SerializeField] private bool isOneTimeEvent;
     [SerializeField] private EventContext eventContext;
     [SerializeField] private Sequences eventData;
@@ -44,47 +44,19 @@ public class Event : MonoBehaviour, IEvent
     private IEventStep _activeEventStep;
     private bool _isActivated = false;
 
-    private void PlayerEventInput_OnPlayerConfirm(object sender, EventArgs e)
-    {
-        switch (eventData.sequences[_sequenceIndex].sequence[_stepIndex].stepType)
-        {
-            case StepType.Phrase:
-                if (_activeEventStep.IsRunning)
-                {
-                    _activeEventStep.Skip(eventData.sequences[_sequenceIndex].sequence[_stepIndex], eventContext, OnStepFinished);
-                }
-                else
-                {
-                    _activeEventStep.End(eventData.sequences[_sequenceIndex].sequence[_stepIndex], eventContext, OnStepFinished);
-                    NextStep();
-                }
-                break;
-            case StepType.GiveItem:
-                break;
-            case StepType.Battle:
-                break;
-        }
-    }
-
     private void Update()
     {
-        if (_activeEventStep != null) _activeEventStep.Update(eventData.sequences[_sequenceIndex].sequence[_stepIndex], eventContext, OnStepFinished);
-
+        if (_activeEventStep != null) _activeEventStep.Update();
     }
     
     public void Execute(Player player)
     {
         if (eventData.sequences == null || _isActivated) return;
-        StartEvent();
-    }
-    
-    private void StartEvent()
-    {
+        eventContext.soundManager.SetMusic(aaa);
         _isActivated = true;
         _stepIndex = 0;
-        PlayerInputManager.Instance.SetInputMode(PlayerInputManager.InputMode.Cutscene);
-        playerEventInput.OnPlayerConfirm += PlayerEventInput_OnPlayerConfirm;
         eventContext.CoroutineRunner = this;
+        PlayerInputManager.Instance.SetInputMode(PlayerInputManager.InputMode.Event);
         NextStep();
     }
     
@@ -92,24 +64,22 @@ public class Event : MonoBehaviour, IEvent
     {
         if (_stepIndex >= eventData.sequences[_sequenceIndex].sequence.Count)
         {
-            EndCutscene();
+            End();
             return;
         }
 
         switch (eventData.sequences[_sequenceIndex].sequence[_stepIndex].stepType)
         {
             case StepType.Phrase:
-                _activeEventStep = new EventPhrase();
+                _activeEventStep = new TypePhrase();
                 _activeEventStep.Execute(eventData.sequences[_sequenceIndex].sequence[_stepIndex], eventContext, OnStepFinished);
                 break;
             case StepType.GiveItem:
-                _activeEventStep = new EventGiveItem();
+                _activeEventStep = new GiveItem();
                 _activeEventStep.Execute(eventData.sequences[_sequenceIndex].sequence[_stepIndex], eventContext, OnStepFinished);
-                _activeEventStep.End(eventData.sequences[_sequenceIndex].sequence[_stepIndex], eventContext, OnStepFinished);
-                NextStep();
                 break;
             case StepType.Battle:
-                _activeEventStep = new EventBattle();
+                _activeEventStep = new Battle();
                 _activeEventStep.Execute(eventData.sequences[_sequenceIndex].sequence[_stepIndex], eventContext, OnStepFinished);
                 break;
         }
@@ -118,9 +88,10 @@ public class Event : MonoBehaviour, IEvent
     private void OnStepFinished()
     {
         _stepIndex++;
+        NextStep();
     }
     
-    private void EndCutscene()
+    private void End()
     {
         _isActivated = isOneTimeEvent;
         if (_sequenceIndex < eventData.sequences.Count-1)
@@ -131,7 +102,6 @@ public class Event : MonoBehaviour, IEvent
         {
             Destroy(gameObject);
         }
-        playerEventInput.OnPlayerConfirm -= PlayerEventInput_OnPlayerConfirm;
         PlayerInputManager.Instance.SetInputMode(PlayerInputManager.InputMode.Map);
     }
 }

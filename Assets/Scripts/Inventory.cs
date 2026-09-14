@@ -38,8 +38,8 @@ public class Inventory : MonoBehaviour
         }
     }
 
-    // public List<InventorySlot> GetInventorySlots()
-    // {
-    //     return slots;
-    // }
+    public List<InventorySlot> GetInventorySlots()
+    {
+        return slots;
+    }
 }
