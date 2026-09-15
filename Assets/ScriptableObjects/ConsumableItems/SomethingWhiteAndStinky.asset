@@ -14,6 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: "Assembly-CSharp::Scriptable\u0421onsumableSO"
   sprite: {fileID: -7769987634172304614, guid: edfcb64958fc54e569477935be993e82, type: 3}
   objectName: Something White and Sticky
-  objectDescription: ...
   objectEffectDescription: Increase the target ally's Magic for some time.
+  objectDescription: ...
   isTakesTurn: 0
+  effect:
+    rid: 7026581128638890259
+  references:
+    version: 2
+    RefIds:
+    - rid: 7026581128638890259
+      type: {class: SomethingWhiteAndStinky, ns: , asm: Assembly-CSharp}
+      data: 

@@ -7,7 +7,14 @@ public enum StepType
 {
     Phrase,
     GiveItem,
-    Battle
+    Battle,
+    MoveCamera,
+    PlaySound,
+    SetMusic,
+    SetCG,
+    Wait,
+    SpawnObject,
+    DestroyObject
 }
 
 [Serializable]
@@ -18,6 +25,13 @@ public class Step
     [ShowIf("stepType", StepType.Phrase)] [AllowNesting] public PhraseInfo phrase;
     [ShowIf("stepType", StepType.GiveItem)] [AllowNesting] public GiveItemInfo giveItem;
     [ShowIf("stepType", StepType.Battle)] [AllowNesting] public BattleInfo battle;
+    [ShowIf("stepType", StepType.MoveCamera)] [AllowNesting] public MoveCameraInfo moveCamera;
+    [ShowIf("stepType", StepType.PlaySound)] [AllowNesting] public PlaySoundInfo playSound;
+    [ShowIf("stepType", StepType.SetMusic)] [AllowNesting] public SetMusicInfo setMusic;
+    [ShowIf("stepType", StepType.SetCG)] [AllowNesting] public SetCGInfo setCG;
+    [ShowIf("stepType", StepType.Wait)] [AllowNesting] public WaitInfo wait;
+    [ShowIf("stepType", StepType.SpawnObject)] [AllowNesting] public SpawnObjectInfo spawnObject;
+    [ShowIf("stepType", StepType.DestroyObject)] [AllowNesting] public DestroyObjectInfo destroyObject;
 }
 
 [Serializable]
@@ -35,7 +49,6 @@ public class Sequences
 
 public class Event : MonoBehaviour, IEvent
 {
-    [SerializeField] private AudioClip aaa;
     [SerializeField] private bool isOneTimeEvent;
     [SerializeField] private EventContext eventContext;
     [SerializeField] private Sequences eventData;
@@ -52,7 +65,6 @@ public class Event : MonoBehaviour, IEvent
     public void Execute(Player player)
     {
         if (eventData.sequences == null || _isActivated) return;
-        eventContext.soundManager.SetMusic(aaa);
         _isActivated = true;
         _stepIndex = 0;
         eventContext.CoroutineRunner = this;
@@ -71,18 +83,38 @@ public class Event : MonoBehaviour, IEvent
         switch (eventData.sequences[_sequenceIndex].sequence[_stepIndex].stepType)
         {
             case StepType.Phrase:
-                _activeEventStep = new TypePhrase();
-                _activeEventStep.Execute(eventData.sequences[_sequenceIndex].sequence[_stepIndex], eventContext, OnStepFinished);
+                _activeEventStep = new Phrase();
                 break;
             case StepType.GiveItem:
                 _activeEventStep = new GiveItem();
-                _activeEventStep.Execute(eventData.sequences[_sequenceIndex].sequence[_stepIndex], eventContext, OnStepFinished);
                 break;
             case StepType.Battle:
                 _activeEventStep = new Battle();
-                _activeEventStep.Execute(eventData.sequences[_sequenceIndex].sequence[_stepIndex], eventContext, OnStepFinished);
+                break;
+            case StepType.MoveCamera:
+                _activeEventStep = new MoveCamera();
+                break;
+            case StepType.PlaySound:
+                _activeEventStep = new PlaySound();
+                break;
+            case StepType.SetMusic:
+                _activeEventStep = new SetMusic();
+                break;
+            case StepType.SetCG:
+                _activeEventStep = new SetCG();
+                break;
+            case StepType.Wait:
+                _activeEventStep = new Wait();
+                break;
+            case StepType.SpawnObject:
+                _activeEventStep = new SpawnObject();
+                break;
+            case StepType.DestroyObject:
+                _activeEventStep = new DestroyObject();
                 break;
         }
+        
+        _activeEventStep.Execute(eventData.sequences[_sequenceIndex].sequence[_stepIndex], eventContext, OnStepFinished);
     }
 
     private void OnStepFinished()
@@ -93,7 +125,8 @@ public class Event : MonoBehaviour, IEvent
     
     private void End()
     {
-        _isActivated = isOneTimeEvent;
+        _activeEventStep = null; 
+        _isActivated = false;
         if (_sequenceIndex < eventData.sequences.Count-1)
         {
             _sequenceIndex++;

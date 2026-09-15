@@ -14,6 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: "Assembly-CSharp::Scriptable\u0421onsumableSO"
   sprite: {fileID: -4305545938937751024, guid: edfcb64958fc54e569477935be993e82, type: 3}
   objectName: Scrap Iron Candy
-  objectDescription: Increase the target ally's Defense for some time.
   objectEffectDescription: Hansel and Gretel would eat it without hesitation.
+  objectDescription: Increase the target ally's Defense for some time.
   isTakesTurn: 0
+  effect:
+    rid: 7026581128638890258
+  references:
+    version: 2
+    RefIds:
+    - rid: 7026581128638890258
+      type: {class: ScrapIronCandy, ns: , asm: Assembly-CSharp}
+      data: 

@@ -14,6 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: "Assembly-CSharp::Scriptable\u0421onsumableSO"
   sprite: {fileID: -237017833660977155, guid: edfcb64958fc54e569477935be993e82, type: 3}
   objectName: Girl's Scent
-  objectDescription: This scent fills you with a bittersweet sense of nostalgia.
   objectEffectDescription: 'Perform attack by pain from your broken heart. '
+  objectDescription: This scent fills you with a bittersweet sense of nostalgia.
   isTakesTurn: 1
+  effect:
+    rid: 7026581128638890261
+  references:
+    version: 2
+    RefIds:
+    - rid: 7026581128638890261
+      type: {class: GirlsScent, ns: , asm: Assembly-CSharp}
+      data: 

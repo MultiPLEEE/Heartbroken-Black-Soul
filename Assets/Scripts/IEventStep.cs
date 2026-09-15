@@ -9,6 +9,8 @@ public class EventContext
     [field: NonSerialized] public MonoBehaviour CoroutineRunner;
     public PlayerEventInput playerEventInput;
     public SoundManager soundManager;
+    public SpriteRenderer CG;
+    public GameObject cameraTarget;
     public Player player;
     public GameObject primaryPanelParent;
     public TMP_Text primaryNamePanel;
@@ -18,15 +20,12 @@ public class EventContext
     public TMP_Text secondaryTextPanel;
     public GameObject thirdPanelParent;
     public TMP_Text thirdTextPanel;
-    
     public GameObject battleUIParent;
+    public GameObject eventObjectParent;
 }
 
 public interface IEventStep
 {
-    bool IsRunning { get; }
     void Execute(Step step, EventContext eventContext, Action onComplete);
     void Update();
-    void Skip();
-    void End();
 }

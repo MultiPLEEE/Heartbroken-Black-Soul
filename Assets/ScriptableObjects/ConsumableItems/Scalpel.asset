@@ -14,6 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: "Assembly-CSharp::Scriptable\u0421onsumableSO"
   sprite: {fileID: -1763457934, guid: edfcb64958fc54e569477935be993e82, type: 3}
   objectName: Scalpel
-  objectDescription: Through trepanation and star implantation, they conquered death.
   objectEffectDescription: 'Inflict 30000 fixed damage. '
+  objectDescription: Through trepanation and star implantation, they conquered death.
   isTakesTurn: 1
+  effect:
+    rid: 7026581128638890257
+  references:
+    version: 2
+    RefIds:
+    - rid: 7026581128638890257
+      type: {class: Scalpel, ns: , asm: Assembly-CSharp}
+      data: 

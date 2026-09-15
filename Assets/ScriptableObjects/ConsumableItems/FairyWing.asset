@@ -14,6 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: "Assembly-CSharp::Scriptable\u0421onsumableSO"
   sprite: {fileID: 6410464672967167950, guid: edfcb64958fc54e569477935be993e82, type: 3}
   objectName: FairyWing
-  objectDescription: A forcibly plucked wing. Even now you can hear the screams.
   objectEffectDescription: 'Increase the target ally''s Speed for some time. '
+  objectDescription: A forcibly plucked wing. Even now you can hear the screams.
   isTakesTurn: 0
+  effect:
+    rid: 7026581128638890262
+  references:
+    version: 2
+    RefIds:
+    - rid: 7026581128638890262
+      type: {class: FairyWing, ns: , asm: Assembly-CSharp}
+      data: 

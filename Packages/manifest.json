@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "com.alexeytaranov.serializereferencedropdown": "https://github.com/AlexeyTaranov/SerializeReferenceDropdown.git",
     "com.dbrizov.naughtyattributes": "https://github.com/dbrizov/NaughtyAttributes.git#upm",
     "com.unity.2d.animation": "16.0.0",
     "com.unity.2d.aseprite": "6.0.0",

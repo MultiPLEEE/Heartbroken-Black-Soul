@@ -27,7 +27,7 @@ public class SoundManager : MonoBehaviour
     
     public void SetMusic(AudioClip clip, bool loop = true)
     {
-        if (clip == null) return;
+        // if (clip == null) return;
 
         _musicSource.clip = clip;
         _musicSource.loop = loop;

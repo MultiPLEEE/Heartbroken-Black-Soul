@@ -14,6 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: "Assembly-CSharp::Scriptable\u0421onsumableSO"
   sprite: {fileID: 1170776375, guid: edfcb64958fc54e569477935be993e82, type: 3}
   objectName: Lorde's Fontain Pen
-  objectDescription: One of the playwright's favorite pens. Chipped, it can't write.
   objectEffectDescription: 'Increase the target ally''s HP and MP for some time. '
+  objectDescription: One of the playwright's favorite pens. Chipped, it can't write.
   isTakesTurn: 0
+  effect:
+    rid: 7026581128638890255
+  references:
+    version: 2
+    RefIds:
+    - rid: 7026581128638890255
+      type: {class: LordesFontainPen, ns: , asm: Assembly-CSharp}
+      data: 

@@ -56,6 +56,9 @@ TagManager:
   - name: Interactable
     uniqueID: 2323948779
     locked: 0
+  - name: CG
+    uniqueID: 3303427641
+    locked: 0
   - name: Debug
     uniqueID: 1061536809
     locked: 0

@@ -14,6 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: "Assembly-CSharp::Scriptable\u0421onsumableSO"
   sprite: {fileID: -967982053111731997, guid: edfcb64958fc54e569477935be993e82, type: 3}
   objectName: Goddess' Blood
-  objectDescription: A goddess fell from heaven; her blood covered the earth.
   objectEffectDescription: 'Restores all HP and MP and removes all ailments. '
+  objectDescription: A goddess fell from heaven; her blood covered the earth.
   isTakesTurn: 0
+  effect:
+    rid: 7026581128638890260
+  references:
+    version: 2
+    RefIds:
+    - rid: 7026581128638890260
+      type: {class: GoddessBlood, ns: , asm: Assembly-CSharp}
+      data: 

@@ -14,6 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: "Assembly-CSharp::Scriptable\u0421onsumableSO"
   sprite: {fileID: -1763629634, guid: edfcb64958fc54e569477935be993e82, type: 3}
   objectName: Carpenter's Screws
-  objectDescription: The Carpenter gradually lost his madness and went sane.
   objectEffectDescription: Increase the target ally's Attack for some time.
+  objectDescription: The Carpenter gradually lost his madness and went sane.
   isTakesTurn: 0
+  effect:
+    rid: 7026581128638890263
+  references:
+    version: 2
+    RefIds:
+    - rid: 7026581128638890263
+      type: {class: CarpentersScrews, ns: , asm: Assembly-CSharp}
+      data: 

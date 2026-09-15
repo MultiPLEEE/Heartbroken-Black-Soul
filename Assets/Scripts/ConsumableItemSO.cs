@@ -8,4 +8,5 @@ public class ConsumableItemSO : ScriptableObject
     public string objectEffectDescription;
     public string objectDescription;
     public bool isTakesTurn;
+    [SerializeReference, SerializeReferenceDropdown] public IEffect effect;
 }

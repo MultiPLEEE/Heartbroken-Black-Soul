@@ -6,9 +6,9 @@ public class Ally
 {
     public AllySO data;
     
-    public int CurrentHp { get; private set; }
-    public int CurrentMp { get; private set; }
-    public float ActionGauge { get; private set; }
+    public int CurrentHp { get; set; }
+    public int CurrentMp { get; set; }
+    public float ActionGauge { get; set; }
 
     public bool IsReadyToAct => ActionGauge >= 100f;
     public bool IsDead => CurrentHp <= 0;
