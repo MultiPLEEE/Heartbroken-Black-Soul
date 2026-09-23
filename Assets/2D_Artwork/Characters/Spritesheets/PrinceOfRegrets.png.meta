@@ -288,7 +288,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PrinceOfGrief_0
+      name: PrinceOfRegrets_0
       rect:
         serializedVersion: 2
         x: 0
@@ -303,14 +303,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0ff8ef7b783c24169a7984d829d3022e
-      internalID: -682728856
+      spriteID: 3ee2afcc7a64a4d368aac2fc225902a6
+      internalID: 853478988
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfGrief_1
+      name: PrinceOfRegrets_1
       rect:
         serializedVersion: 2
         x: 32
@@ -325,14 +325,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 197a08d1d096a4e7a928cea4fa92b49e
-      internalID: 694594605
+      spriteID: fb25c465c16ce429b9f525233db839cf
+      internalID: 1355692747
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfGrief_2
+      name: PrinceOfRegrets_2
       rect:
         serializedVersion: 2
         x: 64
@@ -347,14 +347,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 563b73473aa194a7783f55de0df637d9
-      internalID: -1897689687
+      spriteID: 0640857e100084137b5f1e427ff07e1d
+      internalID: 1079297893
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfGrief_3
+      name: PrinceOfRegrets_3
       rect:
         serializedVersion: 2
         x: 96
@@ -369,14 +369,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7cb6338f41b3f4dce8140b5b1ef4af05
-      internalID: 1808004232
+      spriteID: ba29aaef4e8884be3b8302ae7d3bd95d
+      internalID: -1988804965
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfGrief_4
+      name: PrinceOfRegrets_4
       rect:
         serializedVersion: 2
         x: 128
@@ -391,14 +391,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b16c3825631464a949cca64e033c3374
-      internalID: 288594301
+      spriteID: 05ffff9be0f9d431eaee8262d5a5319f
+      internalID: -1663699883
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfGrief_5
+      name: PrinceOfRegrets_5
       rect:
         serializedVersion: 2
         x: 160
@@ -413,14 +413,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0a7dab24bad89493e8c24a1effe0e4f0
-      internalID: -758431630
+      spriteID: a8c47d04f41e24e5db267e999c19e387
+      internalID: 551859469
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfGrief_6
+      name: PrinceOfRegrets_6
       rect:
         serializedVersion: 2
         x: 192
@@ -435,14 +435,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 44194f50fa05b4620af37cd07d261829
-      internalID: 41825636
+      spriteID: 86b13776dc2bb41eeb7e6f11e39d720b
+      internalID: -1552914611
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfGrief_7
+      name: PrinceOfRegrets_7
       rect:
         serializedVersion: 2
         x: 224
@@ -457,14 +457,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ecba76c342bdf4446b4bf1027f650013
-      internalID: 184677147
+      spriteID: c4ee3272b748f4121a0c2975f9118b50
+      internalID: 1173609741
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfGrief_8
+      name: PrinceOfRegrets_8
       rect:
         serializedVersion: 2
         x: 256
@@ -479,14 +479,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: caefead780c2b48c9970218e68915a63
-      internalID: -156204897
+      spriteID: a4482fa8cb5bf49a3971ac027c789aea
+      internalID: -419282122
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfGrief_9
+      name: PrinceOfRegrets_9
       rect:
         serializedVersion: 2
         x: 288
@@ -501,14 +501,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 230a4df8d83cd499694acc2a116ad1a7
-      internalID: 279596408
+      spriteID: 30de7068833a84f9ca33e34d8ac36595
+      internalID: 1176987675
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfGrief_10
+      name: PrinceOfRegrets_10
       rect:
         serializedVersion: 2
         x: 320
@@ -523,14 +523,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e2324ea5e0297402db5328a88fc3e0bf
-      internalID: 511984249
+      spriteID: c301ecc94702244748f292f252f656ea
+      internalID: -748412215
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfGrief_11
+      name: PrinceOfRegrets_11
       rect:
         serializedVersion: 2
         x: 352
@@ -545,14 +545,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7f6d81ca6604d4091b2c4fbf4ba9fbee
-      internalID: -671258644
+      spriteID: 52bab0e85311f430489202d5ab2d4f3e
+      internalID: -2088432262
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfGrief_12
+      name: PrinceOfRegrets_12
       rect:
         serializedVersion: 2
         x: 0
@@ -567,14 +567,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 71a9b6ff675424c0cac85b3524117216
-      internalID: -668044333
+      spriteID: 3b985cd8b6cfd421fb4c23e7268cec74
+      internalID: -360039883
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfGrief_13
+      name: PrinceOfRegrets_13
       rect:
         serializedVersion: 2
         x: 32
@@ -589,14 +589,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 066f3540e2d9649659f2bcc7ccab724b
-      internalID: -1903717429
+      spriteID: 8458f1917c4c446e2a10b297bd11a7d5
+      internalID: -2130856746
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfGrief_14
+      name: PrinceOfRegrets_14
       rect:
         serializedVersion: 2
         x: 64
@@ -611,14 +611,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d66a21619c85a4400b7b170ac098bbc2
-      internalID: 1784219068
+      spriteID: d98e6591e3989409fb36045d8d664ad5
+      internalID: 1487223692
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfGrief_15
+      name: PrinceOfRegrets_15
       rect:
         serializedVersion: 2
         x: 96
@@ -633,14 +633,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 147e7846b672044e2b08480f324e40b1
-      internalID: -1666171377
+      spriteID: d32f071332ead4d0b8f3b90112193fe1
+      internalID: 1383697924
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfGrief_16
+      name: PrinceOfRegrets_16
       rect:
         serializedVersion: 2
         x: 128
@@ -655,14 +655,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d873b7404365e486291fdf47ebce51f4
-      internalID: 1293125585
+      spriteID: 9fd7e42ed269047739b8aa395666c1a7
+      internalID: -252670630
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfGrief_17
+      name: PrinceOfRegrets_17
       rect:
         serializedVersion: 2
         x: 160
@@ -677,14 +677,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fe649e9a8d71646d1865ae32355e9bf0
-      internalID: 1084028533
+      spriteID: 8c7d614e73fbe47daaec26ce799cfe8b
+      internalID: -699203726
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfGrief_18
+      name: PrinceOfRegrets_18
       rect:
         serializedVersion: 2
         x: 192
@@ -699,14 +699,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1b63d7a0b41634380b06fa4f848ecadf
-      internalID: -398397954
+      spriteID: 86e5263a1694a47849df181f88c36439
+      internalID: -937200379
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfGrief_19
+      name: PrinceOfRegrets_19
       rect:
         serializedVersion: 2
         x: 224
@@ -721,14 +721,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a696ddc3ab7114b22af3e7d6350570df
-      internalID: 1449228993
+      spriteID: 04a4e5ba05e7a471caa93ee0cf7ddee7
+      internalID: 1862655664
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfGrief_20
+      name: PrinceOfRegrets_20
       rect:
         serializedVersion: 2
         x: 256
@@ -743,14 +743,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7813c44ae9c864b82b6a1b15aa8fc8a4
-      internalID: 783212733
+      spriteID: cf62ce5b03aad433dab29e80a1752e59
+      internalID: 2085586551
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfGrief_21
+      name: PrinceOfRegrets_21
       rect:
         serializedVersion: 2
         x: 288
@@ -765,14 +765,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 04b6ebcababe54735a29026044d1672a
-      internalID: 102153478
+      spriteID: 56226f54a4003413fbec2d5852f73ed0
+      internalID: 1761085877
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfGrief_22
+      name: PrinceOfRegrets_22
       rect:
         serializedVersion: 2
         x: 320
@@ -787,14 +787,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5d6b9e3a288dd43b6be6241482dc1ea1
-      internalID: -1065557979
+      spriteID: f72bd02760c1a4c1186c3ee098c386ac
+      internalID: 1765115961
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfGrief_23
+      name: PrinceOfRegrets_23
       rect:
         serializedVersion: 2
         x: 352
@@ -809,14 +809,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b471302a19bba4098b493bffc658d069
-      internalID: -1635326838
+      spriteID: 2514dc76b54b042878755820a2959962
+      internalID: -21321384
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfGrief_24
+      name: PrinceOfRegrets_24
       rect:
         serializedVersion: 2
         x: 0
@@ -831,14 +831,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dfc34185978764ef5901b493dbf27e8f
-      internalID: -1581988724
+      spriteID: ec7f839f9f2cb4b10bf3658166a43ac2
+      internalID: 1548955185
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfGrief_25
+      name: PrinceOfRegrets_25
       rect:
         serializedVersion: 2
         x: 32
@@ -853,14 +853,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0346cc191773246b189ffdb6ae5cf6ab
-      internalID: 1040920694
+      spriteID: b9c71edc9e724414ca27a025caf207e3
+      internalID: 810966726
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfGrief_26
+      name: PrinceOfRegrets_26
       rect:
         serializedVersion: 2
         x: 64
@@ -875,14 +875,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 90cb075c64a61480592e4d3911e8460d
-      internalID: -301713653
+      spriteID: d8fce239f01f943a29725207363a5895
+      internalID: -394626129
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfGrief_27
+      name: PrinceOfRegrets_27
       rect:
         serializedVersion: 2
         x: 96
@@ -897,14 +897,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5350638e6d2f7403ca0f5f125930b115
-      internalID: -1441221954
+      spriteID: 800994a143b2740b8b292c36bd223da0
+      internalID: 1748143327
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfGrief_28
+      name: PrinceOfRegrets_28
       rect:
         serializedVersion: 2
         x: 128
@@ -919,14 +919,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ce3f063bee690487ca0d4aa3faf8f2f5
-      internalID: 1343779361
+      spriteID: 4c01c7134e73a4cebb2f8036563b7f68
+      internalID: 1233525898
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfGrief_29
+      name: PrinceOfRegrets_29
       rect:
         serializedVersion: 2
         x: 160
@@ -941,14 +941,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6afdf301b341c4534a5d329534e49c98
-      internalID: -1570497230
+      spriteID: bd36748a35a814d1d8acb91de7baf898
+      internalID: 529316195
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfGrief_30
+      name: PrinceOfRegrets_30
       rect:
         serializedVersion: 2
         x: 192
@@ -963,14 +963,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4b9d06a370a214a4a835eaa733229e0e
-      internalID: 95984346
+      spriteID: d67ce027b339342cd8ec8cec1d41d1d5
+      internalID: 934091786
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfGrief_31
+      name: PrinceOfRegrets_31
       rect:
         serializedVersion: 2
         x: 224
@@ -985,14 +985,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fa14ebcc06abe485eade3a8bdff1f6a4
-      internalID: 571145992
+      spriteID: 3ba44a90f38a544048bad46caf669daa
+      internalID: 966908006
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfGrief_32
+      name: PrinceOfRegrets_32
       rect:
         serializedVersion: 2
         x: 256
@@ -1007,14 +1007,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0d55761b694ee43d6a28215ffbecbb47
-      internalID: 568249207
+      spriteID: 3231839e036e145939e3d69d89e11aea
+      internalID: -1608674144
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfGrief_33
+      name: PrinceOfRegrets_33
       rect:
         serializedVersion: 2
         x: 288
@@ -1029,14 +1029,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0de7a8d07121d43d1b02acd7265b0d7f
-      internalID: 1696351360
+      spriteID: 8872e9a84d07a45f19c903b7409ba962
+      internalID: 2008476797
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfGrief_34
+      name: PrinceOfRegrets_34
       rect:
         serializedVersion: 2
         x: 320
@@ -1051,14 +1051,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 99a07540ca0d24f43a53b4a0b1082d2f
-      internalID: -1176890779
+      spriteID: f4b7b3c837c6c420d9fc2313aa6eff30
+      internalID: 1867507939
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfGrief_35
+      name: PrinceOfRegrets_35
       rect:
         serializedVersion: 2
         x: 352
@@ -1073,14 +1073,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4c220e3046b854335a3c855f2a72b119
-      internalID: -809309613
+      spriteID: 7a103764917ac45968c57c1346bcd575
+      internalID: 861647784
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfGrief_36
+      name: PrinceOfRegrets_36
       rect:
         serializedVersion: 2
         x: 0
@@ -1095,14 +1095,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e1c93186ff6e24c4c920a1e9ef23c8ae
-      internalID: 931572635
+      spriteID: 5669424d0a1b640e2ac528c3b7e20de4
+      internalID: 303073944
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfGrief_37
+      name: PrinceOfRegrets_37
       rect:
         serializedVersion: 2
         x: 32
@@ -1117,14 +1117,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aa142a93b17e44f719dfd66da559b8e5
-      internalID: -463778114
+      spriteID: 44b7f23d3fca34494b7f0024ec613d44
+      internalID: 754395757
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfGrief_38
+      name: PrinceOfRegrets_38
       rect:
         serializedVersion: 2
         x: 64
@@ -1139,14 +1139,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f1f7a36a7b2ea4e2e9032eec9e1321b6
-      internalID: -1368864341
+      spriteID: f0dbb62c0c2344f56bf0e222efb62568
+      internalID: 1180084515
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfGrief_39
+      name: PrinceOfRegrets_39
       rect:
         serializedVersion: 2
         x: 96
@@ -1161,14 +1161,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0100aa8adb00c4402903fb49afffc00f
-      internalID: -1577717083
+      spriteID: acfc671bb07234706b8f3d84edf2f102
+      internalID: 838892793
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfGrief_40
+      name: PrinceOfRegrets_40
       rect:
         serializedVersion: 2
         x: 128
@@ -1183,14 +1183,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 92d02e9db315a4a519d9f9e6cec8264e
-      internalID: -494952969
+      spriteID: 03d416b3f83c443f28f46de99e6ed819
+      internalID: 1861730132
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfGrief_41
+      name: PrinceOfRegrets_41
       rect:
         serializedVersion: 2
         x: 160
@@ -1205,14 +1205,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f25bae5eefd514977aaad6626b536eb4
-      internalID: 1534559856
+      spriteID: ca9795101c1094e9494b1f5e76b7b388
+      internalID: -601176818
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfGrief_42
+      name: PrinceOfRegrets_42
       rect:
         serializedVersion: 2
         x: 192
@@ -1227,14 +1227,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e7bff7745ace647a5bc4b776a0154a04
-      internalID: 1870134432
+      spriteID: e02a514bff6d743d3b8da900d7ee65f6
+      internalID: -1345352781
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfGrief_43
+      name: PrinceOfRegrets_43
       rect:
         serializedVersion: 2
         x: 224
@@ -1249,14 +1249,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bcccc7bde24b1432c979f84774739580
-      internalID: 297569146
+      spriteID: 669efd4f9d893455b874f87a89447a3a
+      internalID: -2089410792
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfGrief_44
+      name: PrinceOfRegrets_44
       rect:
         serializedVersion: 2
         x: 256
@@ -1271,14 +1271,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 570dd3d910a39485296fd8994aa2d8d0
-      internalID: 2116663326
+      spriteID: eda5148968ccd47aaa74706d08d6ab40
+      internalID: -1926374942
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfGrief_45
+      name: PrinceOfRegrets_45
       rect:
         serializedVersion: 2
         x: 288
@@ -1293,14 +1293,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f45caea12d90b40209335ad3459b4915
-      internalID: 799588733
+      spriteID: 20cd6b5dd01664adba72d2d8c2d8fabf
+      internalID: -600528084
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfGrief_46
+      name: PrinceOfRegrets_46
       rect:
         serializedVersion: 2
         x: 320
@@ -1315,14 +1315,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4ece67f71f82441719c153df5f526639
-      internalID: -1243184507
+      spriteID: 455261615dd76471b9c809541aa8055f
+      internalID: -517061585
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfGrief_47
+      name: PrinceOfRegrets_47
       rect:
         serializedVersion: 2
         x: 352
@@ -1337,14 +1337,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 092582c87873d459e8f53f2615038b9e
-      internalID: -1860522128
+      spriteID: 8ed25b19bc34c47f8a8b84f5760fb72d
+      internalID: 1579019812
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfGrief_48
+      name: PrinceOfRegrets_48
       rect:
         serializedVersion: 2
         x: 0
@@ -1359,14 +1359,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: af42974efc8704e26821ff0390f2c377
-      internalID: 1261895258
+      spriteID: 45dbd03905e164cd7a0d952f5a6f9eb5
+      internalID: -1948444062
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfGrief_49
+      name: PrinceOfRegrets_49
       rect:
         serializedVersion: 2
         x: 32
@@ -1381,14 +1381,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0b9cc4bf641c74c9caa87c96f6b5d4bc
-      internalID: 1083739397
+      spriteID: 651050db04c2a442f8a6ba21f9b228a1
+      internalID: 256120938
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfGrief_50
+      name: PrinceOfRegrets_50
       rect:
         serializedVersion: 2
         x: 64
@@ -1403,14 +1403,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a48440efa7f4a42e88777bd8f5a23784
-      internalID: -1597723185
+      spriteID: 24e287b09811e4a0f9b977b45e7b5c23
+      internalID: -791763859
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfGrief_51
+      name: PrinceOfRegrets_51
       rect:
         serializedVersion: 2
         x: 96
@@ -1425,14 +1425,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5fee65a702bdd457d9e678daa58e5c4d
-      internalID: 918677210
+      spriteID: b3936b927d7d54f10a532a44aa90416a
+      internalID: 2080381346
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfGrief_52
+      name: PrinceOfRegrets_52
       rect:
         serializedVersion: 2
         x: 128
@@ -1447,14 +1447,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d1cfd9f9fa20947ef9222ce5429e0e7d
-      internalID: 918639977
+      spriteID: fd0f75ab811af45dd85be8ae2d823605
+      internalID: 1247304072
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfGrief_53
+      name: PrinceOfRegrets_53
       rect:
         serializedVersion: 2
         x: 160
@@ -1469,14 +1469,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 48cd09b03bbb14a46be9eeb3451e4e14
-      internalID: -2015810211
+      spriteID: 783bc164fbdeb46c1b73309161893369
+      internalID: -579743113
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfGrief_54
+      name: PrinceOfRegrets_54
       rect:
         serializedVersion: 2
         x: 192
@@ -1491,14 +1491,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a04ebb218a30a417bb6c7748d0b02bd5
-      internalID: 1908335432
+      spriteID: 611e81f11e37b41d788d6ad2b6088485
+      internalID: -846381809
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfGrief_55
+      name: PrinceOfRegrets_55
       rect:
         serializedVersion: 2
         x: 224
@@ -1513,14 +1513,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ac644ab4f7f3649b6ae54d023c4640d0
-      internalID: 994282864
+      spriteID: c33f76a80b2714cceac8eca6e49c7b12
+      internalID: 43582708
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfGrief_56
+      name: PrinceOfRegrets_56
       rect:
         serializedVersion: 2
         x: 256
@@ -1535,14 +1535,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9ff362a264ff943e3b3c04c8dcbfbac3
-      internalID: -1333169303
+      spriteID: c1a5e84d5a52b4184943b9ff0b94e787
+      internalID: -88433763
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfGrief_57
+      name: PrinceOfRegrets_57
       rect:
         serializedVersion: 2
         x: 288
@@ -1557,14 +1557,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dac5fba778c60440e820fcb8fdf6a81a
-      internalID: -2143788473
+      spriteID: 73063dcd17c4e43e3be8366b553c989c
+      internalID: -639248488
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfGrief_58
+      name: PrinceOfRegrets_58
       rect:
         serializedVersion: 2
         x: 320
@@ -1579,14 +1579,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d19c3419b62324391aa5cb8c93de2e0e
-      internalID: -1728852746
+      spriteID: affc0f77fa6e2420ba63e3ea54929b02
+      internalID: 174086255
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfGrief_59
+      name: PrinceOfRegrets_59
       rect:
         serializedVersion: 2
         x: 352
@@ -1601,14 +1601,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 922b7311943fe4e2e94c9875902ec04d
-      internalID: 840718595
+      spriteID: 5df79e99d6df74d64a587adb6262e0b7
+      internalID: 254253742
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfGrief_60
+      name: PrinceOfRegrets_60
       rect:
         serializedVersion: 2
         x: 0
@@ -1623,14 +1623,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b9c7d8a7cc6234378b7af77f82f88a3f
-      internalID: -1517851733
+      spriteID: 07ee26a8c0d734da28b95ebb806856b2
+      internalID: -324748866
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfGrief_61
+      name: PrinceOfRegrets_61
       rect:
         serializedVersion: 2
         x: 32
@@ -1645,14 +1645,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6f5fcf70387ff4dcbba3976a5950b293
-      internalID: -1012241169
+      spriteID: 81671cf6ce05c4aafb9b2e7040198512
+      internalID: -1669841477
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfGrief_62
+      name: PrinceOfRegrets_62
       rect:
         serializedVersion: 2
         x: 64
@@ -1667,14 +1667,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b1066329c97224be2a95288a67d7cc82
-      internalID: 193167991
+      spriteID: 0627483cdae0b42a09cd3e444d026f7e
+      internalID: 511541745
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfGrief_63
+      name: PrinceOfRegrets_63
       rect:
         serializedVersion: 2
         x: 96
@@ -1689,14 +1689,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ad0dffb3a085f496fbc9d6ea8ef00a31
-      internalID: 1723461555
+      spriteID: 46c1ec5e22af34e509c362d1a6b72df7
+      internalID: -1186665412
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfGrief_64
+      name: PrinceOfRegrets_64
       rect:
         serializedVersion: 2
         x: 128
@@ -1711,14 +1711,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 794c1f65e98bd427999fc77b0c740c6f
-      internalID: -1169213752
+      spriteID: 0049011f66f294e0794d22ea1d9aac3a
+      internalID: 1073236532
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfGrief_65
+      name: PrinceOfRegrets_65
       rect:
         serializedVersion: 2
         x: 160
@@ -1733,14 +1733,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6afcad4cb34204353a116b508adbc7ab
-      internalID: 246581090
+      spriteID: 54a0c1af4901f48c0a80d8d1e50a9d53
+      internalID: -347530717
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfGrief_66
+      name: PrinceOfRegrets_66
       rect:
         serializedVersion: 2
         x: 192
@@ -1755,14 +1755,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f117be477526a48d7a0a4be4cd18d2ed
-      internalID: -1986305301
+      spriteID: 9bf971afa405b4531847ce5202f3ab81
+      internalID: -836732582
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfGrief_67
+      name: PrinceOfRegrets_67
       rect:
         serializedVersion: 2
         x: 224
@@ -1777,14 +1777,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 69c939d80ec1c4895a6bd56a45fcf250
-      internalID: 310159411
+      spriteID: 03cbc264fc225460bb81c6159378a21e
+      internalID: 1220137425
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfGrief_68
+      name: PrinceOfRegrets_68
       rect:
         serializedVersion: 2
         x: 256
@@ -1799,14 +1799,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 76d467e4e3b47473ab9225a3b31761c4
-      internalID: 1713897476
+      spriteID: 5b2857b9487c64f2d926f109ba8a18db
+      internalID: 139861783
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfGrief_69
+      name: PrinceOfRegrets_69
       rect:
         serializedVersion: 2
         x: 288
@@ -1821,14 +1821,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 709b59933fab0484893bae08a3b2c02f
-      internalID: -209633174
+      spriteID: 4eddb9e0a90ce49d0ace5c1d18db3115
+      internalID: -1135129441
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfGrief_70
+      name: PrinceOfRegrets_70
       rect:
         serializedVersion: 2
         x: 320
@@ -1843,14 +1843,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 92cef2c5d17ae4a958d6860a53d108b2
-      internalID: -120521412
+      spriteID: a7c90899de2474e82ae9686f24d6dbf2
+      internalID: 721641599
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfGrief_71
+      name: PrinceOfRegrets_71
       rect:
         serializedVersion: 2
         x: 352
@@ -1865,14 +1865,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 05453ff094db84f59b0ec52fff3b11c5
-      internalID: -1532823181
+      spriteID: 1f27a9afb9eb54fd18cd2ebdb18c22fb
+      internalID: 199148344
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfGrief_72
+      name: PrinceOfRegrets_72
       rect:
         serializedVersion: 2
         x: 0
@@ -1887,14 +1887,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8d5c6f12ab80640719277ac9e76e6987
-      internalID: 1411479473
+      spriteID: ee2a98dea242a48fca4a8b902f06af78
+      internalID: 1293208786
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfGrief_73
+      name: PrinceOfRegrets_73
       rect:
         serializedVersion: 2
         x: 32
@@ -1909,14 +1909,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9516e308886604ab0b34318c06f54c58
-      internalID: -1058744923
+      spriteID: 04665fbf993894ce99e3a96b2cae25af
+      internalID: 1624356270
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfGrief_74
+      name: PrinceOfRegrets_74
       rect:
         serializedVersion: 2
         x: 64
@@ -1931,14 +1931,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 22cd0146c548943c2ba7e2afa538485e
-      internalID: -1501739466
+      spriteID: e8e46253b3fa84007917328f3d47f609
+      internalID: -81697163
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfGrief_75
+      name: PrinceOfRegrets_75
       rect:
         serializedVersion: 2
         x: 96
@@ -1953,14 +1953,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4fe79273b0e334be3aa597e851748604
-      internalID: -481031787
+      spriteID: 4a06ce4ee53264e1385d0c981ad2a234
+      internalID: 605435692
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfGrief_76
+      name: PrinceOfRegrets_76
       rect:
         serializedVersion: 2
         x: 128
@@ -1975,14 +1975,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e146a759edc2e4dce887312548bece92
-      internalID: -503299846
+      spriteID: e13773f30068e4cf88832f447f1c3202
+      internalID: 1680647033
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfGrief_77
+      name: PrinceOfRegrets_77
       rect:
         serializedVersion: 2
         x: 160
@@ -1997,14 +1997,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4b784ca9bf69845b3900ff4c09774eba
-      internalID: -1227973680
+      spriteID: a9b3bbf46498f4565938c2e48a834234
+      internalID: 157414645
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfGrief_78
+      name: PrinceOfRegrets_78
       rect:
         serializedVersion: 2
         x: 192
@@ -2019,14 +2019,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cf9f7c596c5a04e39889f069997db600
-      internalID: 1765776790
+      spriteID: 2350309e643754059a19f50ff12acd69
+      internalID: 1113361902
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfGrief_79
+      name: PrinceOfRegrets_79
       rect:
         serializedVersion: 2
         x: 224
@@ -2041,14 +2041,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cebff85bfdd3e430abc55e1f16749cf8
-      internalID: -297251784
+      spriteID: b3389bdb00f6245e0a21054b9ee3465a
+      internalID: 152169822
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfGrief_80
+      name: PrinceOfRegrets_80
       rect:
         serializedVersion: 2
         x: 256
@@ -2063,14 +2063,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d96db536eee8f409495dd6c6f2959aa8
-      internalID: 276867356
+      spriteID: 8bcb3929d185d44a590400e82d1a38ff
+      internalID: -135951274
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfGrief_81
+      name: PrinceOfRegrets_81
       rect:
         serializedVersion: 2
         x: 288
@@ -2085,14 +2085,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0be48a2b09b134eb5839113552b07ce4
-      internalID: 945367428
+      spriteID: 66a131ee7702e43848df8f0f95e3ffe8
+      internalID: -522175148
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfGrief_82
+      name: PrinceOfRegrets_82
       rect:
         serializedVersion: 2
         x: 320
@@ -2107,14 +2107,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 107ef1f9782e540a7864b3110a702742
-      internalID: 1040349537
+      spriteID: 4b70732cdecb84b27a8477859a10cb2c
+      internalID: -90456765
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfGrief_83
+      name: PrinceOfRegrets_83
       rect:
         serializedVersion: 2
         x: 352
@@ -2129,14 +2129,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 38b7b10c3b6bd46949167344d02af9e3
-      internalID: 1446628061
+      spriteID: cbb5cfd51e5fe4ad5947a3ad3e9436bc
+      internalID: 2066855951
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfGrief_84
+      name: PrinceOfRegrets_84
       rect:
         serializedVersion: 2
         x: 0
@@ -2151,14 +2151,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c8d320a09a0f8473290a166930faee76
-      internalID: -1503359164
+      spriteID: 103c7ac0373af46c1b6bd0571184fb7e
+      internalID: 513004794
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfGrief_85
+      name: PrinceOfRegrets_85
       rect:
         serializedVersion: 2
         x: 32
@@ -2173,14 +2173,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 54f1d68d8c0d544e3a61663d7c777521
-      internalID: -1449888039
+      spriteID: cc65cd931c95c41e093d430badc6cb4c
+      internalID: 1119793807
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfGrief_86
+      name: PrinceOfRegrets_86
       rect:
         serializedVersion: 2
         x: 64
@@ -2195,14 +2195,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5f919fd8c830d4436bc8ee4f25c0eabb
-      internalID: -1331131279
+      spriteID: 6166ed94665f7439dbd4eb4f1e730967
+      internalID: 828500480
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfGrief_87
+      name: PrinceOfRegrets_87
       rect:
         serializedVersion: 2
         x: 96
@@ -2217,14 +2217,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2cf17d3e8572645f5b28ba28ca248ba8
-      internalID: 930753871
+      spriteID: facc74496a1814590b733fecec3506c2
+      internalID: -915256269
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfGrief_88
+      name: PrinceOfRegrets_88
       rect:
         serializedVersion: 2
         x: 128
@@ -2239,14 +2239,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 19ccfce6104f44d2eb122f1b4f14cbd2
-      internalID: 258527134
+      spriteID: 9ed97956fee7c48fb9f063d7b168b24e
+      internalID: -841378226
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfGrief_89
+      name: PrinceOfRegrets_89
       rect:
         serializedVersion: 2
         x: 160
@@ -2261,14 +2261,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7d1f0dc155a204a07a1d6c18a588abce
-      internalID: -1452708521
+      spriteID: 6623a71672a974847bae863cdcb39090
+      internalID: 992642199
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfGrief_90
+      name: PrinceOfRegrets_90
       rect:
         serializedVersion: 2
         x: 192
@@ -2283,14 +2283,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 07a33619a563d41afa1eabb0c09bc1b1
-      internalID: -1903770523
+      spriteID: fba6c0c882e73411087e1ff0344fcbcd
+      internalID: 586744080
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfGrief_91
+      name: PrinceOfRegrets_91
       rect:
         serializedVersion: 2
         x: 224
@@ -2305,14 +2305,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4968eaa82e93147ce8c8bf424fa32911
-      internalID: -122351916
+      spriteID: 1f3573024dced4b84a4fe105c263386f
+      internalID: 126778129
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfGrief_92
+      name: PrinceOfRegrets_92
       rect:
         serializedVersion: 2
         x: 256
@@ -2327,14 +2327,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aebfcfbc84e7f438c9d86bcc84b79554
-      internalID: -669931410
+      spriteID: 927eddfcf84d548e59d8076e96acb360
+      internalID: -227720718
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfGrief_93
+      name: PrinceOfRegrets_93
       rect:
         serializedVersion: 2
         x: 288
@@ -2349,14 +2349,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8ebdd49b1985b41e6a2b0c874de46a5c
-      internalID: -589285357
+      spriteID: 5a25a5bb8f4ca4287b0d00c452289e02
+      internalID: -773250577
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfGrief_94
+      name: PrinceOfRegrets_94
       rect:
         serializedVersion: 2
         x: 320
@@ -2371,14 +2371,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: efb44e385355240d3bf3e535628e6cb8
-      internalID: -1042077806
+      spriteID: db0adc71f029c44e394cd6f33f077283
+      internalID: 1817149274
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PrinceOfGrief_95
+      name: PrinceOfRegrets_95
       rect:
         serializedVersion: 2
         x: 352
@@ -2393,8 +2393,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8b60d3a095ac4486c99ec10482b94acb
-      internalID: 1037217397
+      spriteID: e49a4b644c1694bc497ddc59b8fabcf9
+      internalID: -1979278579
       vertices: []
       indices: 
       edges: []
@@ -2415,102 +2415,102 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      PrinceOfGrief_0: -682728856
-      PrinceOfGrief_1: 694594605
-      PrinceOfGrief_10: 511984249
-      PrinceOfGrief_11: -671258644
-      PrinceOfGrief_12: -668044333
-      PrinceOfGrief_13: -1903717429
-      PrinceOfGrief_14: 1784219068
-      PrinceOfGrief_15: -1666171377
-      PrinceOfGrief_16: 1293125585
-      PrinceOfGrief_17: 1084028533
-      PrinceOfGrief_18: -398397954
-      PrinceOfGrief_19: 1449228993
-      PrinceOfGrief_2: -1897689687
-      PrinceOfGrief_20: 783212733
-      PrinceOfGrief_21: 102153478
-      PrinceOfGrief_22: -1065557979
-      PrinceOfGrief_23: -1635326838
-      PrinceOfGrief_24: -1581988724
-      PrinceOfGrief_25: 1040920694
-      PrinceOfGrief_26: -301713653
-      PrinceOfGrief_27: -1441221954
-      PrinceOfGrief_28: 1343779361
-      PrinceOfGrief_29: -1570497230
-      PrinceOfGrief_3: 1808004232
-      PrinceOfGrief_30: 95984346
-      PrinceOfGrief_31: 571145992
-      PrinceOfGrief_32: 568249207
-      PrinceOfGrief_33: 1696351360
-      PrinceOfGrief_34: -1176890779
-      PrinceOfGrief_35: -809309613
-      PrinceOfGrief_36: 931572635
-      PrinceOfGrief_37: -463778114
-      PrinceOfGrief_38: -1368864341
-      PrinceOfGrief_39: -1577717083
-      PrinceOfGrief_4: 288594301
-      PrinceOfGrief_40: -494952969
-      PrinceOfGrief_41: 1534559856
-      PrinceOfGrief_42: 1870134432
-      PrinceOfGrief_43: 297569146
-      PrinceOfGrief_44: 2116663326
-      PrinceOfGrief_45: 799588733
-      PrinceOfGrief_46: -1243184507
-      PrinceOfGrief_47: -1860522128
-      PrinceOfGrief_48: 1261895258
-      PrinceOfGrief_49: 1083739397
-      PrinceOfGrief_5: -758431630
-      PrinceOfGrief_50: -1597723185
-      PrinceOfGrief_51: 918677210
-      PrinceOfGrief_52: 918639977
-      PrinceOfGrief_53: -2015810211
-      PrinceOfGrief_54: 1908335432
-      PrinceOfGrief_55: 994282864
-      PrinceOfGrief_56: -1333169303
-      PrinceOfGrief_57: -2143788473
-      PrinceOfGrief_58: -1728852746
-      PrinceOfGrief_59: 840718595
-      PrinceOfGrief_6: 41825636
-      PrinceOfGrief_60: -1517851733
-      PrinceOfGrief_61: -1012241169
-      PrinceOfGrief_62: 193167991
-      PrinceOfGrief_63: 1723461555
-      PrinceOfGrief_64: -1169213752
-      PrinceOfGrief_65: 246581090
-      PrinceOfGrief_66: -1986305301
-      PrinceOfGrief_67: 310159411
-      PrinceOfGrief_68: 1713897476
-      PrinceOfGrief_69: -209633174
-      PrinceOfGrief_7: 184677147
-      PrinceOfGrief_70: -120521412
-      PrinceOfGrief_71: -1532823181
-      PrinceOfGrief_72: 1411479473
-      PrinceOfGrief_73: -1058744923
-      PrinceOfGrief_74: -1501739466
-      PrinceOfGrief_75: -481031787
-      PrinceOfGrief_76: -503299846
-      PrinceOfGrief_77: -1227973680
-      PrinceOfGrief_78: 1765776790
-      PrinceOfGrief_79: -297251784
-      PrinceOfGrief_8: -156204897
-      PrinceOfGrief_80: 276867356
-      PrinceOfGrief_81: 945367428
-      PrinceOfGrief_82: 1040349537
-      PrinceOfGrief_83: 1446628061
-      PrinceOfGrief_84: -1503359164
-      PrinceOfGrief_85: -1449888039
-      PrinceOfGrief_86: -1331131279
-      PrinceOfGrief_87: 930753871
-      PrinceOfGrief_88: 258527134
-      PrinceOfGrief_89: -1452708521
-      PrinceOfGrief_9: 279596408
-      PrinceOfGrief_90: -1903770523
-      PrinceOfGrief_91: -122351916
-      PrinceOfGrief_92: -669931410
-      PrinceOfGrief_93: -589285357
-      PrinceOfGrief_94: -1042077806
-      PrinceOfGrief_95: 1037217397
+      PrinceOfRegrets_0: 853478988
+      PrinceOfRegrets_1: 1355692747
+      PrinceOfRegrets_10: -748412215
+      PrinceOfRegrets_11: -2088432262
+      PrinceOfRegrets_12: -360039883
+      PrinceOfRegrets_13: -2130856746
+      PrinceOfRegrets_14: 1487223692
+      PrinceOfRegrets_15: 1383697924
+      PrinceOfRegrets_16: -252670630
+      PrinceOfRegrets_17: -699203726
+      PrinceOfRegrets_18: -937200379
+      PrinceOfRegrets_19: 1862655664
+      PrinceOfRegrets_2: 1079297893
+      PrinceOfRegrets_20: 2085586551
+      PrinceOfRegrets_21: 1761085877
+      PrinceOfRegrets_22: 1765115961
+      PrinceOfRegrets_23: -21321384
+      PrinceOfRegrets_24: 1548955185
+      PrinceOfRegrets_25: 810966726
+      PrinceOfRegrets_26: -394626129
+      PrinceOfRegrets_27: 1748143327
+      PrinceOfRegrets_28: 1233525898
+      PrinceOfRegrets_29: 529316195
+      PrinceOfRegrets_3: -1988804965
+      PrinceOfRegrets_30: 934091786
+      PrinceOfRegrets_31: 966908006
+      PrinceOfRegrets_32: -1608674144
+      PrinceOfRegrets_33: 2008476797
+      PrinceOfRegrets_34: 1867507939
+      PrinceOfRegrets_35: 861647784
+      PrinceOfRegrets_36: 303073944
+      PrinceOfRegrets_37: 754395757
+      PrinceOfRegrets_38: 1180084515
+      PrinceOfRegrets_39: 838892793
+      PrinceOfRegrets_4: -1663699883
+      PrinceOfRegrets_40: 1861730132
+      PrinceOfRegrets_41: -601176818
+      PrinceOfRegrets_42: -1345352781
+      PrinceOfRegrets_43: -2089410792
+      PrinceOfRegrets_44: -1926374942
+      PrinceOfRegrets_45: -600528084
+      PrinceOfRegrets_46: -517061585
+      PrinceOfRegrets_47: 1579019812
+      PrinceOfRegrets_48: -1948444062
+      PrinceOfRegrets_49: 256120938
+      PrinceOfRegrets_5: 551859469
+      PrinceOfRegrets_50: -791763859
+      PrinceOfRegrets_51: 2080381346
+      PrinceOfRegrets_52: 1247304072
+      PrinceOfRegrets_53: -579743113
+      PrinceOfRegrets_54: -846381809
+      PrinceOfRegrets_55: 43582708
+      PrinceOfRegrets_56: -88433763
+      PrinceOfRegrets_57: -639248488
+      PrinceOfRegrets_58: 174086255
+      PrinceOfRegrets_59: 254253742
+      PrinceOfRegrets_6: -1552914611
+      PrinceOfRegrets_60: -324748866
+      PrinceOfRegrets_61: -1669841477
+      PrinceOfRegrets_62: 511541745
+      PrinceOfRegrets_63: -1186665412
+      PrinceOfRegrets_64: 1073236532
+      PrinceOfRegrets_65: -347530717
+      PrinceOfRegrets_66: -836732582
+      PrinceOfRegrets_67: 1220137425
+      PrinceOfRegrets_68: 139861783
+      PrinceOfRegrets_69: -1135129441
+      PrinceOfRegrets_7: 1173609741
+      PrinceOfRegrets_70: 721641599
+      PrinceOfRegrets_71: 199148344
+      PrinceOfRegrets_72: 1293208786
+      PrinceOfRegrets_73: 1624356270
+      PrinceOfRegrets_74: -81697163
+      PrinceOfRegrets_75: 605435692
+      PrinceOfRegrets_76: 1680647033
+      PrinceOfRegrets_77: 157414645
+      PrinceOfRegrets_78: 1113361902
+      PrinceOfRegrets_79: 152169822
+      PrinceOfRegrets_8: -419282122
+      PrinceOfRegrets_80: -135951274
+      PrinceOfRegrets_81: -522175148
+      PrinceOfRegrets_82: -90456765
+      PrinceOfRegrets_83: 2066855951
+      PrinceOfRegrets_84: 513004794
+      PrinceOfRegrets_85: 1119793807
+      PrinceOfRegrets_86: 828500480
+      PrinceOfRegrets_87: -915256269
+      PrinceOfRegrets_88: -841378226
+      PrinceOfRegrets_89: 992642199
+      PrinceOfRegrets_9: 1176987675
+      PrinceOfRegrets_90: 586744080
+      PrinceOfRegrets_91: 126778129
+      PrinceOfRegrets_92: -227720718
+      PrinceOfRegrets_93: -773250577
+      PrinceOfRegrets_94: 1817149274
+      PrinceOfRegrets_95: -1979278579
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

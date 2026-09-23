@@ -1,7 +1,7 @@
 using UnityEngine;
 
 [CreateAssetMenu()]
-public class AllySO : ScriptableObject
+public class AllySo : ScriptableObject
 {
     [Header("Visual & Info")] public string allyName;
     public Sprite portrait;
@@ -10,6 +10,7 @@ public class AllySO : ScriptableObject
     [Header("Base Stats")] public int maxHp;
     public int maxMp;
     public int attack;
+    public int magic;
     public int defense;
     public float speed;
 }

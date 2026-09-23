@@ -30,8 +30,8 @@ public class BattleInfo
     };
     public Inventory inventory;
     
-    public AllySO ally;
-    public AllySO enemy;
+    public AllySo ally;
+    public AllySo enemy;
     
     [NonSerialized] public Ally AllyUnit;
     [NonSerialized] public Ally EnemyUnit;
@@ -54,6 +54,10 @@ public class Battle : IEventStep
     private BattleInfo _info;
     private EventContext _context;
     private Action _onComplete;
+    private float _timer;
+    private bool _reload;
+
+    private int _enemyTurnCounter;
     
     private bool _isWaitingForPlayerTurn;
 
@@ -62,30 +66,35 @@ public class Battle : IEventStep
         switch (_currentMenu)
         {
             case MenuType.ActionSelect:
+                SoundManager.Instance.PlaySound(SoundManager.Instance.Database.uiConfirm, 1f);
                 switch (_info.Actions[_currentActionIndex])
                 {
                     case ActionType.Attack:
-                        Debug.Log("Attack!");
+                        SoundManager.Instance.PlaySound(SoundManager.Instance.Database.attack, 0.5f);
+                        _timer += 0.5f;
+                        _info.EnemyUnit.TakeDamage(_info.AllyUnit.CurrentAttack);
                         EndPlayerTurn();
                         break;
                     case ActionType.Guard:
-                        Debug.Log("Guard!");
+                        _info.AllyUnit.IsGuard = true;
+                        _timer += 0.5f;
                         EndPlayerTurn();
                         break;
                     case ActionType.Items:
                         ActivateItemMenu();
-                        Debug.Log("ToItemSelect!");
                         break;
                 }
                 break;
             case MenuType.ItemSelect:
                 _info.inventory.GetInventorySlots()[_currentItemIndex].item.effect.Execute(_info.AllyUnit, _info.EnemyUnit);
-                
+                SoundManager.Instance.PlaySound(_info.inventory.GetInventorySlots()[_currentItemIndex].item.soundEffect);
+                    
                 bool isTakesTurn = _info.inventory.GetInventorySlots()[_currentItemIndex].item.isTakesTurn;
-                
                 _info.inventory.RemoveItem(_info.inventory.GetInventorySlots()[_currentItemIndex].item);
+                
                 if (isTakesTurn)
                 {
+                    _timer += 0.5f;
                     EndPlayerTurn();
                 }
                 else
@@ -104,6 +113,7 @@ public class Battle : IEventStep
                 // Nothing
                 break;
             case MenuType.ItemSelect:
+                SoundManager.Instance.PlaySound(SoundManager.Instance.Database.uiPrevious, 1f);
                 ActivateActionMenu();
                 break;
         }
@@ -111,6 +121,7 @@ public class Battle : IEventStep
     
     private void PlayerEventInputOnPlayerUp(object sender, EventArgs e)
     {
+        SoundManager.Instance.PlaySound(SoundManager.Instance.Database.uiMoveCursor, 1f);
         switch (_currentMenu)
         {
             case MenuType.ActionSelect:
@@ -130,6 +141,7 @@ public class Battle : IEventStep
     
     private void PlayerEventInputOnPlayerDown(object sender, EventArgs e)
     {
+        SoundManager.Instance.PlaySound(SoundManager.Instance.Database.uiMoveCursor, 1f);
         switch (_currentMenu)
         {
             case MenuType.ActionSelect:
@@ -155,6 +167,7 @@ public class Battle : IEventStep
                 // Nothing
                 break;
             case MenuType.ItemSelect:
+                SoundManager.Instance.PlaySound(SoundManager.Instance.Database.uiMoveCursor, 1f);
                 if (_currentItemIndex > 0) _currentItemIndex--;
                 UpdateItemSelectionVisuals();
                 break;
@@ -169,6 +182,7 @@ public class Battle : IEventStep
                 // Nothing
                 break;
             case MenuType.ItemSelect:
+                SoundManager.Instance.PlaySound(SoundManager.Instance.Database.uiMoveCursor, 1f);
                 if (_currentItemIndex < _info.inventory.GetInventorySlots().Count-1) _currentItemIndex++;
                 UpdateItemSelectionVisuals();
                 break;
@@ -182,31 +196,86 @@ public class Battle : IEventStep
         _onComplete = onComplete;
         
         _info.Initialize();
+
+        _enemyTurnCounter = 1;
         
-        eventContext.battleUIParent.SetActive(true);
+        _context.battleUIParent.SetActive(true);
     }
 
     public void Update()
     {
+        RenderStats();
+
+        if (_timer > 0)
+        {
+            _timer -= Time.deltaTime;
+            return;
+        }
+        
+        if (_reload)
+        {
+            SoundManager.Instance.PlaySound(SoundManager.Instance.Database.enemyGunReload, 0.9f);
+            _reload = false;
+            _timer += 0.5f;
+            return;
+        }
         if (_isWaitingForPlayerTurn) return;
+
+        if (_info.EnemyUnit.IsDead) End();
+        
+        if (_info.AllyUnit.IsDead)
+        {
+            Application.Quit();
+        
+            #if UNITY_EDITOR
+            UnityEditor.EditorApplication.isPlaying = false;
+            #endif
+        }
 
         if (_info.AllyUnit.IsReadyToAct)
         {
-            Debug.Log("Ally is acting!");
             StartPlayerTurn();
         }
         else if (_info.EnemyUnit.IsReadyToAct)
         {
-            Debug.Log("Enemy is acting!");
+            if (_enemyTurnCounter % 4 == 0)
+            {
+                SoundManager.Instance.PlaySound(SoundManager.Instance.Database.enemyGunAttack, 1f);
+                SoundManager.Instance.PlaySound(SoundManager.Instance.Database.enemyAttack, 0.5f);
+                _info.AllyUnit.TakeDamage((int)(_info.EnemyUnit.CurrentAttack * 2f));
+                _timer += 0.5f;
+                _enemyTurnCounter++;
+                _reload = true;
+            }
+            else
+            {
+                SoundManager.Instance.PlaySound(SoundManager.Instance.Database.attack, 0.5f);
+                SoundManager.Instance.PlaySound(SoundManager.Instance.Database.enemyAttack, 0.5f);
+                _info.AllyUnit.TakeDamage(_info.EnemyUnit.CurrentAttack);
+                _timer += 0.05f;
+                _enemyTurnCounter++;
+            }
             _info.EnemyUnit.ResetGauge();
         }
         else
         {
             float delta = Time.deltaTime;
-
             _info.AllyUnit.TickActionGauge(delta);
             _info.EnemyUnit.TickActionGauge(delta);
         }
+    }
+
+    private void RenderStats()
+    {
+        _context.hpValues.SetText($"{_info.AllyUnit.CurrentHp}/{_info.AllyUnit.CurrentMaxHp}");
+        _context.mpValues.SetText($"{_info.AllyUnit.CurrentMp}");
+        _context.apPercent.SetText($"{(int)_info.AllyUnit.ActionGauge}%");
+        _context.hpBar.value = (float)_info.AllyUnit.CurrentHp / _info.AllyUnit.CurrentMaxHp;
+        _context.mpBar.value = (float)_info.AllyUnit.CurrentMp / _info.AllyUnit.CurrentMaxMp;
+        _context.apBar.value = _info.AllyUnit.ActionGauge / 100;
+        
+        _context.enemyHpBar.value = (float)_info.EnemyUnit.CurrentHp / _info.EnemyUnit.CurrentMaxHp;
+        _context.enemyApBar.value = _info.EnemyUnit.ActionGauge / 100;
     }
     
     private void RenderActionUI()
@@ -276,6 +345,7 @@ public class Battle : IEventStep
 
     private void StartPlayerTurn()
     {
+        _info.AllyUnit.IsGuard = false;
         _isWaitingForPlayerTurn =  true;
         SubscribeInput();
         ActivateActionMenu();
@@ -336,6 +406,7 @@ public class Battle : IEventStep
     private void End()
     {
         UnsubscribeInput();
+        _context.battleUIParent.SetActive(false);
         _onComplete?.Invoke();
     }
 }

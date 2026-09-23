@@ -17,6 +17,7 @@ MonoBehaviour:
   objectEffectDescription: 'Restores all HP and MP and removes all ailments. '
   objectDescription: A goddess fell from heaven; her blood covered the earth.
   isTakesTurn: 0
+  soundEffect: {fileID: 8300000, guid: 7239b0ecb069d46468f1550a7caaa2d9, type: 3}
   effect:
     rid: 7026581128638890260
   references:

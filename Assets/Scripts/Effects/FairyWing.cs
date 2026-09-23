@@ -5,7 +5,6 @@ public class FairyWing : IEffect
 {
     public void Execute(Ally ally, Ally enemy)
     {
-        ally.CurrentHp = ally.data.maxHp;
-        ally.CurrentMp = ally.data.maxMp;
+        ally.CurrentSpeed += (int)(ally.CurrentSpeed * 0.1);
     }
 }

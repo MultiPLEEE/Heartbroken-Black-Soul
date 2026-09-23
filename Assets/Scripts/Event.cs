@@ -14,7 +14,8 @@ public enum StepType
     SetCG,
     Wait,
     SpawnObject,
-    DestroyObject
+    DestroyObject,
+    QuitGame
 }
 
 [Serializable]
@@ -32,6 +33,7 @@ public class Step
     [ShowIf("stepType", StepType.Wait)] [AllowNesting] public WaitInfo wait;
     [ShowIf("stepType", StepType.SpawnObject)] [AllowNesting] public SpawnObjectInfo spawnObject;
     [ShowIf("stepType", StepType.DestroyObject)] [AllowNesting] public DestroyObjectInfo destroyObject;
+    [ShowIf("stepType", StepType.QuitGame)] [AllowNesting] public quitGameInfo quitGame;
 }
 
 [Serializable]
@@ -86,7 +88,7 @@ public class Event : MonoBehaviour, IEvent
                 _activeEventStep = new Phrase();
                 break;
             case StepType.GiveItem:
-                _activeEventStep = new GiveItem();
+                _activeEventStep = new ItemGet();
                 break;
             case StepType.Battle:
                 _activeEventStep = new Battle();
@@ -111,6 +113,9 @@ public class Event : MonoBehaviour, IEvent
                 break;
             case StepType.DestroyObject:
                 _activeEventStep = new DestroyObject();
+                break;
+            case StepType.QuitGame:
+                _activeEventStep = new QuitGame();
                 break;
         }
         

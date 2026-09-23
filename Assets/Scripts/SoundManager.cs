@@ -3,6 +3,10 @@ using UnityEngine;
 public class SoundManager : MonoBehaviour
 {
     public static SoundManager Instance { get; private set; }
+
+    [SerializeField] private SoundDatabaseSo databaseSo;
+    
+    public SoundDatabaseSo Database => databaseSo;
     
     private AudioSource _musicSource;
     private AudioSource _seSource;

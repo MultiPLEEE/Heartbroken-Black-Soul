@@ -14,6 +14,7 @@ public class Player : MonoBehaviour
     private bool _isMoving = false, _isSprinting = false;
     private float _currentMoveSpeed;
     private Vector2 _currentPlayerDirectionVector = new Vector2(0, 1);
+    private float _timer;
     
     public Inventory GetPlayerInventory() => inventory;
     public bool GetIsMoving() => _isMoving;
@@ -40,7 +41,17 @@ public class Player : MonoBehaviour
     {
         ExecuteEvent(transform.position);
         _isSprinting = playerMapInput.IsSprintPressed()? true : false;
-        _currentMoveSpeed = _isSprinting? walkSpeed * sprintSpeedMultiplier : walkSpeed;
+        _currentMoveSpeed = _isSprinting ? walkSpeed * sprintSpeedMultiplier : walkSpeed;
+
+        if (_isMoving)
+        {
+            _timer -= Time.deltaTime;
+            if (_timer <= 0)
+            {
+                SoundManager.Instance.PlaySound(SoundManager.Instance.Database.playerStep, 0.5f);
+            }
+        } 
+        
         PlayerMovement();
     }
     
@@ -95,7 +106,9 @@ public class Player : MonoBehaviour
          else
          {
              visualTransform.localPosition = Vector3.MoveTowards(visualTransform.localPosition, Vector3.zero,  _currentMoveSpeed * Time.deltaTime);
-             
+
+             if (_timer <= 0) _timer += _isSprinting? 0.2f : 0.3f;
+                 
              if (visualTransform.localPosition == Vector3.zero)
              {
                  visualTransform.localPosition = Vector3.zero;
@@ -103,18 +116,6 @@ public class Player : MonoBehaviour
              }
          }
      }
-     
-     // private void OnDrawGizmos()
-     // {
-     //     // Устанавливаем цвет круга (например, зеленый)
-     //     Gizmos.color = Color.green;
-     //
-     //     // Считаем позицию целевой клетки
-     //     Vector3 targetCheckPos = transform.position + new Vector3(currentPlayerDirectionVector.x, currentPlayerDirectionVector.y, 0);
-     //
-     //     // Рисуем проволочную сферу радиусом 0.2f (укажи тот же радиус, что и в OverlapCircle)
-     //     Gizmos.DrawWireSphere(targetCheckPos, 0.4f);
-     // }
      
      private void ExecuteEvent(Vector2 targetTransform)
      {

@@ -2248,6 +2248,111 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!1 &47350039
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 47350040}
+  - component: {fileID: 47350043}
+  - component: {fileID: 47350042}
+  - component: {fileID: 47350041}
+  m_Layer: 0
+  m_Name: Canvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &47350040
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 47350039}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1877753530}
+  - {fileID: 1533725133}
+  - {fileID: 169125816}
+  m_Father: {fileID: 1100056056}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
+--- !u!114 &47350041
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 47350039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.GraphicRaycaster
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &47350042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 47350039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.CanvasScaler
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 0
+--- !u!223 &47350043
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 47350039}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
+  m_UseReflectionProbes: 0
+  m_AdditionalShaderChannelsFlag: 25
+  m_UpdateRectTransformForStandalone: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
 --- !u!1 &56831837
 GameObject:
   m_ObjectHideFlags: 0
@@ -2357,6 +2462,14 @@ MonoBehaviour:
     thirdTextPanel: {fileID: 801759123}
     battleUIParent: {fileID: 99435133}
     eventObjectParent: {fileID: 0}
+    hpValues: {fileID: 0}
+    hpBar: {fileID: 0}
+    mpValues: {fileID: 0}
+    mpBar: {fileID: 0}
+    apPercent: {fileID: 0}
+    apBar: {fileID: 0}
+    enemyHpBar: {fileID: 0}
+    enemyApBar: {fileID: 0}
   eventData:
     sequences:
     - sequence:
@@ -2615,6 +2728,121 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 103350440}
   m_CullTransparentMesh: 1
+--- !u!1 &126730529
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 126730530}
+  - component: {fileID: 126730532}
+  - component: {fileID: 126730531}
+  m_Layer: 6
+  m_Name: Square
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &126730530
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 126730529}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 911129897}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &126730531
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 126730529}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6172f2c13360c49958ee389eef1bab75, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!212 &126730532
+SpriteRenderer:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 126730529}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_Sprite: {fileID: -7386302218855430791, guid: ccf33014ac8f94873b2134e40e5699fe, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.6666667}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &128505149
 GameObject:
   m_ObjectHideFlags: 0
@@ -5218,7 +5446,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 10, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &135721771
 MonoBehaviour:
@@ -5347,6 +5575,143 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!1 &169125815
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 169125816}
+  - component: {fileID: 169125818}
+  - component: {fileID: 169125817}
+  m_Layer: 0
+  m_Name: ItemGet
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &169125816
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 169125815}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 47350040}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -212.63676, y: -156.77994}
+  m_SizeDelta: {x: 92.0948, y: 51.2695}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &169125817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 169125815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Item GET!
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: db2f3c25d5285415aa4406e79f831f96, type: 2}
+  m_sharedMaterial: {fileID: -2529227817855291715, guid: db2f3c25d5285415aa4406e79f831f96, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 11
+  m_fontSizeBase: 11
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: -4
+  m_characterHorizontalScale: 1
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656bu
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: -13.315834, y: 30.05717, z: 53.362606, w: 9.101192}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &169125818
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 169125815}
+  m_CullTransparentMesh: 1
 --- !u!1 &232730088
 GameObject:
   m_ObjectHideFlags: 0
@@ -5376,6 +5741,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0489c5cdaa3ac49fb86f9374bcaf0bb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SoundManager
+  databaseSo: {fileID: 11400000, guid: 825facffed35c497bb8531758460da6e, type: 2}
 --- !u!4 &232730090
 Transform:
   m_ObjectHideFlags: 0
@@ -5434,8 +5800,8 @@ RectTransform:
   - {fileID: 147409624}
   - {fileID: 772816160}
   - {fileID: 802426696}
-  - {fileID: 1989856021}
   - {fileID: 1302130861}
+  - {fileID: 1989856021}
   m_Father: {fileID: 301154941}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -5517,7 +5883,7 @@ GameObject:
   m_Component:
   - component: {fileID: 301154941}
   m_Layer: 0
-  m_Name: CharactersMenu
+  m_Name: Stats
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6045,6 +6411,14 @@ MonoBehaviour:
     thirdTextPanel: {fileID: 801759123}
     battleUIParent: {fileID: 99435133}
     eventObjectParent: {fileID: 0}
+    hpValues: {fileID: 0}
+    hpBar: {fileID: 0}
+    mpValues: {fileID: 0}
+    mpBar: {fileID: 0}
+    apPercent: {fileID: 0}
+    apBar: {fileID: 0}
+    enemyHpBar: {fileID: 0}
+    enemyApBar: {fileID: 0}
   eventData:
     sequences:
     - sequence:
@@ -6193,6 +6567,14 @@ MonoBehaviour:
     thirdTextPanel: {fileID: 801759123}
     battleUIParent: {fileID: 99435133}
     eventObjectParent: {fileID: 0}
+    hpValues: {fileID: 0}
+    hpBar: {fileID: 0}
+    mpValues: {fileID: 0}
+    mpBar: {fileID: 0}
+    apPercent: {fileID: 0}
+    apBar: {fileID: 0}
+    enemyHpBar: {fileID: 0}
+    enemyApBar: {fileID: 0}
   eventData:
     sequences:
     - sequence:
@@ -6337,6 +6719,7 @@ GameObject:
   m_Component:
   - component: {fileID: 376777884}
   - component: {fileID: 376777886}
+  - component: {fileID: 376777887}
   - component: {fileID: 376777885}
   m_Layer: 0
   m_Name: Battler
@@ -6345,21 +6728,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &376777884
-Transform:
+--- !u!224 &376777884
+RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 376777883}
-  serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.12, z: 10}
+  m_LocalPosition: {x: 0, y: 0, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 1
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 99435134}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -1.5}
+  m_SizeDelta: {x: 4.717949, y: 7.5897436}
+  m_Pivot: {x: 0.5, y: 0}
 --- !u!210 &376777885
 SortingGroup:
   m_ObjectHideFlags: 0
@@ -6433,6 +6820,28 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!95 &376777887
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 376777883}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8a6885c0e96f64850a4e33b636ff6942, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &395196299
 GameObject:
   m_ObjectHideFlags: 0
@@ -6466,8 +6875,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.25}
   m_AnchorMax: {x: 1, y: 0.75}
-  m_AnchoredPosition: {x: -5, y: 0}
-  m_SizeDelta: {x: -20, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &395670122
 GameObject:
@@ -6578,6 +6987,14 @@ MonoBehaviour:
     thirdTextPanel: {fileID: 801759123}
     battleUIParent: {fileID: 99435133}
     eventObjectParent: {fileID: 0}
+    hpValues: {fileID: 0}
+    hpBar: {fileID: 0}
+    mpValues: {fileID: 0}
+    mpBar: {fileID: 0}
+    apPercent: {fileID: 0}
+    apBar: {fileID: 0}
+    enemyHpBar: {fileID: 0}
+    enemyApBar: {fileID: 0}
   eventData:
     sequences:
     - sequence:
@@ -7352,6 +7769,14 @@ MonoBehaviour:
     thirdTextPanel: {fileID: 801759123}
     battleUIParent: {fileID: 99435133}
     eventObjectParent: {fileID: 0}
+    hpValues: {fileID: 0}
+    hpBar: {fileID: 0}
+    mpValues: {fileID: 0}
+    mpBar: {fileID: 0}
+    apPercent: {fileID: 0}
+    apBar: {fileID: 0}
+    enemyHpBar: {fileID: 0}
+    enemyApBar: {fileID: 0}
   eventData:
     sequences:
     - sequence:
@@ -7450,7 +7875,7 @@ MonoBehaviour:
         playSound:
           clip: {fileID: 0}
         setMusic:
-          clip: {fileID: 8300000, guid: 9ad96cc076e4f4d9995ee29e63833e4e, type: 3}
+          clip: {fileID: 8300000, guid: c08194c6f69a2428f9115ca280e7dbe1, type: 3}
         setCG:
           sprite: {fileID: 0}
         wait:
@@ -7496,7 +7921,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 10, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &477227371
 MonoBehaviour:
@@ -9024,6 +9449,14 @@ MonoBehaviour:
     thirdTextPanel: {fileID: 801759123}
     battleUIParent: {fileID: 99435133}
     eventObjectParent: {fileID: 0}
+    hpValues: {fileID: 0}
+    hpBar: {fileID: 0}
+    mpValues: {fileID: 0}
+    mpBar: {fileID: 0}
+    apPercent: {fileID: 0}
+    apBar: {fileID: 0}
+    enemyHpBar: {fileID: 0}
+    enemyApBar: {fileID: 0}
   eventData:
     sequences:
     - sequence:
@@ -9097,6 +9530,41 @@ MonoBehaviour:
           spawnPosition: {x: 0, y: 0}
         destroyObject:
           objectToDestroy: {fileID: 0}
+      - stepType: 6
+        phrase:
+          textPanelType: 0
+          speakerName: 
+          speakerPortrait: {fileID: 0}
+          speakerText: 
+        giveItem:
+          itemToGive: {fileID: 0}
+          amount: 0
+        battle:
+          actionSelectParent: {fileID: 0}
+          actionSlotPrefab: {fileID: 0}
+          actionGridContainer: {fileID: 0}
+          itemSelectParent: {fileID: 0}
+          itemGridContainer: {fileID: 0}
+          itemSlotPrefab: {fileID: 0}
+          itemDescriptionText: {fileID: 0}
+          inventory: {fileID: 0}
+          ally: {fileID: 0}
+          enemy: {fileID: 0}
+        moveCamera:
+          targetPosition: {x: 0, y: 0}
+        playSound:
+          clip: {fileID: 0}
+        setMusic:
+          clip: {fileID: 8300000, guid: c08194c6f69a2428f9115ca280e7dbe1, type: 3}
+        setCG:
+          sprite: {fileID: 0}
+        wait:
+          duration: 0
+        spawnObject:
+          objectToSpawn: {fileID: 0}
+          spawnPosition: {x: 0, y: 0}
+        destroyObject:
+          objectToDestroy: {fileID: 0}
       - stepType: 5
         phrase:
           textPanelType: 0
@@ -9122,7 +9590,7 @@ MonoBehaviour:
         playSound:
           clip: {fileID: 0}
         setMusic:
-          clip: {fileID: 8300000, guid: 9ad96cc076e4f4d9995ee29e63833e4e, type: 3}
+          clip: {fileID: 8300000, guid: c08194c6f69a2428f9115ca280e7dbe1, type: 3}
         setCG:
           sprite: {fileID: 0}
         wait:
@@ -9166,8 +9634,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.25}
   m_AnchorMax: {x: 1, y: 0.75}
-  m_AnchoredPosition: {x: -5, y: 0}
-  m_SizeDelta: {x: -20, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &619394800
 GameObject:
@@ -9603,6 +10071,14 @@ MonoBehaviour:
     thirdTextPanel: {fileID: 801759123}
     battleUIParent: {fileID: 99435133}
     eventObjectParent: {fileID: 0}
+    hpValues: {fileID: 0}
+    hpBar: {fileID: 0}
+    mpValues: {fileID: 0}
+    mpBar: {fileID: 0}
+    apPercent: {fileID: 0}
+    apBar: {fileID: 0}
+    enemyHpBar: {fileID: 0}
+    enemyApBar: {fileID: 0}
   eventData:
     sequences:
     - sequence:
@@ -9750,8 +10226,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.25}
   m_AnchorMax: {x: 1, y: 0.75}
-  m_AnchoredPosition: {x: -5, y: 0}
-  m_SizeDelta: {x: -20, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &684613417
 GameObject:
@@ -10206,6 +10682,14 @@ MonoBehaviour:
     thirdTextPanel: {fileID: 801759123}
     battleUIParent: {fileID: 99435133}
     eventObjectParent: {fileID: 0}
+    hpValues: {fileID: 0}
+    hpBar: {fileID: 0}
+    mpValues: {fileID: 0}
+    mpBar: {fileID: 0}
+    apPercent: {fileID: 0}
+    apBar: {fileID: 0}
+    enemyHpBar: {fileID: 0}
+    enemyApBar: {fileID: 0}
   eventData:
     sequences:
     - sequence:
@@ -10769,6 +11253,14 @@ MonoBehaviour:
     thirdTextPanel: {fileID: 801759123}
     battleUIParent: {fileID: 99435133}
     eventObjectParent: {fileID: 0}
+    hpValues: {fileID: 0}
+    hpBar: {fileID: 0}
+    mpValues: {fileID: 0}
+    mpBar: {fileID: 0}
+    apPercent: {fileID: 0}
+    apBar: {fileID: 0}
+    enemyHpBar: {fileID: 0}
+    enemyApBar: {fileID: 0}
   eventData:
     sequences:
     - sequence:
@@ -10944,6 +11436,8 @@ Transform:
   - {fileID: 1143009747}
   - {fileID: 343174777}
   - {fileID: 660436863}
+  - {fileID: 911129897}
+  - {fileID: 1743031574}
   - {fileID: 395670123}
   - {fileID: 759482141}
   - {fileID: 749366713}
@@ -11076,6 +11570,14 @@ MonoBehaviour:
     thirdTextPanel: {fileID: 801759123}
     battleUIParent: {fileID: 99435133}
     eventObjectParent: {fileID: 0}
+    hpValues: {fileID: 0}
+    hpBar: {fileID: 0}
+    mpValues: {fileID: 0}
+    mpBar: {fileID: 0}
+    apPercent: {fileID: 0}
+    apBar: {fileID: 0}
+    enemyHpBar: {fileID: 0}
+    enemyApBar: {fileID: 0}
   eventData:
     sequences:
     - sequence:
@@ -11407,6 +11909,14 @@ MonoBehaviour:
     thirdTextPanel: {fileID: 801759123}
     battleUIParent: {fileID: 99435133}
     eventObjectParent: {fileID: 0}
+    hpValues: {fileID: 0}
+    hpBar: {fileID: 0}
+    mpValues: {fileID: 0}
+    mpBar: {fileID: 0}
+    apPercent: {fileID: 0}
+    apBar: {fileID: 0}
+    enemyHpBar: {fileID: 0}
+    enemyApBar: {fileID: 0}
   eventData:
     sequences:
     - sequence:
@@ -11491,7 +12001,7 @@ GameObject:
   - component: {fileID: 772816162}
   - component: {fileID: 772816161}
   m_Layer: 0
-  m_Name: APPresent
+  m_Name: "APPer\u0441ent"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12750,6 +13260,162 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!1 &911129896
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 911129897}
+  - component: {fileID: 911129899}
+  - component: {fileID: 911129898}
+  m_Layer: 6
+  m_Name: GetItem (15)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &911129897
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 911129896}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 6, y: 42, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 126730530}
+  m_Father: {fileID: 724813233}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &911129898
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 911129896}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
+--- !u!114 &911129899
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 911129896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b75d089dbaff438eb3cce286f1bf0c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Cutscene
+  isOneTimeEvent: 0
+  eventContext:
+    playerEventInput: {fileID: 1072936689}
+    soundManager: {fileID: 232730089}
+    CG: {fileID: 2025597938}
+    cameraTarget: {fileID: 628754874}
+    player: {fileID: 1072936686}
+    primaryPanelParent: {fileID: 1066070950}
+    primaryNamePanel: {fileID: 690627884}
+    primaryTextPanel: {fileID: 1023074400}
+    primaryPortraitPanel: {fileID: 862978283}
+    secondaryPanelParent: {fileID: 1142523661}
+    secondaryTextPanel: {fileID: 103350442}
+    thirdPanelParent: {fileID: 1024326494}
+    thirdTextPanel: {fileID: 801759123}
+    battleUIParent: {fileID: 99435133}
+    eventObjectParent: {fileID: 0}
+    hpValues: {fileID: 0}
+    hpBar: {fileID: 0}
+    mpValues: {fileID: 0}
+    mpBar: {fileID: 0}
+    apPercent: {fileID: 0}
+    apBar: {fileID: 0}
+    enemyHpBar: {fileID: 0}
+    enemyApBar: {fileID: 0}
+  eventData:
+    sequences:
+    - sequence:
+      - stepType: 1
+        phrase:
+          textPanelType: 0
+          speakerName: 
+          speakerPortrait: {fileID: 0}
+          speakerText: 
+        giveItem:
+          itemToGive: {fileID: 11400000, guid: c53961efc341c4a5e85202e57b58892d, type: 2}
+          amount: 1
+        battle:
+          actionSelectParent: {fileID: 0}
+          actionSlotPrefab: {fileID: 0}
+          actionGridContainer: {fileID: 0}
+          itemSelectParent: {fileID: 0}
+          itemGridContainer: {fileID: 0}
+          itemSlotPrefab: {fileID: 0}
+          itemDescriptionText: {fileID: 0}
+          inventory: {fileID: 0}
+          ally: {fileID: 0}
+          enemy: {fileID: 0}
+        moveCamera:
+          targetPosition: {x: 0, y: 0}
+        playSound:
+          clip: {fileID: 0}
+        setMusic:
+          clip: {fileID: 0}
+        setCG:
+          sprite: {fileID: 0}
+        wait:
+          duration: 0
+        spawnObject:
+          objectToSpawn: {fileID: 0}
+          spawnPosition: {x: 0, y: 0}
+        destroyObject:
+          objectToDestroy: {fileID: 0}
+      isDestroys: 1
 --- !u!1 &919594404
 GameObject:
   m_ObjectHideFlags: 0
@@ -12859,6 +13525,14 @@ MonoBehaviour:
     thirdTextPanel: {fileID: 801759123}
     battleUIParent: {fileID: 99435133}
     eventObjectParent: {fileID: 0}
+    hpValues: {fileID: 0}
+    hpBar: {fileID: 0}
+    mpValues: {fileID: 0}
+    mpBar: {fileID: 0}
+    apPercent: {fileID: 0}
+    apBar: {fileID: 0}
+    enemyHpBar: {fileID: 0}
+    enemyApBar: {fileID: 0}
   eventData:
     sequences:
     - sequence:
@@ -13289,6 +13963,7 @@ Transform:
   - {fileID: 1066070951}
   - {fileID: 1142523662}
   - {fileID: 1024326495}
+  - {fileID: 1100056056}
   m_Father: {fileID: 519420032}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &965043957
@@ -17256,6 +17931,98 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &969285915
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 969285916}
+  - component: {fileID: 969285917}
+  m_Layer: 0
+  m_Name: Panel (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &969285916
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 969285915}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -7.7681, y: 0.4657, z: 9}
+  m_LocalScale: {x: 1.4638374, y: 0.47161704, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1761930266}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &969285917
+SpriteRenderer:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 969285915}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 94709653
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.9019608}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &980512366
 GameObject:
   m_ObjectHideFlags: 0
@@ -17395,7 +18162,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 10, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &987919217
 MonoBehaviour:
@@ -17435,6 +18202,121 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 987919215}
   m_CullTransparentMesh: 1
+--- !u!1 &997158997
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 997158998}
+  - component: {fileID: 997159000}
+  - component: {fileID: 997158999}
+  m_Layer: 6
+  m_Name: Square
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &997158998
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 997158997}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1743031574}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &997158999
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 997158997}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6172f2c13360c49958ee389eef1bab75, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!212 &997159000
+SpriteRenderer:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 997158997}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_Sprite: {fileID: -7386302218855430791, guid: ccf33014ac8f94873b2134e40e5699fe, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.6666667}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
 --- !u!1 &1023074398
 GameObject:
   m_ObjectHideFlags: 0
@@ -17760,6 +18642,14 @@ MonoBehaviour:
     thirdTextPanel: {fileID: 801759123}
     battleUIParent: {fileID: 99435133}
     eventObjectParent: {fileID: 0}
+    hpValues: {fileID: 0}
+    hpBar: {fileID: 0}
+    mpValues: {fileID: 0}
+    mpBar: {fileID: 0}
+    apPercent: {fileID: 0}
+    apBar: {fileID: 0}
+    enemyHpBar: {fileID: 0}
+    enemyApBar: {fileID: 0}
   eventData:
     sequences:
     - sequence:
@@ -18031,9 +18921,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Inventory
   maxAmount: 99
-  slots:
-  - item: {fileID: 11400000, guid: bf9973d274abe40a6a278807b691f2dc, type: 2}
-    amount: 2
+  slots: []
 --- !u!114 &1072936688
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18072,6 +18960,39 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerInputManager
   playerMapInput: {fileID: 1072936688}
   playerEventInput: {fileID: 1072936689}
+--- !u!1 &1100056055
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1100056056}
+  m_Layer: 0
+  m_Name: ItemGet
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1100056056
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1100056055}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 47350040}
+  - {fileID: 1761930266}
+  m_Father: {fileID: 959268706}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1122128952
 GameObject:
   m_ObjectHideFlags: 0
@@ -18220,8 +19141,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.25}
   m_AnchorMax: {x: 1, y: 0.75}
-  m_AnchoredPosition: {x: -5, y: 0}
-  m_SizeDelta: {x: -20, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1142523661
 GameObject:
@@ -18365,6 +19286,14 @@ MonoBehaviour:
     thirdTextPanel: {fileID: 801759123}
     battleUIParent: {fileID: 99435133}
     eventObjectParent: {fileID: 0}
+    hpValues: {fileID: 0}
+    hpBar: {fileID: 0}
+    mpValues: {fileID: 0}
+    mpBar: {fileID: 0}
+    apPercent: {fileID: 0}
+    apBar: {fileID: 0}
+    enemyHpBar: {fileID: 0}
+    enemyApBar: {fileID: 0}
   eventData:
     sequences:
     - sequence:
@@ -19420,6 +20349,14 @@ MonoBehaviour:
     thirdTextPanel: {fileID: 801759123}
     battleUIParent: {fileID: 99435133}
     eventObjectParent: {fileID: 0}
+    hpValues: {fileID: 0}
+    hpBar: {fileID: 0}
+    mpValues: {fileID: 0}
+    mpBar: {fileID: 0}
+    apPercent: {fileID: 0}
+    apBar: {fileID: 0}
+    enemyHpBar: {fileID: 0}
+    enemyApBar: {fileID: 0}
   eventData:
     sequences:
     - sequence:
@@ -19638,6 +20575,14 @@ MonoBehaviour:
     thirdTextPanel: {fileID: 801759123}
     battleUIParent: {fileID: 99435133}
     eventObjectParent: {fileID: 0}
+    hpValues: {fileID: 0}
+    hpBar: {fileID: 0}
+    mpValues: {fileID: 0}
+    mpBar: {fileID: 0}
+    apPercent: {fileID: 0}
+    apBar: {fileID: 0}
+    enemyHpBar: {fileID: 0}
+    enemyApBar: {fileID: 0}
   eventData:
     sequences:
     - sequence:
@@ -20669,6 +21614,98 @@ SpriteRenderer:
   m_MaskInteraction: 0
   m_Sprite: {fileID: -7386302218855430791, guid: ccf33014ac8f94873b2134e40e5699fe, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 0.6666667}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_SpriteSortPoint: 0
+  m_BlendShapeWeights: []
+--- !u!1 &1285678126
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1285678127}
+  - component: {fileID: 1285678128}
+  m_Layer: 0
+  m_Name: Panel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1285678127
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1285678126}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.17, z: 9}
+  m_LocalScale: {x: 17, y: 0.8, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1761930266}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &1285678128
+SpriteRenderer:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1285678126}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 94709653
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.9019608}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -24658,8 +25695,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.25}
   m_AnchorMax: {x: 1, y: 0.75}
-  m_AnchoredPosition: {x: -5, y: 0}
-  m_SizeDelta: {x: -20, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1371604030
 GameObject:
@@ -24769,6 +25806,14 @@ MonoBehaviour:
     thirdTextPanel: {fileID: 801759123}
     battleUIParent: {fileID: 99435133}
     eventObjectParent: {fileID: 724813232}
+    hpValues: {fileID: 0}
+    hpBar: {fileID: 0}
+    mpValues: {fileID: 0}
+    mpBar: {fileID: 0}
+    apPercent: {fileID: 0}
+    apBar: {fileID: 0}
+    enemyHpBar: {fileID: 0}
+    enemyApBar: {fileID: 0}
   eventData:
     sequences:
     - sequence:
@@ -24883,6 +25928,53 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1382360829}
   m_CullTransparentMesh: 1
+--- !u!1 &1385402348
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1385402350}
+  - component: {fileID: 1385402349}
+  m_Layer: 0
+  m_Name: ItemNotificationUI
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1385402349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1385402348}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44ada7b4aea66478489bba84bc2ff3af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ItemNotificationUI
+  panel: {fileID: 1100056055}
+  itemTitleText: {fileID: 1533725134}
+  itemIcon: {fileID: 1877753531}
+--- !u!4 &1385402350
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1385402348}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4.73111, y: 109.60125, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1386419376
 GameObject:
   m_ObjectHideFlags: 0
@@ -25715,6 +26807,145 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!1 &1533725132
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1533725133}
+  - component: {fileID: 1533725135}
+  - component: {fileID: 1533725134}
+  m_Layer: 0
+  m_Name: Info
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1533725133
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1533725132}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 47350040}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 113.7, y: -23.8}
+  m_SizeDelta: {x: 423.28, y: 82.552}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1533725134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1533725132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: '
+
+'
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: db2f3c25d5285415aa4406e79f831f96, type: 2}
+  m_sharedMaterial: {fileID: -2529227817855291715, guid: db2f3c25d5285415aa4406e79f831f96, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 16
+  m_fontSizeBase: 16
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: -3
+  m_characterHorizontalScale: 1
+  m_wordSpacing: 3
+  m_lineSpacing: 20
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656bu
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 122.66372, y: -11.576218, z: -925.1801, w: 80.19481}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1533725135
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1533725132}
+  m_CullTransparentMesh: 1
 --- !u!1 &1551366588
 GameObject:
   m_ObjectHideFlags: 0
@@ -28815,7 +30046,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 10, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1665380135
 MonoBehaviour:
@@ -30471,6 +31702,26 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
+  - first: {x: -14, y: 6, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 1
+      m_TileSpriteIndex: 1
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: -13, y: 6, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 1
+      m_TileSpriteIndex: 1
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
   - first: {x: -4, y: 6, z: 0}
     second:
       serializedVersion: 2
@@ -30512,6 +31763,26 @@ Tilemap:
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
   - first: {x: -22, y: 7, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 1
+      m_TileSpriteIndex: 1
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: -14, y: 7, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 1
+      m_TileSpriteIndex: 1
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: -13, y: 7, z: 0}
     second:
       serializedVersion: 2
       m_TileIndex: 1
@@ -35087,7 +36358,7 @@ Tilemap:
     m_RefCount: 0
     m_Data: {fileID: 11400000, guid: 293e8f425806c46079ae71c66830c3cb, type: 2}
   - serializedVersion: 2
-    m_RefCount: 596
+    m_RefCount: 600
     m_Data: {fileID: 11400000, guid: 390bb30856c51474a8234a6d34941bee, type: 2}
   - serializedVersion: 2
     m_RefCount: 0
@@ -35097,14 +36368,14 @@ Tilemap:
     m_RefCount: 0
     m_Data: {fileID: -197335756, guid: 6b2b90046fc1f4a9aa24014e6651df97, type: 3}
   - serializedVersion: 2
-    m_RefCount: 596
+    m_RefCount: 600
     m_Data: {fileID: -1684315717, guid: 6b2b90046fc1f4a9aa24014e6651df97, type: 3}
   - serializedVersion: 2
     m_RefCount: 0
     m_Data: {fileID: -1268426377, guid: 6b2b90046fc1f4a9aa24014e6651df97, type: 3}
   m_TileMatrixArray:
   - serializedVersion: 2
-    m_RefCount: 596
+    m_RefCount: 600
     m_Data:
       e00: 1
       e01: 0
@@ -35124,7 +36395,7 @@ Tilemap:
       e33: 1
   m_TileColorArray:
   - serializedVersion: 2
-    m_RefCount: 596
+    m_RefCount: 600
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
@@ -35188,6 +36459,162 @@ TilemapCollider2D:
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0
   m_UseDelaunayMesh: 0
+--- !u!1 &1743031573
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1743031574}
+  - component: {fileID: 1743031576}
+  - component: {fileID: 1743031575}
+  m_Layer: 6
+  m_Name: GetItem (16)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1743031574
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1743031573}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1, y: 55, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 997158998}
+  m_Father: {fileID: 724813233}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1743031575
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1743031573}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
+--- !u!114 &1743031576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1743031573}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b75d089dbaff438eb3cce286f1bf0c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Cutscene
+  isOneTimeEvent: 0
+  eventContext:
+    playerEventInput: {fileID: 1072936689}
+    soundManager: {fileID: 232730089}
+    CG: {fileID: 2025597938}
+    cameraTarget: {fileID: 628754874}
+    player: {fileID: 1072936686}
+    primaryPanelParent: {fileID: 1066070950}
+    primaryNamePanel: {fileID: 690627884}
+    primaryTextPanel: {fileID: 1023074400}
+    primaryPortraitPanel: {fileID: 862978283}
+    secondaryPanelParent: {fileID: 1142523661}
+    secondaryTextPanel: {fileID: 103350442}
+    thirdPanelParent: {fileID: 1024326494}
+    thirdTextPanel: {fileID: 801759123}
+    battleUIParent: {fileID: 99435133}
+    eventObjectParent: {fileID: 0}
+    hpValues: {fileID: 0}
+    hpBar: {fileID: 0}
+    mpValues: {fileID: 0}
+    mpBar: {fileID: 0}
+    apPercent: {fileID: 0}
+    apBar: {fileID: 0}
+    enemyHpBar: {fileID: 0}
+    enemyApBar: {fileID: 0}
+  eventData:
+    sequences:
+    - sequence:
+      - stepType: 1
+        phrase:
+          textPanelType: 0
+          speakerName: 
+          speakerPortrait: {fileID: 0}
+          speakerText: 
+        giveItem:
+          itemToGive: {fileID: 11400000, guid: c53961efc341c4a5e85202e57b58892d, type: 2}
+          amount: 1
+        battle:
+          actionSelectParent: {fileID: 0}
+          actionSlotPrefab: {fileID: 0}
+          actionGridContainer: {fileID: 0}
+          itemSelectParent: {fileID: 0}
+          itemGridContainer: {fileID: 0}
+          itemSlotPrefab: {fileID: 0}
+          itemDescriptionText: {fileID: 0}
+          inventory: {fileID: 0}
+          ally: {fileID: 0}
+          enemy: {fileID: 0}
+        moveCamera:
+          targetPosition: {x: 0, y: 0}
+        playSound:
+          clip: {fileID: 0}
+        setMusic:
+          clip: {fileID: 0}
+        setCG:
+          sprite: {fileID: 0}
+        wait:
+          duration: 0
+        spawnObject:
+          objectToSpawn: {fileID: 0}
+          spawnPosition: {x: 0, y: 0}
+        destroyObject:
+          objectToDestroy: {fileID: 0}
+      isDestroys: 1
 --- !u!1 &1747383846
 GameObject:
   m_ObjectHideFlags: 0
@@ -35297,6 +36724,14 @@ MonoBehaviour:
     thirdTextPanel: {fileID: 801759123}
     battleUIParent: {fileID: 99435133}
     eventObjectParent: {fileID: 0}
+    hpValues: {fileID: 0}
+    hpBar: {fileID: 0}
+    mpValues: {fileID: 0}
+    mpBar: {fileID: 0}
+    apPercent: {fileID: 0}
+    apBar: {fileID: 0}
+    enemyHpBar: {fileID: 0}
+    enemyApBar: {fileID: 0}
   eventData:
     sequences:
     - sequence:
@@ -35399,6 +36834,14 @@ MonoBehaviour:
     thirdTextPanel: {fileID: 801759123}
     battleUIParent: {fileID: 99435133}
     eventObjectParent: {fileID: 0}
+    hpValues: {fileID: 0}
+    hpBar: {fileID: 0}
+    mpValues: {fileID: 0}
+    mpBar: {fileID: 0}
+    apPercent: {fileID: 0}
+    apBar: {fileID: 0}
+    enemyHpBar: {fileID: 0}
+    enemyApBar: {fileID: 0}
   eventData:
     sequences:
     - sequence:
@@ -35484,6 +36927,53 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!1 &1761930265
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1761930266}
+  - component: {fileID: 1761930267}
+  m_Layer: 0
+  m_Name: TextPanel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1761930266
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1761930265}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -5.68, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1285678127}
+  - {fileID: 969285916}
+  m_Father: {fileID: 1100056056}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!210 &1761930267
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1761930265}
+  m_Enabled: 1
+  m_SortingLayerID: -1338685235
+  m_SortingLayer: 8
+  m_SortingOrder: 1
+  m_SortAtRoot: 0
+  m_Sort3DAs2D: 0
 --- !u!1 &1790685474
 GameObject:
   m_ObjectHideFlags: 0
@@ -35495,7 +36985,7 @@ GameObject:
   - component: {fileID: 1790685475}
   - component: {fileID: 1790685476}
   m_Layer: 6
-  m_Name: PrinceOfHell
+  m_Name: PrinceOfRegrets
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -42350,7 +43840,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 10, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1845548451
 MonoBehaviour:
@@ -42499,6 +43989,14 @@ MonoBehaviour:
     thirdTextPanel: {fileID: 801759123}
     battleUIParent: {fileID: 99435133}
     eventObjectParent: {fileID: 0}
+    hpValues: {fileID: 0}
+    hpBar: {fileID: 0}
+    mpValues: {fileID: 0}
+    mpBar: {fileID: 0}
+    apPercent: {fileID: 0}
+    apBar: {fileID: 0}
+    enemyHpBar: {fileID: 0}
+    enemyApBar: {fileID: 0}
   eventData:
     sequences:
     - sequence:
@@ -42613,6 +44111,81 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1872759393}
   m_CullTransparentMesh: 1
+--- !u!1 &1877753529
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1877753530}
+  - component: {fileID: 1877753532}
+  - component: {fileID: 1877753531}
+  m_Layer: 0
+  m_Name: Sprite
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1877753530
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1877753529}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -9}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 47350040}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 12, y: -394.1}
+  m_SizeDelta: {x: 24, y: 24}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1877753531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1877753529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 8188430572177038966, guid: edfcb64958fc54e569477935be993e82, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1877753532
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1877753529}
+  m_CullTransparentMesh: 1
 --- !u!1 &1899544536
 GameObject:
   m_ObjectHideFlags: 0
@@ -42722,6 +44295,14 @@ MonoBehaviour:
     thirdTextPanel: {fileID: 801759123}
     battleUIParent: {fileID: 99435133}
     eventObjectParent: {fileID: 724813232}
+    hpValues: {fileID: 0}
+    hpBar: {fileID: 0}
+    mpValues: {fileID: 0}
+    mpBar: {fileID: 0}
+    apPercent: {fileID: 0}
+    apBar: {fileID: 0}
+    enemyHpBar: {fileID: 0}
+    enemyApBar: {fileID: 0}
   eventData:
     sequences:
     - sequence:
@@ -42765,7 +44346,77 @@ MonoBehaviour:
           textPanelType: 1
           speakerName: 
           speakerPortrait: {fileID: 0}
-          speakerText: '"I dont'' accept this fate."'
+          speakerText: '"I can''t let myself end up there again."'
+        giveItem:
+          itemToGive: {fileID: 0}
+          amount: 0
+        battle:
+          actionSelectParent: {fileID: 0}
+          actionSlotPrefab: {fileID: 0}
+          actionGridContainer: {fileID: 0}
+          itemSelectParent: {fileID: 0}
+          itemGridContainer: {fileID: 0}
+          itemSlotPrefab: {fileID: 0}
+          itemDescriptionText: {fileID: 0}
+          inventory: {fileID: 0}
+          ally: {fileID: 0}
+          enemy: {fileID: 0}
+        moveCamera:
+          targetPosition: {x: 0, y: 0}
+        playSound:
+          clip: {fileID: 0}
+        setMusic:
+          clip: {fileID: 0}
+        setCG:
+          sprite: {fileID: 0}
+        wait:
+          duration: 0
+        spawnObject:
+          objectToSpawn: {fileID: 0}
+          spawnPosition: {x: 0, y: 0}
+        destroyObject:
+          objectToDestroy: {fileID: 0}
+      - stepType: 0
+        phrase:
+          textPanelType: 1
+          speakerName: 
+          speakerPortrait: {fileID: 0}
+          speakerText: "\u201CEveryone wanted to free me from the shackles of Wonderland... And they paid a very high price for it...\u201D"
+        giveItem:
+          itemToGive: {fileID: 0}
+          amount: 0
+        battle:
+          actionSelectParent: {fileID: 0}
+          actionSlotPrefab: {fileID: 0}
+          actionGridContainer: {fileID: 0}
+          itemSelectParent: {fileID: 0}
+          itemGridContainer: {fileID: 0}
+          itemSlotPrefab: {fileID: 0}
+          itemDescriptionText: {fileID: 0}
+          inventory: {fileID: 0}
+          ally: {fileID: 0}
+          enemy: {fileID: 0}
+        moveCamera:
+          targetPosition: {x: 0, y: 0}
+        playSound:
+          clip: {fileID: 0}
+        setMusic:
+          clip: {fileID: 0}
+        setCG:
+          sprite: {fileID: 0}
+        wait:
+          duration: 0
+        spawnObject:
+          objectToSpawn: {fileID: 0}
+          spawnPosition: {x: 0, y: 0}
+        destroyObject:
+          objectToDestroy: {fileID: 0}
+      - stepType: 0
+        phrase:
+          textPanelType: 1
+          speakerName: 
+          speakerPortrait: {fileID: 0}
+          speakerText: '"I''ll do that."'
         giveItem:
           itemToGive: {fileID: 0}
           amount: 0
@@ -42870,7 +44521,112 @@ MonoBehaviour:
           textPanelType: 0
           speakerName: Cheshire Cat
           speakerPortrait: {fileID: 1740420571, guid: 6b05fd8051c7c43d790d0a5101e05b8c, type: 3}
-          speakerText: '"Meow! Grimm!"'
+          speakerText: '"Meow! There''s no way out down there, Grimm, and Prikket, the one you''re looking for, isn''t there either."'
+        giveItem:
+          itemToGive: {fileID: 0}
+          amount: 0
+        battle:
+          actionSelectParent: {fileID: 0}
+          actionSlotPrefab: {fileID: 0}
+          actionGridContainer: {fileID: 0}
+          itemSelectParent: {fileID: 0}
+          itemGridContainer: {fileID: 0}
+          itemSlotPrefab: {fileID: 0}
+          itemDescriptionText: {fileID: 0}
+          inventory: {fileID: 0}
+          ally: {fileID: 0}
+          enemy: {fileID: 0}
+        moveCamera:
+          targetPosition: {x: 0, y: 0}
+        playSound:
+          clip: {fileID: 0}
+        setMusic:
+          clip: {fileID: 8300000, guid: 9ad96cc076e4f4d9995ee29e63833e4e, type: 3}
+        setCG:
+          sprite: {fileID: 0}
+        wait:
+          duration: 0
+        spawnObject:
+          objectToSpawn: {fileID: 0}
+          spawnPosition: {x: 0, y: 0}
+        destroyObject:
+          objectToDestroy: {fileID: 0}
+      - stepType: 0
+        phrase:
+          textPanelType: 0
+          speakerName: Cheshire Cat
+          speakerPortrait: {fileID: 1740420571, guid: 6b05fd8051c7c43d790d0a5101e05b8c, type: 3}
+          speakerText: "\"There's a passage behind that tree\u2014who knows, maybe there's an exit there? Meow!\""
+        giveItem:
+          itemToGive: {fileID: 0}
+          amount: 0
+        battle:
+          actionSelectParent: {fileID: 0}
+          actionSlotPrefab: {fileID: 0}
+          actionGridContainer: {fileID: 0}
+          itemSelectParent: {fileID: 0}
+          itemGridContainer: {fileID: 0}
+          itemSlotPrefab: {fileID: 0}
+          itemDescriptionText: {fileID: 0}
+          inventory: {fileID: 0}
+          ally: {fileID: 0}
+          enemy: {fileID: 0}
+        moveCamera:
+          targetPosition: {x: 0, y: 0}
+        playSound:
+          clip: {fileID: 0}
+        setMusic:
+          clip: {fileID: 8300000, guid: 9ad96cc076e4f4d9995ee29e63833e4e, type: 3}
+        setCG:
+          sprite: {fileID: 0}
+        wait:
+          duration: 0
+        spawnObject:
+          objectToSpawn: {fileID: 0}
+          spawnPosition: {x: 0, y: 0}
+        destroyObject:
+          objectToDestroy: {fileID: 0}
+      - stepType: 0
+        phrase:
+          textPanelType: 0
+          speakerName: Cheshire Cat
+          speakerPortrait: {fileID: 1740420571, guid: 6b05fd8051c7c43d790d0a5101e05b8c, type: 3}
+          speakerText: '"And Grimm, please don''t let your dream turn into a nightmare."'
+        giveItem:
+          itemToGive: {fileID: 0}
+          amount: 0
+        battle:
+          actionSelectParent: {fileID: 0}
+          actionSlotPrefab: {fileID: 0}
+          actionGridContainer: {fileID: 0}
+          itemSelectParent: {fileID: 0}
+          itemGridContainer: {fileID: 0}
+          itemSlotPrefab: {fileID: 0}
+          itemDescriptionText: {fileID: 0}
+          inventory: {fileID: 0}
+          ally: {fileID: 0}
+          enemy: {fileID: 0}
+        moveCamera:
+          targetPosition: {x: 0, y: 0}
+        playSound:
+          clip: {fileID: 0}
+        setMusic:
+          clip: {fileID: 8300000, guid: 9ad96cc076e4f4d9995ee29e63833e4e, type: 3}
+        setCG:
+          sprite: {fileID: 0}
+        wait:
+          duration: 0
+        spawnObject:
+          objectToSpawn: {fileID: 0}
+          spawnPosition: {x: 0, y: 0}
+        destroyObject:
+          objectToDestroy: {fileID: 0}
+      - stepType: 0
+        phrase:
+          textPanelType: 0
+          speakerName: Cheshire Cat
+          speakerPortrait: {fileID: 1740420571, guid: 6b05fd8051c7c43d790d0a5101e05b8c, type: 3}
+          speakerText: '"You helped my mistress find peace... That''s the least I can wish for you. Thanks..."'
         giveItem:
           itemToGive: {fileID: 0}
           amount: 0
@@ -42925,7 +44681,7 @@ MonoBehaviour:
         playSound:
           clip: {fileID: 0}
         setMusic:
-          clip: {fileID: 8300000, guid: 9ad96cc076e4f4d9995ee29e63833e4e, type: 3}
+          clip: {fileID: 8300000, guid: c08194c6f69a2428f9115ca280e7dbe1, type: 3}
         setCG:
           sprite: {fileID: 0}
         wait:
@@ -43022,7 +44778,7 @@ GameObject:
   - component: {fileID: 1910597391}
   - component: {fileID: 1910597388}
   m_Layer: 0
-  m_Name: BattlePrinceOfGrief
+  m_Name: BattlePrinceOfHell
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -43222,8 +44978,8 @@ Tilemap:
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Origin: {x: -13, y: -2, z: 0}
-  m_Size: {x: 24, y: 91, z: 1}
+  m_Origin: {x: -13, y: -3, z: 0}
+  m_Size: {x: 36, y: 92, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
   m_TileOrientation: 0
   m_TileOrientationMatrix:
@@ -43272,6 +45028,14 @@ MonoBehaviour:
     thirdTextPanel: {fileID: 801759123}
     battleUIParent: {fileID: 99435133}
     eventObjectParent: {fileID: 0}
+    hpValues: {fileID: 306328159}
+    hpBar: {fileID: 555852397}
+    mpValues: {fileID: 655835927}
+    mpBar: {fileID: 1513268165}
+    apPercent: {fileID: 772816161}
+    apBar: {fileID: 147409625}
+    enemyHpBar: {fileID: 1302130862}
+    enemyApBar: {fileID: 1989856022}
   eventData:
     sequences:
     - sequence:
@@ -43401,7 +45165,7 @@ MonoBehaviour:
           ally: {fileID: 0}
           enemy: {fileID: 0}
         moveCamera:
-          targetPosition: {x: 0, y: 5}
+          targetPosition: {x: 0, y: 3.5}
         playSound:
           clip: {fileID: 0}
         setMusic:
@@ -43593,8 +45357,8 @@ MonoBehaviour:
       - stepType: 0
         phrase:
           textPanelType: 0
-          speakerName: Prince Of Grief
-          speakerPortrait: {fileID: -946738187, guid: 356b2b91b5b9d416b89be16bef2ba3f0, type: 3}
+          speakerName: Playwright Lorde
+          speakerPortrait: {fileID: 1254746789, guid: 356b2b91b5b9d416b89be16bef2ba3f0, type: 3}
           speakerText: 'Found you... '
         giveItem:
           itemToGive: {fileID: 11400000, guid: faab8bda81b304a38935c77791972bbf, type: 2}
@@ -43620,41 +45384,6 @@ MonoBehaviour:
           sprite: {fileID: 0}
         wait:
           duration: 0
-        spawnObject:
-          objectToSpawn: {fileID: 0}
-          spawnPosition: {x: 0, y: 0}
-        destroyObject:
-          objectToDestroy: {fileID: 0}
-      - stepType: 7
-        phrase:
-          textPanelType: 2
-          speakerName: Hi
-          speakerPortrait: {fileID: 0}
-          speakerText: NIGHTMARE SPIRIT DESTROYED
-        giveItem:
-          itemToGive: {fileID: 11400000, guid: faab8bda81b304a38935c77791972bbf, type: 2}
-          amount: 1
-        battle:
-          actionSelectParent: {fileID: 0}
-          actionSlotPrefab: {fileID: 0}
-          actionGridContainer: {fileID: 0}
-          itemSelectParent: {fileID: 0}
-          itemGridContainer: {fileID: 0}
-          itemSlotPrefab: {fileID: 0}
-          itemDescriptionText: {fileID: 0}
-          inventory: {fileID: 0}
-          ally: {fileID: 0}
-          enemy: {fileID: 0}
-        moveCamera:
-          targetPosition: {x: 0, y: 0}
-        playSound:
-          clip: {fileID: 0}
-        setMusic:
-          clip: {fileID: 0}
-        setCG:
-          sprite: {fileID: 0}
-        wait:
-          duration: 0.5
         spawnObject:
           objectToSpawn: {fileID: 0}
           spawnPosition: {x: 0, y: 0}
@@ -43759,7 +45488,7 @@ MonoBehaviour:
         setCG:
           sprite: {fileID: 0}
         wait:
-          duration: 1.5
+          duration: 3
         spawnObject:
           objectToSpawn: {fileID: 0}
           spawnPosition: {x: 0, y: 0}
@@ -43790,7 +45519,7 @@ MonoBehaviour:
         playSound:
           clip: {fileID: 0}
         setMusic:
-          clip: {fileID: 8300000, guid: 6c61f812fa6d34460bb28319a12a96fa, type: 3}
+          clip: {fileID: 8300000, guid: 24593b777c1b6462e9b6e170dfd7d49a, type: 3}
         setCG:
           sprite: {fileID: 0}
         wait:
@@ -43835,12 +45564,12 @@ MonoBehaviour:
           spawnPosition: {x: 0, y: 0}
         destroyObject:
           objectToDestroy: {fileID: 0}
-      - stepType: 0
+      - stepType: 5
         phrase:
-          textPanelType: 0
-          speakerName: Prince Of Grief
-          speakerPortrait: {fileID: -946738187, guid: 356b2b91b5b9d416b89be16bef2ba3f0, type: 3}
-          speakerText: 'Grand Guignol... My beloved child... If only you were here with me... Forgive me... '
+          textPanelType: 2
+          speakerName: Hi
+          speakerPortrait: {fileID: 0}
+          speakerText: NIGHTMARE SPIRIT DESTROYED
         giveItem:
           itemToGive: {fileID: 11400000, guid: faab8bda81b304a38935c77791972bbf, type: 2}
           amount: 1
@@ -43859,6 +45588,41 @@ MonoBehaviour:
           targetPosition: {x: 0, y: 0}
         playSound:
           clip: {fileID: 0}
+        setMusic:
+          clip: {fileID: 0}
+        setCG:
+          sprite: {fileID: 0}
+        wait:
+          duration: 0
+        spawnObject:
+          objectToSpawn: {fileID: 0}
+          spawnPosition: {x: 0, y: 0}
+        destroyObject:
+          objectToDestroy: {fileID: 0}
+      - stepType: 4
+        phrase:
+          textPanelType: 2
+          speakerName: Hi
+          speakerPortrait: {fileID: 0}
+          speakerText: NIGHTMARE SPIRIT DESTROYED
+        giveItem:
+          itemToGive: {fileID: 11400000, guid: faab8bda81b304a38935c77791972bbf, type: 2}
+          amount: 1
+        battle:
+          actionSelectParent: {fileID: 0}
+          actionSlotPrefab: {fileID: 0}
+          actionGridContainer: {fileID: 0}
+          itemSelectParent: {fileID: 0}
+          itemGridContainer: {fileID: 0}
+          itemSlotPrefab: {fileID: 0}
+          itemDescriptionText: {fileID: 0}
+          inventory: {fileID: 0}
+          ally: {fileID: 0}
+          enemy: {fileID: 0}
+        moveCamera:
+          targetPosition: {x: 0, y: 0}
+        playSound:
+          clip: {fileID: 8300000, guid: 09fb55c8fce2c4bf4859945707a5812d, type: 3}
         setMusic:
           clip: {fileID: 0}
         setCG:
@@ -43899,7 +45663,77 @@ MonoBehaviour:
         setCG:
           sprite: {fileID: 0}
         wait:
-          duration: 0.5
+          duration: 3
+        spawnObject:
+          objectToSpawn: {fileID: 0}
+          spawnPosition: {x: 0, y: 0}
+        destroyObject:
+          objectToDestroy: {fileID: 0}
+      - stepType: 6
+        phrase:
+          textPanelType: 2
+          speakerName: Hi
+          speakerPortrait: {fileID: 0}
+          speakerText: NIGHTMARE SPIRIT DESTROYED
+        giveItem:
+          itemToGive: {fileID: 11400000, guid: faab8bda81b304a38935c77791972bbf, type: 2}
+          amount: 1
+        battle:
+          actionSelectParent: {fileID: 0}
+          actionSlotPrefab: {fileID: 0}
+          actionGridContainer: {fileID: 0}
+          itemSelectParent: {fileID: 0}
+          itemGridContainer: {fileID: 0}
+          itemSlotPrefab: {fileID: 0}
+          itemDescriptionText: {fileID: 0}
+          inventory: {fileID: 0}
+          ally: {fileID: 0}
+          enemy: {fileID: 0}
+        moveCamera:
+          targetPosition: {x: 0, y: 0}
+        playSound:
+          clip: {fileID: 0}
+        setMusic:
+          clip: {fileID: 0}
+        setCG:
+          sprite: {fileID: 0}
+        wait:
+          duration: 0
+        spawnObject:
+          objectToSpawn: {fileID: 0}
+          spawnPosition: {x: 0, y: 0}
+        destroyObject:
+          objectToDestroy: {fileID: 0}
+      - stepType: 0
+        phrase:
+          textPanelType: 0
+          speakerName: Playwright Lorde
+          speakerPortrait: {fileID: 1254746789, guid: 356b2b91b5b9d416b89be16bef2ba3f0, type: 3}
+          speakerText: Grand Guignol... My beloved child... If only you hadn't been stolen and killed...
+        giveItem:
+          itemToGive: {fileID: 11400000, guid: faab8bda81b304a38935c77791972bbf, type: 2}
+          amount: 1
+        battle:
+          actionSelectParent: {fileID: 0}
+          actionSlotPrefab: {fileID: 0}
+          actionGridContainer: {fileID: 0}
+          itemSelectParent: {fileID: 0}
+          itemGridContainer: {fileID: 0}
+          itemSlotPrefab: {fileID: 0}
+          itemDescriptionText: {fileID: 0}
+          inventory: {fileID: 0}
+          ally: {fileID: 0}
+          enemy: {fileID: 0}
+        moveCamera:
+          targetPosition: {x: 0, y: 0}
+        playSound:
+          clip: {fileID: 0}
+        setMusic:
+          clip: {fileID: 0}
+        setCG:
+          sprite: {fileID: 0}
+        wait:
+          duration: 0
         spawnObject:
           objectToSpawn: {fileID: 0}
           spawnPosition: {x: 0, y: 0}
@@ -43940,6 +45774,41 @@ MonoBehaviour:
           spawnPosition: {x: 0, y: 0}
         destroyObject:
           objectToDestroy: {fileID: 1790685474}
+      - stepType: 4
+        phrase:
+          textPanelType: 2
+          speakerName: Hi
+          speakerPortrait: {fileID: 0}
+          speakerText: NIGHTMARE SPIRIT DESTROYED
+        giveItem:
+          itemToGive: {fileID: 11400000, guid: faab8bda81b304a38935c77791972bbf, type: 2}
+          amount: 1
+        battle:
+          actionSelectParent: {fileID: 0}
+          actionSlotPrefab: {fileID: 0}
+          actionGridContainer: {fileID: 0}
+          itemSelectParent: {fileID: 0}
+          itemGridContainer: {fileID: 0}
+          itemSlotPrefab: {fileID: 0}
+          itemDescriptionText: {fileID: 0}
+          inventory: {fileID: 0}
+          ally: {fileID: 0}
+          enemy: {fileID: 0}
+        moveCamera:
+          targetPosition: {x: 0, y: 0}
+        playSound:
+          clip: {fileID: 8300000, guid: 764775a478fed477a91ab4c97bf57316, type: 3}
+        setMusic:
+          clip: {fileID: 0}
+        setCG:
+          sprite: {fileID: 0}
+        wait:
+          duration: 0
+        spawnObject:
+          objectToSpawn: {fileID: 0}
+          spawnPosition: {x: 0, y: 0}
+        destroyObject:
+          objectToDestroy: {fileID: 0}
       - stepType: 0
         phrase:
           textPanelType: 2
@@ -43966,6 +45835,76 @@ MonoBehaviour:
           clip: {fileID: 0}
         setMusic:
           clip: {fileID: 0}
+        setCG:
+          sprite: {fileID: 0}
+        wait:
+          duration: 0
+        spawnObject:
+          objectToSpawn: {fileID: 0}
+          spawnPosition: {x: 0, y: 0}
+        destroyObject:
+          objectToDestroy: {fileID: 0}
+      - stepType: 3
+        phrase:
+          textPanelType: 2
+          speakerName: Hi
+          speakerPortrait: {fileID: 0}
+          speakerText: NIGHTMARE SPIRIT DESTROYED
+        giveItem:
+          itemToGive: {fileID: 11400000, guid: faab8bda81b304a38935c77791972bbf, type: 2}
+          amount: 1
+        battle:
+          actionSelectParent: {fileID: 0}
+          actionSlotPrefab: {fileID: 0}
+          actionGridContainer: {fileID: 0}
+          itemSelectParent: {fileID: 0}
+          itemGridContainer: {fileID: 0}
+          itemSlotPrefab: {fileID: 0}
+          itemDescriptionText: {fileID: 0}
+          inventory: {fileID: 0}
+          ally: {fileID: 0}
+          enemy: {fileID: 0}
+        moveCamera:
+          targetPosition: {x: 0, y: 0}
+        playSound:
+          clip: {fileID: 0}
+        setMusic:
+          clip: {fileID: 0}
+        setCG:
+          sprite: {fileID: 0}
+        wait:
+          duration: 0
+        spawnObject:
+          objectToSpawn: {fileID: 0}
+          spawnPosition: {x: 0, y: 0}
+        destroyObject:
+          objectToDestroy: {fileID: 0}
+      - stepType: 5
+        phrase:
+          textPanelType: 2
+          speakerName: Hi
+          speakerPortrait: {fileID: 0}
+          speakerText: NIGHTMARE SPIRIT DESTROYED
+        giveItem:
+          itemToGive: {fileID: 11400000, guid: faab8bda81b304a38935c77791972bbf, type: 2}
+          amount: 1
+        battle:
+          actionSelectParent: {fileID: 0}
+          actionSlotPrefab: {fileID: 0}
+          actionGridContainer: {fileID: 0}
+          itemSelectParent: {fileID: 0}
+          itemGridContainer: {fileID: 0}
+          itemSlotPrefab: {fileID: 0}
+          itemDescriptionText: {fileID: 0}
+          inventory: {fileID: 0}
+          ally: {fileID: 0}
+          enemy: {fileID: 0}
+        moveCamera:
+          targetPosition: {x: 0, y: 0}
+        playSound:
+          clip: {fileID: 0}
+        setMusic:
+          clip: {fileID: 8300000, guid: c08194c6f69a2428f9115ca280e7dbe1, type: 3}
         setCG:
           sprite: {fileID: 0}
         wait:
@@ -44596,7 +46535,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 694594605, guid: 3f139e3d9254843a59d47d8caf6df652, type: 3}
+  m_Sprite: {fileID: 853478988, guid: 3f139e3d9254843a59d47d8caf6df652, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -44808,8 +46747,158 @@ MonoBehaviour:
     thirdTextPanel: {fileID: 801759123}
     battleUIParent: {fileID: 99435133}
     eventObjectParent: {fileID: 0}
+    hpValues: {fileID: 0}
+    hpBar: {fileID: 0}
+    mpValues: {fileID: 0}
+    mpBar: {fileID: 0}
+    apPercent: {fileID: 0}
+    apBar: {fileID: 0}
+    enemyHpBar: {fileID: 0}
+    enemyApBar: {fileID: 0}
   eventData:
     sequences:
+    - sequence:
+      - stepType: 4
+        phrase:
+          textPanelType: 0
+          speakerName: 
+          speakerPortrait: {fileID: 0}
+          speakerText: 
+        giveItem:
+          itemToGive: {fileID: 0}
+          amount: 0
+        battle:
+          actionSelectParent: {fileID: 0}
+          actionSlotPrefab: {fileID: 0}
+          actionGridContainer: {fileID: 0}
+          itemSelectParent: {fileID: 0}
+          itemGridContainer: {fileID: 0}
+          itemSlotPrefab: {fileID: 0}
+          itemDescriptionText: {fileID: 0}
+          inventory: {fileID: 0}
+          ally: {fileID: 0}
+          enemy: {fileID: 0}
+        moveCamera:
+          targetPosition: {x: 0, y: 0}
+        playSound:
+          clip: {fileID: 8300000, guid: e0c1c9c7b66d647deba1b4395cfd7007, type: 3}
+        setMusic:
+          clip: {fileID: 0}
+        setCG:
+          sprite: {fileID: 0}
+        wait:
+          duration: 0
+        spawnObject:
+          objectToSpawn: {fileID: 0}
+          spawnPosition: {x: 0, y: 0}
+        destroyObject:
+          objectToDestroy: {fileID: 0}
+      - stepType: 5
+        phrase:
+          textPanelType: 0
+          speakerName: 
+          speakerPortrait: {fileID: 0}
+          speakerText: 
+        giveItem:
+          itemToGive: {fileID: 0}
+          amount: 0
+        battle:
+          actionSelectParent: {fileID: 0}
+          actionSlotPrefab: {fileID: 0}
+          actionGridContainer: {fileID: 0}
+          itemSelectParent: {fileID: 0}
+          itemGridContainer: {fileID: 0}
+          itemSlotPrefab: {fileID: 0}
+          itemDescriptionText: {fileID: 0}
+          inventory: {fileID: 0}
+          ally: {fileID: 0}
+          enemy: {fileID: 0}
+        moveCamera:
+          targetPosition: {x: 0, y: 0}
+        playSound:
+          clip: {fileID: 0}
+        setMusic:
+          clip: {fileID: 8300000, guid: e5f8affbe78d94562b62bb33a90d156f, type: 3}
+        setCG:
+          sprite: {fileID: 0}
+        wait:
+          duration: 0
+        spawnObject:
+          objectToSpawn: {fileID: 0}
+          spawnPosition: {x: 0, y: 0}
+        destroyObject:
+          objectToDestroy: {fileID: 0}
+      - stepType: 0
+        phrase:
+          textPanelType: 0
+          speakerName: Cheshire Cat
+          speakerPortrait: {fileID: 1740420571, guid: 6b05fd8051c7c43d790d0a5101e05b8c, type: 3}
+          speakerText: '"Meow! You''d better hurry and wake up, right over to your Red Hood!"'
+        giveItem:
+          itemToGive: {fileID: 0}
+          amount: 0
+        battle:
+          actionSelectParent: {fileID: 0}
+          actionSlotPrefab: {fileID: 0}
+          actionGridContainer: {fileID: 0}
+          itemSelectParent: {fileID: 0}
+          itemGridContainer: {fileID: 0}
+          itemSlotPrefab: {fileID: 0}
+          itemDescriptionText: {fileID: 0}
+          inventory: {fileID: 0}
+          ally: {fileID: 0}
+          enemy: {fileID: 0}
+        moveCamera:
+          targetPosition: {x: 0, y: 0}
+        playSound:
+          clip: {fileID: 0}
+        setMusic:
+          clip: {fileID: 0}
+        setCG:
+          sprite: {fileID: 0}
+        wait:
+          duration: 0
+        spawnObject:
+          objectToSpawn: {fileID: 0}
+          spawnPosition: {x: 0, y: 0}
+        destroyObject:
+          objectToDestroy: {fileID: 0}
+      - stepType: 5
+        phrase:
+          textPanelType: 0
+          speakerName: 
+          speakerPortrait: {fileID: 0}
+          speakerText: 
+        giveItem:
+          itemToGive: {fileID: 0}
+          amount: 0
+        battle:
+          actionSelectParent: {fileID: 0}
+          actionSlotPrefab: {fileID: 0}
+          actionGridContainer: {fileID: 0}
+          itemSelectParent: {fileID: 0}
+          itemGridContainer: {fileID: 0}
+          itemSlotPrefab: {fileID: 0}
+          itemDescriptionText: {fileID: 0}
+          inventory: {fileID: 0}
+          ally: {fileID: 0}
+          enemy: {fileID: 0}
+        moveCamera:
+          targetPosition: {x: 0, y: 0}
+        playSound:
+          clip: {fileID: 0}
+        setMusic:
+          clip: {fileID: 8300000, guid: c08194c6f69a2428f9115ca280e7dbe1, type: 3}
+        setCG:
+          sprite: {fileID: 0}
+        wait:
+          duration: 0
+        spawnObject:
+          objectToSpawn: {fileID: 0}
+          spawnPosition: {x: 0, y: 0}
+        destroyObject:
+          objectToDestroy: {fileID: 0}
+      isDestroys: 0
     - sequence:
       - stepType: 4
         phrase:
@@ -44941,7 +47030,7 @@ MonoBehaviour:
         playSound:
           clip: {fileID: 0}
         setMusic:
-          clip: {fileID: 8300000, guid: 9ad96cc076e4f4d9995ee29e63833e4e, type: 3}
+          clip: {fileID: 8300000, guid: c08194c6f69a2428f9115ca280e7dbe1, type: 3}
         setCG:
           sprite: {fileID: 0}
         wait:
@@ -46256,3 +48345,4 @@ SceneRoots:
   - {fileID: 232730090}
   - {fileID: 344579176}
   - {fileID: 1484836674}
+  - {fileID: 1385402350}

@@ -5,7 +5,6 @@ public class SomethingWhiteAndStinky : IEffect
 {
     public void Execute(Ally ally, Ally enemy)
     {
-        ally.CurrentHp = ally.data.maxHp;
-        ally.CurrentMp = ally.data.maxMp;
+        ally.CurrentMagic += (int)(ally.CurrentMagic * 0.1);
     }
 }

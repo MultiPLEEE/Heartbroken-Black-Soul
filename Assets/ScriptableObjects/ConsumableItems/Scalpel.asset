@@ -14,9 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: "Assembly-CSharp::Scriptable\u0421onsumableSO"
   sprite: {fileID: -1763457934, guid: edfcb64958fc54e569477935be993e82, type: 3}
   objectName: Scalpel
-  objectEffectDescription: 'Inflict 30000 fixed damage. '
+  objectEffectDescription: 'Inflict 40000 fixed damage and reduces enemy ATK. '
   objectDescription: Through trepanation and star implantation, they conquered death.
   isTakesTurn: 1
+  soundEffect: {fileID: 8300000, guid: f6066f0dd61d147e88b5f963742b018e, type: 3}
   effect:
     rid: 7026581128638890257
   references:

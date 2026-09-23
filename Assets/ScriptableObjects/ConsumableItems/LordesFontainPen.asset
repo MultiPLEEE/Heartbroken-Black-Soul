@@ -17,6 +17,7 @@ MonoBehaviour:
   objectEffectDescription: 'Increase the target ally''s HP and MP for some time. '
   objectDescription: One of the playwright's favorite pens. Chipped, it can't write.
   isTakesTurn: 0
+  soundEffect: {fileID: 8300000, guid: c5462015830d641628bb57b124ffe5a7, type: 3}
   effect:
     rid: 7026581128638890255
   references:

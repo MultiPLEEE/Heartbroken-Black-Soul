@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a1bf427f0ac384467a078ac831a1a2fd
+guid: 356b2b91b5b9d416b89be16bef2ba3f0
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 39
+  spritePixelsToUnits: 96
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -102,23 +102,67 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "\u30ED\u30EB\u30C8\u3099_0"
+      name: PrinceOfRegrets_0
       rect:
         serializedVersion: 2
-        x: 12
-        y: 3
-        width: 184
-        height: 296
+        x: 0
+        y: 96
+        width: 96
+        height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 7a63c64d608745ac0800000000000000
-      internalID: -3867334209275414873
+      spriteID: 357a4cea6b06e433bb898dd9b11815f7
+      internalID: 1254746789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrinceOfRegrets_1
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f5054621a00547c693316a57a06fe0b
+      internalID: 1807789673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PrinceOfRegrets_2
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 96
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 559f41788d5754b2ca8b3a549f35cf46
+      internalID: 95790076
       vertices: []
       indices: 
       edges: []
@@ -127,7 +171,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 4127867807328417aaf1f45b7b83948f
     internalID: 0
     vertices: []
     indices: 
@@ -135,9 +179,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":96.0,"y":96.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      "\u30ED\u30EB\u30C8\u3099_0": -3867334209275414873
+      PrinceOfRegrets_0: 1254746789
+      PrinceOfRegrets_1: 1807789673
+      PrinceOfRegrets_2: 95790076
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

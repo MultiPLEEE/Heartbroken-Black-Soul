@@ -17,6 +17,7 @@ MonoBehaviour:
   objectEffectDescription: Hansel and Gretel would eat it without hesitation.
   objectDescription: Increase the target ally's Defense for some time.
   isTakesTurn: 0
+  soundEffect: {fileID: 8300000, guid: c5462015830d641628bb57b124ffe5a7, type: 3}
   effect:
     rid: 7026581128638890258
   references:

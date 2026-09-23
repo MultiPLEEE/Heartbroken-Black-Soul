@@ -16,7 +16,8 @@ MonoBehaviour:
   portrait: {fileID: -940057392, guid: e3688782114254b36a9ca7bd2de86b77, type: 3}
   battleSprite: {fileID: 0}
   maxHp: 300000
-  maxMp: 9000
-  attack: 40000
+  maxMp: 6000
+  attack: 70000
+  magic: 30000
   defense: 30000
   speed: 300

@@ -17,6 +17,7 @@ MonoBehaviour:
   objectEffectDescription: 'Perform attack by pain from your broken heart. '
   objectDescription: This scent fills you with a bittersweet sense of nostalgia.
   isTakesTurn: 1
+  soundEffect: {fileID: 8300000, guid: c464ae83a47bf46f683ada9e121aed75, type: 3}
   effect:
     rid: 7026581128638890261
   references:

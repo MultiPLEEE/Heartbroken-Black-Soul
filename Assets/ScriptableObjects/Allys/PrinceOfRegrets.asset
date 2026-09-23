@@ -10,13 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 34c76866220054718928a774a1ab5590, type: 3}
-  m_Name: PrinceOfGrief
+  m_Name: PrinceOfRegrets
   m_EditorClassIdentifier: Assembly-CSharp::AllySO
   allyName: Prince Of Grief
   portrait: {fileID: -946738187, guid: 356b2b91b5b9d416b89be16bef2ba3f0, type: 3}
   battleSprite: {fileID: -3867334209275414873, guid: a1bf427f0ac384467a078ac831a1a2fd, type: 3}
-  maxHp: 300000
+  maxHp: 900000
   maxMp: 30000
-  attack: 40000
+  attack: 90000
+  magic: 30000
   defense: 10000
   speed: 900

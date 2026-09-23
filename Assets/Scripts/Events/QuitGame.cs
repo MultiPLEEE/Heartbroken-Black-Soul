@@ -1,37 +1,38 @@
 using System;
 using UnityEngine;
 
-
 [Serializable]
-public class GiveItemInfo
+public class quitGameInfo
 {
-    public ConsumableItemSO itemToGive;
-    public int amount = 1;
+
 }
 
-public class GiveItem : IEventStep
+public class QuitGame : IEventStep
 {
-    private GiveItemInfo _info;
+    private quitGameInfo _info;
     private EventContext _context;
     private Action _onComplete;
-
+    
     public void Execute(Step step, EventContext eventContext, Action onComplete)
     {
-        _info = step.giveItem;
-        _context = eventContext;
+        _info = step.quitGame;
+        _context =  eventContext;
         _onComplete = onComplete;
         
-        Inventory playerInventory = _context.player.GetPlayerInventory();
-        playerInventory.AddItem(_info.itemToGive, _info.amount);
+        Application.Quit();
+        
+        #if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+        #endif
         
         End();
     }
-    
+
     public void Update()
     {
         
     }
-
+    
     private void End()
     {
         _onComplete?.Invoke();

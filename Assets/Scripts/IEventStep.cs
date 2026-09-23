@@ -22,6 +22,16 @@ public class EventContext
     public TMP_Text thirdTextPanel;
     public GameObject battleUIParent;
     public GameObject eventObjectParent;
+    
+    public TMP_Text hpValues;
+    public Slider hpBar;
+    public TMP_Text mpValues;
+    public Slider mpBar;
+    public TMP_Text apPercent;
+    public Slider apBar;
+    
+    public Slider enemyHpBar;
+    public Slider enemyApBar;
 }
 
 public interface IEventStep
